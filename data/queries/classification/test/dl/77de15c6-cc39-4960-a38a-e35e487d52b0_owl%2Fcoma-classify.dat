@@ -1,8 +1,0 @@
-QueryType	classification
-OntologySource	RELATIVETOONTOLOGIESDIRECTORY	test/dl/77de15c6-cc39-4960-a38a-e35e487d52b0_owl%2Fcoma
-UsingRules	false
-UsingDatatypes	true
-InDLProfile	true
-InELProfile	false
-InRLProfile	false
-InQLProfile	false

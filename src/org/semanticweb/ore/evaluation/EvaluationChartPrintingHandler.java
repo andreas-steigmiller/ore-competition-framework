@@ -30,11 +30,23 @@ public class EvaluationChartPrintingHandler {
 	}
 	
 	public boolean printBarChart(Competition competition, String evaluationNameString, EvaluationChartPrintingData chartData) {
-		if (mJChartPrinter.printBarChart(mBaseOutputString+evaluationNameString+"-JChart.png", chartData)) {
-			mStatusUpdater.updateCompetitionEvaluationStatus(new CompetitionEvaluationStatus(competition,evaluationNameString+"-JChart",mBaseOutputString+evaluationNameString+"-JChart.png",CompetitionEvaluationType.COMPETITION_EVALUTION_TYPE_CHART_PNG,new DateTime(DateTimeZone.UTC)));
+		try {
+			CompetitionEvaluationStatus jChartEvalStat = new CompetitionEvaluationStatus(competition,evaluationNameString+"-JChart",mBaseOutputString+evaluationNameString+"-JChart.png",CompetitionEvaluationType.COMPETITION_EVALUTION_TYPE_CHART_PNG,new DateTime(DateTimeZone.UTC));
+			if (mJChartPrinter.printBarChart(mBaseOutputString+evaluationNameString+"-JChart.png", chartData)) {
+				if (mStatusUpdater != null) {
+					mStatusUpdater.updateCompetitionEvaluationStatus(jChartEvalStat);
+				}
+			}
+		} catch (Exception e) {			
 		}
-		if (mHighchartPrinter.printBarChart(mBaseOutputString+evaluationNameString+"-Highchart.html", chartData)) {
-			mStatusUpdater.updateCompetitionEvaluationStatus(new CompetitionEvaluationStatus(competition,evaluationNameString+"-Highchart",mBaseOutputString+evaluationNameString+"-Highchart.html",CompetitionEvaluationType.COMPETITION_EVALUTION_TYPE_CHART_HTML,new DateTime(DateTimeZone.UTC)));
+		try {
+			CompetitionEvaluationStatus highChartEvalStat = new CompetitionEvaluationStatus(competition,evaluationNameString+"-Highchart",mBaseOutputString+evaluationNameString+"-Highchart.html",CompetitionEvaluationType.COMPETITION_EVALUTION_TYPE_CHART_HTML,new DateTime(DateTimeZone.UTC));
+			if (mHighchartPrinter.printBarChart(mBaseOutputString+evaluationNameString+"-Highchart.html", chartData)) {
+				if (mStatusUpdater != null) {
+					mStatusUpdater.updateCompetitionEvaluationStatus(highChartEvalStat);
+				}
+			}
+		} catch (Exception e) {			
 		}
 		return false;
 	}

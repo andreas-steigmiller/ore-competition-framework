@@ -77,7 +77,8 @@ public class CompetitionEvaluatorHandler extends Thread implements Runnable, Com
 		try {
 			CorrectAverageRankingQueryResultEvaluator corrAverageRankingEvaluator = new CorrectAverageRankingQueryResultEvaluator(mConfig,evaluationResultsResponseDirectory,mStatusUpdater);
 			corrAverageRankingEvaluator.evaluateCompetitionResults(mResultStorage, mCompetition);
-		} catch (Exception e) {			
+		} catch (Exception e) {		
+			mLogger.info("Failed to create correct average ranking statistics for competition {}, got Exception {}'.",mCompetition.getCompetitionName(),e.getMessage());
 		}			
 
 		try {

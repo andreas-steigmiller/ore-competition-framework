@@ -12,6 +12,7 @@ public class EvaluationFinishedBlockingCallback implements EvaluationFinishedCal
 
 	@Override
 	public void finishedEvaluation() {
+		mBlockSemaphore.release();
 	}
 
 }
