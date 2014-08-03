@@ -1,0 +1,8 @@
+QueryType	classification
+OntologySource	RELATIVETOONTOLOGIESDIRECTORY	test/rl/2db8eeab-8ec3-4815-8cbb-a34245e07b31_latest.owl
+UsingRules	false
+UsingDatatypes	false
+InDLProfile	true
+InELProfile	false
+InRLProfile	true
+InQLProfile	false

@@ -1,0 +1,703 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://org.semanticweb.ore/normalised-result-comparision-ontology"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     ontologyIRI="http://org.semanticweb.ore/normalised-result-comparision-ontology">
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <EquivalentClasses>
+        <Class IRI="http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#CheeseyVegetableTopping"/>
+        <Class IRI="http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#IceCream"/>
+        <Class abbreviatedIRI="owl:Nothing"/>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#SpicyPizza"/>
+        <Class IRI="http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#SpicyPizzaEquivalent"/>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#VegetarianPizzaEquivalent1"/>
+        <Class IRI="http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#VegetarianPizzaEquivalent2"/>
+    </EquivalentClasses>
+    <SubClassOf>
+        <Class IRI="http://protege.stanford.edu/plugins/owl/protege#DIRECTED-BINARY-RELATION"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://protege.stanford.edu/plugins/owl/protege#PAL-CONSTRAINT"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#American"/>
+        <Class IRI="http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#CheeseyPizza"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#American"/>
+        <Class IRI="http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#InterestingPizza"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#American"/>
+        <Class IRI="http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#MeatyPizza"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#American"/>
+        <Class IRI="http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#NamedPizza"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#AmericanHot"/>
+        <Class IRI="http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#CheeseyPizza"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#AmericanHot"/>
+        <Class IRI="http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#InterestingPizza"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#AmericanHot"/>
+        <Class IRI="http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#MeatyPizza"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#AmericanHot"/>
+        <Class IRI="http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#NamedPizza"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#AmericanHot"/>
+        <Class IRI="http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#SpicyPizzaEquivalent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#AnchoviesTopping"/>
+        <Class IRI="http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#FishTopping"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#ArtichokeTopping"/>
+        <Class IRI="http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#VegetableTopping"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#AsparagusTopping"/>
+        <Class IRI="http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#VegetableTopping"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#Cajun"/>
+        <Class IRI="http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#CheeseyPizza"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#Cajun"/>
+        <Class IRI="http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#InterestingPizza"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#Cajun"/>
+        <Class IRI="http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#NamedPizza"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#Cajun"/>
+        <Class IRI="http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#NonVegetarianPizza"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#Cajun"/>
+        <Class IRI="http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#SpicyPizzaEquivalent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#CajunSpiceTopping"/>
+        <Class IRI="http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#HerbSpiceTopping"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#CajunSpiceTopping"/>
+        <Class IRI="http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#SpicyTopping"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#CaperTopping"/>
+        <Class IRI="http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#VegetableTopping"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#Capricciosa"/>
+        <Class IRI="http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#CheeseyPizza"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#Capricciosa"/>
+        <Class IRI="http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#InterestingPizza"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#Capricciosa"/>
+        <Class IRI="http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#MeatyPizza"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#Capricciosa"/>
+        <Class IRI="http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#NamedPizza"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#Caprina"/>
+        <Class IRI="http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#CheeseyPizza"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#Caprina"/>
+        <Class IRI="http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#InterestingPizza"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#Caprina"/>
+        <Class IRI="http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#NamedPizza"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#Caprina"/>
+        <Class IRI="http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#VegetarianPizzaEquivalent2"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#CheeseTopping"/>
+        <Class IRI="http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#VegetarianTopping"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#CheeseyPizza"/>
+        <Class IRI="http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#Pizza"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#ChickenTopping"/>
+        <Class IRI="http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#MeatTopping"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#Country"/>
+        <Class IRI="http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#DomainConcept"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#DeepPanBase"/>
+        <Class IRI="http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#PizzaBase"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#DomainConcept"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#Fiorentina"/>
+        <Class IRI="http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#CheeseyPizza"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#Fiorentina"/>
+        <Class IRI="http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#InterestingPizza"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#Fiorentina"/>
+        <Class IRI="http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#NamedPizza"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#Fiorentina"/>
+        <Class IRI="http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#VegetarianPizzaEquivalent2"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#FishTopping"/>
+        <Class IRI="http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#PizzaTopping"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#FourCheesesTopping"/>
+        <Class IRI="http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#CheeseTopping"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#FourSeasons"/>
+        <Class IRI="http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#CheeseyPizza"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#FourSeasons"/>
+        <Class IRI="http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#InterestingPizza"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#FourSeasons"/>
+        <Class IRI="http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#MeatyPizza"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#FourSeasons"/>
+        <Class IRI="http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#NamedPizza"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#FruitTopping"/>
+        <Class IRI="http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#VegetarianTopping"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#FruttiDiMare"/>
+        <Class IRI="http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#InterestingPizza"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#FruttiDiMare"/>
+        <Class IRI="http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#NamedPizza"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#FruttiDiMare"/>
+        <Class IRI="http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#NonVegetarianPizza"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#GarlicTopping"/>
+        <Class IRI="http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#VegetableTopping"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#Giardiniera"/>
+        <Class IRI="http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#CheeseyPizza"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#Giardiniera"/>
+        <Class IRI="http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#InterestingPizza"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#Giardiniera"/>
+        <Class IRI="http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#NamedPizza"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#Giardiniera"/>
+        <Class IRI="http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#VegetarianPizzaEquivalent2"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#GoatsCheeseTopping"/>
+        <Class IRI="http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#CheeseTopping"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#GorgonzolaTopping"/>
+        <Class IRI="http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#CheeseTopping"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#GreenPepperTopping"/>
+        <Class IRI="http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#PepperTopping"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#HamTopping"/>
+        <Class IRI="http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#MeatTopping"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#HerbSpiceTopping"/>
+        <Class IRI="http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#VegetarianTopping"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#Hot"/>
+        <Class IRI="http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#Spiciness"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#HotGreenPepperTopping"/>
+        <Class IRI="http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#GreenPepperTopping"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#HotGreenPepperTopping"/>
+        <Class IRI="http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#SpicyTopping"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#HotSpicedBeefTopping"/>
+        <Class IRI="http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#MeatTopping"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#HotSpicedBeefTopping"/>
+        <Class IRI="http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#SpicyTopping"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#InterestingPizza"/>
+        <Class IRI="http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#Pizza"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#JalapenoPepperTopping"/>
+        <Class IRI="http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#PepperTopping"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#JalapenoPepperTopping"/>
+        <Class IRI="http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#SpicyTopping"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#LaReine"/>
+        <Class IRI="http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#CheeseyPizza"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#LaReine"/>
+        <Class IRI="http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#InterestingPizza"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#LaReine"/>
+        <Class IRI="http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#MeatyPizza"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#LaReine"/>
+        <Class IRI="http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#NamedPizza"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#LeekTopping"/>
+        <Class IRI="http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#VegetableTopping"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#Margherita"/>
+        <Class IRI="http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#CheeseyPizza"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#Margherita"/>
+        <Class IRI="http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#NamedPizza"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#Margherita"/>
+        <Class IRI="http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#VegetarianPizzaEquivalent2"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#MeatTopping"/>
+        <Class IRI="http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#PizzaTopping"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#MeatyPizza"/>
+        <Class IRI="http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#NonVegetarianPizza"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#Medium"/>
+        <Class IRI="http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#Spiciness"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#Mild"/>
+        <Class IRI="http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#Spiciness"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#MixedSeafoodTopping"/>
+        <Class IRI="http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#FishTopping"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#MozzarellaTopping"/>
+        <Class IRI="http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#CheeseTopping"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#Mushroom"/>
+        <Class IRI="http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#CheeseyPizza"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#Mushroom"/>
+        <Class IRI="http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#InterestingPizza"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#Mushroom"/>
+        <Class IRI="http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#NamedPizza"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#Mushroom"/>
+        <Class IRI="http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#VegetarianPizzaEquivalent2"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#MushroomTopping"/>
+        <Class IRI="http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#VegetableTopping"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#NamedPizza"/>
+        <Class IRI="http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#Pizza"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#Napoletana"/>
+        <Class IRI="http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#CheeseyPizza"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#Napoletana"/>
+        <Class IRI="http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#InterestingPizza"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#Napoletana"/>
+        <Class IRI="http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#NamedPizza"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#Napoletana"/>
+        <Class IRI="http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#NonVegetarianPizza"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#NonVegetarianPizza"/>
+        <Class IRI="http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#Pizza"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#NutTopping"/>
+        <Class IRI="http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#VegetarianTopping"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#OliveTopping"/>
+        <Class IRI="http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#VegetableTopping"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#OnionTopping"/>
+        <Class IRI="http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#VegetableTopping"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#ParmaHamTopping"/>
+        <Class IRI="http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#HamTopping"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#Parmense"/>
+        <Class IRI="http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#CheeseyPizza"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#Parmense"/>
+        <Class IRI="http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#InterestingPizza"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#Parmense"/>
+        <Class IRI="http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#MeatyPizza"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#Parmense"/>
+        <Class IRI="http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#NamedPizza"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#ParmesanTopping"/>
+        <Class IRI="http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#CheeseTopping"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#PeperonataTopping"/>
+        <Class IRI="http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#PepperTopping"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#PeperoniSausageTopping"/>
+        <Class IRI="http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#MeatTopping"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#PepperTopping"/>
+        <Class IRI="http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#VegetableTopping"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#PetitPoisTopping"/>
+        <Class IRI="http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#VegetableTopping"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#PineKernels"/>
+        <Class IRI="http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#NutTopping"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#Pizza"/>
+        <Class IRI="http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#DomainConcept"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#PizzaBase"/>
+        <Class IRI="http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#DomainConcept"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#PizzaTopping"/>
+        <Class IRI="http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#DomainConcept"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#PolloAdAstra"/>
+        <Class IRI="http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#CheeseyPizza"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#PolloAdAstra"/>
+        <Class IRI="http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#InterestingPizza"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#PolloAdAstra"/>
+        <Class IRI="http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#MeatyPizza"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#PolloAdAstra"/>
+        <Class IRI="http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#NamedPizza"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#PolloAdAstra"/>
+        <Class IRI="http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#SpicyPizzaEquivalent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#PrawnsTopping"/>
+        <Class IRI="http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#FishTopping"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#PrinceCarlo"/>
+        <Class IRI="http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#CheeseyPizza"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#PrinceCarlo"/>
+        <Class IRI="http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#InterestingPizza"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#PrinceCarlo"/>
+        <Class IRI="http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#NamedPizza"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#PrinceCarlo"/>
+        <Class IRI="http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#VegetarianPizzaEquivalent2"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#QuattroFormaggi"/>
+        <Class IRI="http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#CheeseyPizza"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#QuattroFormaggi"/>
+        <Class IRI="http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#NamedPizza"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#QuattroFormaggi"/>
+        <Class IRI="http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#VegetarianPizzaEquivalent2"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#RealItalianPizza"/>
+        <Class IRI="http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#Pizza"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#RedOnionTopping"/>
+        <Class IRI="http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#OnionTopping"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#RocketTopping"/>
+        <Class IRI="http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#VegetableTopping"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#Rosa"/>
+        <Class IRI="http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#CheeseyPizza"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#Rosa"/>
+        <Class IRI="http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#InterestingPizza"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#Rosa"/>
+        <Class IRI="http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#NamedPizza"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#Rosa"/>
+        <Class IRI="http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#VegetarianPizzaEquivalent2"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#RosemaryTopping"/>
+        <Class IRI="http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#HerbSpiceTopping"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#SauceTopping"/>
+        <Class IRI="http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#VegetarianTopping"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#Siciliana"/>
+        <Class IRI="http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#CheeseyPizza"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#Siciliana"/>
+        <Class IRI="http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#InterestingPizza"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#Siciliana"/>
+        <Class IRI="http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#MeatyPizza"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#Siciliana"/>
+        <Class IRI="http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#NamedPizza"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#SlicedTomatoTopping"/>
+        <Class IRI="http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#TomatoTopping"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#SloppyGiuseppe"/>
+        <Class IRI="http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#CheeseyPizza"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#SloppyGiuseppe"/>
+        <Class IRI="http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#InterestingPizza"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#SloppyGiuseppe"/>
+        <Class IRI="http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#MeatyPizza"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#SloppyGiuseppe"/>
+        <Class IRI="http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#NamedPizza"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#SloppyGiuseppe"/>
+        <Class IRI="http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#SpicyPizzaEquivalent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#Soho"/>
+        <Class IRI="http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#CheeseyPizza"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#Soho"/>
+        <Class IRI="http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#InterestingPizza"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#Soho"/>
+        <Class IRI="http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#NamedPizza"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#Soho"/>
+        <Class IRI="http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#VegetarianPizzaEquivalent2"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#Spiciness"/>
+        <Class IRI="http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#ValuePartition"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#SpicyPizzaEquivalent"/>
+        <Class IRI="http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#Pizza"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#SpicyTopping"/>
+        <Class IRI="http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#PizzaTopping"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#SpinachTopping"/>
+        <Class IRI="http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#VegetableTopping"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#SultanaTopping"/>
+        <Class IRI="http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#FruitTopping"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#SundriedTomatoTopping"/>
+        <Class IRI="http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#TomatoTopping"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#SweetPepperTopping"/>
+        <Class IRI="http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#PepperTopping"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#ThinAndCrispyBase"/>
+        <Class IRI="http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#PizzaBase"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#TobascoPepperSauce"/>
+        <Class IRI="http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#SauceTopping"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#TobascoPepperSauce"/>
+        <Class IRI="http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#SpicyTopping"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#TomatoTopping"/>
+        <Class IRI="http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#VegetableTopping"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#UnclosedPizza"/>
+        <Class IRI="http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#CheeseyPizza"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#UnclosedPizza"/>
+        <Class IRI="http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#NamedPizza"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#ValuePartition"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#VegetableTopping"/>
+        <Class IRI="http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#VegetarianTopping"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#VegetarianPizza"/>
+        <Class IRI="http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#Pizza"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#VegetarianPizzaEquivalent2"/>
+        <Class IRI="http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#VegetarianPizza"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#VegetarianTopping"/>
+        <Class IRI="http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#PizzaTopping"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#Veneziana"/>
+        <Class IRI="http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#CheeseyPizza"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#Veneziana"/>
+        <Class IRI="http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#InterestingPizza"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#Veneziana"/>
+        <Class IRI="http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#NamedPizza"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#Veneziana"/>
+        <Class IRI="http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#VegetarianPizzaEquivalent2"/>
+    </SubClassOf>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 3.4.10-SNAPSHOT) http://owlapi.sourceforge.net -->
+

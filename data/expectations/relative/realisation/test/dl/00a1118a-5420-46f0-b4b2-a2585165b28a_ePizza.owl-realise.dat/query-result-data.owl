@@ -1,0 +1,25 @@
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+
+
+Ontology(<file:E:\Data\MyFiles\SemanticWeb\ORECompetition\2014\ORE-Eclipse-Workspace\ORE-Framework\data\responses\hermit-windows\realisation\2014-02-28--03-27-03\realisation\dl\00a1118a-5420-46f0-b4b2-a2585165b28a_ePizza.owl-realise.dat\query-result-data.owl>
+
+ClassAssertion(<http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#Country> <http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#America>)
+ClassAssertion(<http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#DomainConcept> <http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#America>)
+ClassAssertion(owl:Thing <http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#America>)
+ClassAssertion(<http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#Country> <http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#England>)
+ClassAssertion(<http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#DomainConcept> <http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#England>)
+ClassAssertion(owl:Thing <http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#England>)
+ClassAssertion(<http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#Country> <http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#France>)
+ClassAssertion(<http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#DomainConcept> <http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#France>)
+ClassAssertion(owl:Thing <http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#France>)
+ClassAssertion(<http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#Country> <http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#Germany>)
+ClassAssertion(<http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#DomainConcept> <http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#Germany>)
+ClassAssertion(owl:Thing <http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#Germany>)
+ClassAssertion(<http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#Country> <http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#Italy>)
+ClassAssertion(<http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#DomainConcept> <http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#Italy>)
+ClassAssertion(owl:Thing <http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#Italy>)
+)

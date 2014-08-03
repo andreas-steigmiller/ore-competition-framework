@@ -1,0 +1,1 @@
+java -Xmx8g -jar ReasonerQueryEvaluator.jar consistency %1

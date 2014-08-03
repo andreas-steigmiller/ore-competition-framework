@@ -1,0 +1,8 @@
+QueryType	classification
+OntologySource	RELATIVETOONTOLOGIESDIRECTORY	test/rl/2fe93b88-75dc-40d4-b02b-dbb5430aca7f_ntness.rdf
+UsingRules	false
+UsingDatatypes	false
+InDLProfile	true
+InELProfile	true
+InRLProfile	true
+InQLProfile	true

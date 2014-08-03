@@ -1,0 +1,5 @@
+
+E:\Data\MyFiles\SemanticWeb\ORECompetition\2014\ORE-Eclipse-Workspace\ORE-Framework\data\reasoners\hermit-windows>java -cp .;lib -jar OREv2ReasonerWrapper.jar org.semanticweb.HermiT.Reasoner$ReasonerFactory realisation E:\Data\MyFiles\SemanticWeb\ORECompetition\2014\ORE-Eclipse-Workspace\ORE-Framework\data\conversions\relative\OWL2FUNCTIONAL\dl\wine_nodatatype.owl.owl.fss E:\Data\MyFiles\SemanticWeb\ORECompetition\2014\ORE-Eclipse-Workspace\ORE-Framework\data\responses\hermit-windows\realisation\2014-05-16--18-29-25\realisation\dl\wine_nodatatype.owl-realise.dat\query-result-data.owl      
+Started realisation on E:\Data\MyFiles\SemanticWeb\ORECompetition\2014\ORE-Eclipse-Workspace\ORE-Framework\data\conversions\relative\OWL2FUNCTIONAL\dl\wine_nodatatype.owl.owl.fss
+Operation time: 45224
+Completed realisation on E:\Data\MyFiles\SemanticWeb\ORECompetition\2014\ORE-Eclipse-Workspace\ORE-Framework\data\conversions\relative\OWL2FUNCTIONAL\dl\wine_nodatatype.owl.owl.fss

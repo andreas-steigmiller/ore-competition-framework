@@ -1,0 +1,8 @@
+QueryType	consistency
+OntologySource	RELATIVETOONTOLOGIESDIRECTORY	test/el/f2663a02-9a90-4e74-8778-53a42a2bfce3_dBases.owl
+UsingRules	false
+UsingDatatypes	false
+InDLProfile	true
+InELProfile	true
+InRLProfile	false
+InQLProfile	false

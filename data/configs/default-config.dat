@@ -1,0 +1,64 @@
+# Configuration file for the evaluation/testing framework.
+# Lines starting with '#' are interpreted as comments (like this line).
+# Each non-comment line starts with a key followed by one or more values. 
+# All values must be separated by tabs (i.e., by the character '	').
+
+# Specifies whether the evaluation data is written into a separate sub-directory 
+# in the 'responses' folder that is named by the current date.
+org.semanticweb.ore.responses.datesubdirectory	TRUE
+
+
+# The timeout (in milliseconds) for the execution of the reasoner.
+# The timeout is possibly not enforced on all operation systems, i.e., the reasoner process 
+# is possibly not terminated when the time limit is reached.
+# On Linux, 'org.semanticweb.ore.execution.addtimeoutasfirstargument' can be set to 'TRUE', 
+# which allows for modifying the starter script such that the reasoner is encapsulated by the timeout command.
+org.semanticweb.ore.execution.executiontimeout	180000
+
+# The processing timeout is used to cut the reported processing time of the reasoners for the evaluation, 
+# i.e., if the reasoner reported a processing time that is greater than the processing timeout, then it is
+# also interpreted as timeout. This is used to allow some extra time for parsing and serialisation of the results.
+org.semanticweb.ore.execution.processingtimeout	150000
+
+
+# If set to 'TRUE', then the timeout is passed as first argument to the wrapper script.
+org.semanticweb.ore.execution.addtimeoutasargument	TRUE
+
+
+
+# The memory limit that is used for the evaluation of the reasoners (must be
+# handled by the wrapper scripts of the reasoners (e.g., by using ulimit or java -Xmx 
+# and by passing the memory limit to the wrapper script as argument, i.e., by setting 
+# 'org.semanticweb.ore.execution.addmemorylimitasargument' to 'TRUE'.
+org.semanticweb.ore.execution.memorylimit	10737418240
+
+# If set to 'TRUE', then the memory limit is passed as additional argument to the wrapper script.
+# The memory limit is the first argument if 'org.semanticweb.ore.execution.addtimeoutasargument' 
+# is set to 'FALSE' and the second argument otherwise.
+org.semanticweb.ore.execution.addmemorylimitasargument	TRUE
+
+
+
+# Specifies whether the normalised results are saved to files.
+# The evaluation framework normalises the results of the reasoners to calculate hash codes.
+# The hash codes are then used to determine whether the results are probably correct.
+org.semanticweb.ore.responses.writenormalisedresults	TRUE
+
+
+
+# If set to 'TRUE', then the competition is only executed if for every reasoner one client is available.
+# If set to 'FALSE', then the competition is also executed if only one client is available.
+org.semanticweb.ore.competition.executorperreasoner	TRUE
+
+
+# If set to 'TRUE', then the competition is paused if the contact with a client is lost (should not happen)
+# and no other client are available that can be used instead of the lost one.
+org.semanticweb.ore.competition.continueexecutorloss	FALSE
+
+
+
+# Specifies whether the ontologies are converted to the serialisation format that is specified by the reasoners.
+# Can be set to 'FALSE' if all reasoners accept the format in which all ontologies are serialised.
+org.semanticweb.ore.execution.ontologyconversion	FALSE
+
+

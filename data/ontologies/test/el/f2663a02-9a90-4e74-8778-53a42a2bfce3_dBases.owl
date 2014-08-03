@@ -1,0 +1,1696 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://owl.cs.man.ac.uk/ontologies/mergedimports/f2663a02-9a90-4e74-8778-53a42a2bfce3_dBases.owl"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     ontologyIRI="http://owl.cs.man.ac.uk/ontologies/mergedimports/f2663a02-9a90-4e74-8778-53a42a2bfce3_dBases.owl">
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Declaration>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Addition"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Aliphatic-N-Methylation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Amide_Cleavage"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Aminoacylation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Aromatic-N-Methylation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Aromatic-O-Methylation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Aspartylation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Base"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Base_Modification_Reaction"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#C-Hydroxymethylation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#C-Methylation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Carbamoylation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Carboxymethylation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Decarboxymethylation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Diformylglutamylation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Elimination"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Epoxide_Elimination"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Epoxyqueuosinylation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Formylation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Galactosylation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Glutamylation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Glycosylation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Glycylation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Glycylcarbamoylation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Hydration"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Hydrolysis"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Hydroxyl-Peroxidation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Hydroxylation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Isomerisation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Isopentenylation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Lysylation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Mannosylation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Methylation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Methylcarbamoylation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Methylester_Formation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Modified_Base"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#N-Methylation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#O-Methylation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Pseudouridine_Formation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Ribose-O2-Methylation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Ribose-Ribosylation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Selenation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Substitution"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Thiolation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Threonylcarbamoylation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Transamination"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Unmodified_Base"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Wyosine_Formation"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#has_double_reaction"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#has_reaction"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#original_base"/>
+    </Declaration>
+    <EquivalentClasses>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Modified_Base"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#original_base"/>
+            <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Unmodified_Base"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <SubClassOf>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Addition"/>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Base_Modification_Reaction"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Aliphatic-N-Methylation"/>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#N-Methylation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Amide_Cleavage"/>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Hydrolysis"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Aminoacylation"/>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Addition"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Aromatic-N-Methylation"/>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#N-Methylation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Aromatic-O-Methylation"/>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#O-Methylation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Aspartylation"/>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Aminoacylation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#C-Hydroxymethylation"/>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Addition"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#C-Methylation"/>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Methylation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Carbamoylation"/>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Addition"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Carboxymethylation"/>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Addition"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Decarboxymethylation"/>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Elimination"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Diformylglutamylation"/>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Aminoacylation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Elimination"/>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Base_Modification_Reaction"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Epoxide_Elimination"/>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Elimination"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Epoxyqueuosinylation"/>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Addition"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Formylation"/>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Addition"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Galactosylation"/>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Glycosylation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Glutamylation"/>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Aminoacylation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Glycosylation"/>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Addition"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Glycylation"/>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Aminoacylation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Glycylcarbamoylation"/>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Carbamoylation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Hydration"/>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Addition"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Hydrolysis"/>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Substitution"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Hydroxyl-Peroxidation"/>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Substitution"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Hydroxylation"/>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Addition"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Isomerisation"/>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Base_Modification_Reaction"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Isopentenylation"/>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Addition"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Lysylation"/>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Aminoacylation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Mannosylation"/>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Glycosylation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Methylation"/>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Addition"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Methylcarbamoylation"/>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Carbamoylation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Methylester_Formation"/>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#O-Methylation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Modified_Base"/>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Base"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Modified_Base"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#has_reaction"/>
+            <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Base_Modification_Reaction"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#N-Methylation"/>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Methylation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#O-Methylation"/>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Methylation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Pseudouridine_Formation"/>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Isomerisation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Ribose-O2-Methylation"/>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#O-Methylation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Ribose-Ribosylation"/>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Glycosylation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Selenation"/>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Addition"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Substitution"/>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Base_Modification_Reaction"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Thiolation"/>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Addition"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Threonylcarbamoylation"/>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Carbamoylation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Transamination"/>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Substitution"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Unmodified_Base"/>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Base"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Wyosine_Formation"/>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Addition"/>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Base"/>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Base_Modification_Reaction"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Modified_Base"/>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Unmodified_Base"/>
+    </DisjointClasses>
+    <ClassAssertion>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Unmodified_Base"/>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#A"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Aliphatic-N-Methylation"/>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Aliphatic-N-Methylation_130"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Modified_Base"/>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Am"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Amide_Cleavage"/>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Amide_Cleavage_159"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Aromatic-N-Methylation"/>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Aromatic-N-Methylation_131"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Aromatic-O-Methylation"/>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Aromatic-O-Methylation_129"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Modified_Base"/>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Arp"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Aspartylation"/>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Aspartylation_149"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Unmodified_Base"/>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#C"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#C-Hydroxymethylation"/>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#C-Hydroxymethylation_148"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#C-Methylation"/>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#C-Methylation_132"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Carboxymethylation"/>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Carboxymethylation_144"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Modified_Base"/>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Cm"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Modified_Base"/>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#D"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Decarboxymethylation"/>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Decarboxymethylation_154"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Diformylglutamylation"/>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Diformylglutamylation_150"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Epoxide_Elimination"/>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Epoxide_Elimination_155"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Epoxyqueuosinylation"/>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Epoxyqueuosinylation_143"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Formylation"/>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Formylation_142"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Unmodified_Base"/>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#G"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Galactosylation"/>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Galactosylation_139"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Glutamylation"/>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Glutamylation_151"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Glycylation"/>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Glycylation_152"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Glycylcarbamoylation"/>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Glycylcarbamoylation_147"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Modified_Base"/>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Gm"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Modified_Base"/>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Grp"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Hydration"/>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Hydration_138"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Hydroxyl-Peroxidation"/>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Hydroxyl-Peroxidation_158"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Hydroxylation"/>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Hydroxylation_137"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Modified_Base"/>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#I"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Modified_Base"/>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Im"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Isopentenylation"/>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Isopentenylation_136"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Lysylation"/>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Lysylation_153"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Mannosylation"/>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Mannosylation_140"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Methylcarbamoylation"/>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Methylcarbamoylation_146"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Methylester_Formation"/>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Methylester_Formation_128"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Modified_Base"/>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#OHyW"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Modified_Base"/>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#OHyW_star"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Pseudouridine_Formation"/>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Pseudouridine_Formation_156"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Modified_Base"/>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Qbase"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Modified_Base"/>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#QtrNA"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Unmodified_Base"/>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Queuosine"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Ribose-O2-Methylation"/>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Ribose-O2-Methylation_127"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Ribose-Ribosylation"/>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Ribose-Ribosylation_141"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Selenation"/>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Selenation_135"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Thiolation"/>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Thiolation_134"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Threonylcarbamoylation"/>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Threonylcarbamoylation_145"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Transamination"/>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Transamination_157"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Unmodified_Base"/>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#U"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Modified_Base"/>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Um"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Wyosine_Formation"/>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Wyosine_Formation_133"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Modified_Base"/>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Y"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Modified_Base"/>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Ym"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Modified_Base"/>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#ac4C"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Modified_Base"/>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#ac4Cm"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Modified_Base"/>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#acp3U"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Modified_Base"/>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#acp3Um"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Modified_Base"/>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#chm5U"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Modified_Base"/>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#cm5U"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Modified_Base"/>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#cm5s2U"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Modified_Base"/>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#cmnm5U"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Modified_Base"/>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#cmnm5Um"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Modified_Base"/>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#cmnm5s2U"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Modified_Base"/>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#cmnm5se2U"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Modified_Base"/>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#cmo5U"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Modified_Base"/>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#f5C"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Modified_Base"/>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#f5Cm"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Modified_Base"/>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#f5U"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Modified_Base"/>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#f5Um"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Modified_Base"/>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#f5s2U"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Modified_Base"/>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#f5se2U"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Modified_Base"/>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#g6A"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Modified_Base"/>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#galQtRNA"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Modified_Base"/>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#gluQtRNA"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Modified_Base"/>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#hm5C"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Modified_Base"/>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#hn6A"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Modified_Base"/>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#ho5U"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Modified_Base"/>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#i6A"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Modified_Base"/>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#imG"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Modified_Base"/>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#imG-14"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Modified_Base"/>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#imG2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Modified_Base"/>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#io6A"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Modified_Base"/>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#k2C"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Modified_Base"/>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#m1A"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Modified_Base"/>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#m1Am"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Modified_Base"/>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#m1G"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Modified_Base"/>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#m1Gm"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Modified_Base"/>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#m1I"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Modified_Base"/>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#m1Im"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Modified_Base"/>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#m1Y"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Modified_Base"/>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#m1acp3Y"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Modified_Base"/>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#m22G"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Modified_Base"/>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#m22Gm"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Modified_Base"/>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#m2A"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Modified_Base"/>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#m2G"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Modified_Base"/>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#m2Gm"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Modified_Base"/>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#m3C"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Modified_Base"/>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#m3U"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Modified_Base"/>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#m3Um"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Modified_Base"/>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#m3Y"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Modified_Base"/>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#m42C"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Modified_Base"/>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#m42Cm"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Modified_Base"/>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#m44C"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Modified_Base"/>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#m44Cm"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Modified_Base"/>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#m4C"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Modified_Base"/>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#m4Cm"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Modified_Base"/>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#m5C"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Modified_Base"/>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#m5Cm"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Modified_Base"/>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#m5D"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Modified_Base"/>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#m5U"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Modified_Base"/>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#m5Um"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Modified_Base"/>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#m5s2U"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Modified_Base"/>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#m62A"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Modified_Base"/>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#m62Am"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Modified_Base"/>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#m6A"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Modified_Base"/>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#m6Am"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Modified_Base"/>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#m6t6A"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Modified_Base"/>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#m7G"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Modified_Base"/>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#m7m22G"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Modified_Base"/>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#m7m2G"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Modified_Base"/>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#manQtRNA"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Modified_Base"/>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#mchm5U"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Modified_Base"/>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#mcm5U"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Modified_Base"/>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#mcm5Um"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Modified_Base"/>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#mcm5s2U"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Modified_Base"/>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#mcmo5U"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Modified_Base"/>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#mimG"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Modified_Base"/>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#mnm5U"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Modified_Base"/>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#mnm5s2U"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Modified_Base"/>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#mnm5se2U"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Modified_Base"/>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#mo5U"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Modified_Base"/>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#ms2hn6A"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Modified_Base"/>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#ms2i6A"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Modified_Base"/>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#ms2io6A"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Modified_Base"/>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#ms2m6A"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Modified_Base"/>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#ms2t6A"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Modified_Base"/>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#ncm5U"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Modified_Base"/>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#ncm5Um"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Modified_Base"/>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#nm5U"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Modified_Base"/>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#nm5s2U"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Modified_Base"/>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#nm5se2U"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Modified_Base"/>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#o2yW"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Modified_Base"/>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#oQtRNA"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Modified_Base"/>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#preQ0base"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Modified_Base"/>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#preQ0tRNA"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Modified_Base"/>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#preQ1base"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Modified_Base"/>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#preQ1tRNA"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Modified_Base"/>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#s2C"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Modified_Base"/>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#s2U"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Modified_Base"/>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#s2Um"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Modified_Base"/>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#s4U"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Modified_Base"/>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#se2U"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Modified_Base"/>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#t6A"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Modified_Base"/>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#tm5U"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Modified_Base"/>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#tm5s2U"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Modified_Base"/>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#yW"/>
+    </ClassAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#original_base"/>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Am"/>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#A"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#original_base"/>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Arp"/>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#A"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#has_reaction"/>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Cm"/>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Ribose-O2-Methylation_127"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#original_base"/>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Cm"/>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#C"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#original_base"/>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#D"/>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#U"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#original_base"/>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Gm"/>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#G"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#original_base"/>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Grp"/>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#G"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#original_base"/>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#I"/>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#G"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#original_base"/>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Im"/>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#G"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#original_base"/>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#OHyW"/>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#G"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#original_base"/>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#OHyW_star"/>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#G"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#original_base"/>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Qbase"/>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Queuosine"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#original_base"/>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#QtrNA"/>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Queuosine"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#original_base"/>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Um"/>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#U"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#original_base"/>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Y"/>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#U"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#original_base"/>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Ym"/>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#U"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#has_reaction"/>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#ac4C"/>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Carboxymethylation_144"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#original_base"/>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#ac4C"/>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#C"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#original_base"/>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#ac4Cm"/>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#C"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#original_base"/>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#acp3U"/>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#U"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#original_base"/>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#acp3Um"/>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#U"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#original_base"/>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#chm5U"/>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#U"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#original_base"/>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#cm5U"/>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#U"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#original_base"/>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#cm5s2U"/>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#U"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#original_base"/>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#cmnm5U"/>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#U"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#original_base"/>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#cmnm5Um"/>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#U"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#original_base"/>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#cmnm5s2U"/>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#U"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#original_base"/>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#cmnm5se2U"/>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#U"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#original_base"/>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#cmo5U"/>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#U"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#has_reaction"/>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#f5C"/>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Formylation_142"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#original_base"/>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#f5C"/>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#C"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#has_reaction"/>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#f5Cm"/>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Formylation_142"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#has_reaction"/>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#f5Cm"/>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Ribose-O2-Methylation_127"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#original_base"/>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#f5Cm"/>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#C"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#original_base"/>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#f5U"/>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#U"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#original_base"/>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#f5Um"/>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#U"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#original_base"/>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#f5s2U"/>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#U"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#original_base"/>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#f5se2U"/>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#U"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#original_base"/>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#g6A"/>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#A"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#original_base"/>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#galQtRNA"/>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Queuosine"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#original_base"/>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#gluQtRNA"/>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Queuosine"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#has_reaction"/>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#hm5C"/>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#C-Hydroxymethylation_148"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#original_base"/>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#hm5C"/>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#C"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#original_base"/>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#hn6A"/>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#A"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#original_base"/>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#ho5U"/>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#U"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#original_base"/>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#i6A"/>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#A"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#original_base"/>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#imG"/>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#G"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#original_base"/>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#imG-14"/>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#G"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#original_base"/>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#imG2"/>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#G"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#original_base"/>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#io6A"/>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#A"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#has_reaction"/>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#k2C"/>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Lysylation_153"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#original_base"/>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#k2C"/>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#C"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#original_base"/>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#m1A"/>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#A"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#original_base"/>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#m1Am"/>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#A"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#original_base"/>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#m1G"/>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#G"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#original_base"/>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#m1Gm"/>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#G"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#original_base"/>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#m1I"/>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#G"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#original_base"/>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#m1Im"/>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#G"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#original_base"/>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#m1Y"/>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#U"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#original_base"/>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#m1acp3Y"/>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#U"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#original_base"/>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#m22G"/>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#G"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#original_base"/>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#m22Gm"/>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#G"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#original_base"/>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#m2A"/>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#A"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#original_base"/>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#m2G"/>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#G"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#original_base"/>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#m2Gm"/>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#G"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#has_reaction"/>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#m3C"/>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Aromatic-N-Methylation_131"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#original_base"/>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#m3C"/>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#C"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#has_reaction"/>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#m3U"/>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Aromatic-N-Methylation_131"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#original_base"/>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#m3U"/>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#U"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#original_base"/>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#m3Um"/>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#U"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#original_base"/>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#m3Y"/>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#U"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#original_base"/>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#m42C"/>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#C"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#original_base"/>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#m42Cm"/>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#C"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#has_double_reaction"/>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#m44C"/>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Aliphatic-N-Methylation_130"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#original_base"/>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#m44C"/>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#C"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#has_double_reaction"/>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#m44Cm"/>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Aliphatic-N-Methylation_130"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#has_reaction"/>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#m44Cm"/>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Ribose-O2-Methylation_127"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#original_base"/>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#m44Cm"/>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#C"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#has_reaction"/>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#m4C"/>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Aliphatic-N-Methylation_130"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#original_base"/>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#m4C"/>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#C"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#has_reaction"/>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#m4Cm"/>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Ribose-O2-Methylation_127"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#has_reaction"/>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#m4Cm"/>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Aliphatic-N-Methylation_130"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#original_base"/>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#m4Cm"/>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#C"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#has_reaction"/>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#m5C"/>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#C-Methylation_132"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#original_base"/>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#m5C"/>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#C"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#original_base"/>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#m5Cm"/>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#C"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#original_base"/>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#m5D"/>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#U"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#original_base"/>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#m5U"/>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#U"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#original_base"/>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#m5Um"/>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#U"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#original_base"/>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#m5s2U"/>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#U"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#original_base"/>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#m62A"/>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#A"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#original_base"/>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#m62Am"/>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#A"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#original_base"/>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#m6A"/>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#A"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#original_base"/>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#m6Am"/>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#A"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#original_base"/>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#m6t6A"/>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#A"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#original_base"/>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#m7G"/>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#G"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#original_base"/>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#m7m22G"/>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#G"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#original_base"/>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#m7m2G"/>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#G"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#original_base"/>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#manQtRNA"/>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Queuosine"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#original_base"/>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#mchm5U"/>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#U"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#original_base"/>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#mcm5U"/>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#U"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#original_base"/>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#mcm5Um"/>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#U"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#original_base"/>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#mcm5s2U"/>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#U"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#original_base"/>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#mcmo5U"/>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#U"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#original_base"/>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#mimG"/>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#G"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#original_base"/>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#mnm5U"/>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#U"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#original_base"/>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#mnm5s2U"/>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#U"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#original_base"/>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#mnm5se2U"/>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#U"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#original_base"/>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#mo5U"/>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#U"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#original_base"/>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#ms2hn6A"/>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#A"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#original_base"/>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#ms2i6A"/>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#A"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#original_base"/>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#ms2io6A"/>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#A"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#original_base"/>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#ms2m6A"/>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#A"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#original_base"/>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#ms2t6A"/>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#A"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#original_base"/>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#ncm5U"/>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#U"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#original_base"/>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#ncm5Um"/>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#U"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#original_base"/>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#nm5U"/>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#U"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#original_base"/>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#nm5s2U"/>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#U"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#original_base"/>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#nm5se2U"/>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#U"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#original_base"/>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#o2yW"/>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#G"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#original_base"/>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#oQtRNA"/>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Queuosine"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#original_base"/>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#preQ0base"/>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Queuosine"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#original_base"/>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#preQ0tRNA"/>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Queuosine"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#original_base"/>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#preQ1base"/>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Queuosine"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#original_base"/>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#preQ1tRNA"/>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Queuosine"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#has_reaction"/>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#s2C"/>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Thiolation_134"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#original_base"/>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#s2C"/>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#C"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#original_base"/>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#s2U"/>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#U"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#original_base"/>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#s2Um"/>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#U"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#original_base"/>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#s4U"/>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#U"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#original_base"/>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#se2U"/>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#U"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#original_base"/>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#t6A"/>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#A"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#original_base"/>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#tm5U"/>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#U"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#original_base"/>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#tm5s2U"/>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#U"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#original_base"/>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#yW"/>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#G"/>
+    </ObjectPropertyAssertion>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#has_double_reaction"/>
+        <ObjectProperty IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#has_reaction"/>
+    </SubObjectPropertyOf>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#has_reaction"/>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Modified_Base"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#original_base"/>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Modified_Base"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#has_reaction"/>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Base_Modification_Reaction"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#original_base"/>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Unmodified_Base"/>
+    </ObjectPropertyRange>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 3.4.10-SNAPSHOT) http://owlapi.sourceforge.net -->
+

@@ -1,0 +1,129 @@
+\documentclass{article}
+\usepackage{amsmath}
+\usepackage{url}
+\usepackage{soul}
+\usepackage[bookmarks,bookmarksopen,bookmarksdepth=2,colorlinks=false, pdfborder={0 0 0}]{hyperref}
+
+\RequirePackage[colorinlistoftodos]{todonotes}
+
+\let\quoteOld\quote
+\let\endquoteOld\endquote
+\renewenvironment{quote}{\quoteOld\itshape}{\endquoteOld}
+
+\newcommand{\AS}[1]{\todo{[AS]: #1}}
+\newcommand{\BG}[1]{\todo{[BG]: #1}}
+
+
+\newcommand{\ASi}[1]{\todo[inline]{[AS]: #1}}
+\newcommand{\BGi}[1]{\todo[inline]{[BG]: #1}}
+
+\newcommand{\hlbg}[1]{{\sethlcolor{lightgray}\hl{#1}}}
+\newcommand{\hlas}[1]{{\sethlcolor{lightblue}\hl{#1}}}
+
+% use the following command line to convert to standard text file
+% pandoc SPECIFICATION.tex -o SPECIFICATION.txt
+%\setlength{\parindent}{0pt}
+
+\title{ORE 2014 Specification}
+
+\begin{document}
+
+
+\maketitle
+
+This document describes the reasoner specification (primarily input and output formats) for the ORE 2014 Competition (see \url{http://vsl2014.at/pages/ORE-index.html}).
+
+
+\section{Reasoning Tasks}
+
+For ORE 2014, the following reasoning tasks are evaluated:
+\begin{itemize}
+\item Classification: arranging all classes of an ontology in a class hierarchy according to their subsumption relations.
+\item Consistency: checking the consistency of an ontology.
+\item Realisation: identifying the types of all individuals in an ontology.
+\end{itemize}
+The reasoning task are evaluated for those OWL 2 Profiles for which enough ontologies can be gathered and enough profile-specific reasoners participate in the ORE 2014 Competition.
+
+\section{Execution Environment}
+
+The evaluation will be carried out on a Linux 64bit system. 
+For this, it is required that the reasoning systems must fulfil the following specifications:
+\begin{itemize}
+\item The reasoning systems must be executable on older Linux 64bit systems (e.g., Fedora 12, Java version 1.6).
+\item The reasoners must be encapsulated by a (shell) wrapper script, i.e., the execution of the wrapper script must trigger the reasoner.
+\item The reasoners should not use a hard-coded memory/time limit.
+\end{itemize}
+
+
+\section{Input Format}
+
+The input format for the ORE 2014 Competition is specified as follows:
+\begin{itemize}
+\item The encoding format for ontologies and command line arguments is \mbox{UTF-8}.
+\item The ontologies are available in all fully fledged OWL 2 serialisation formats, i.e., reasoners can use the OWL 2 Functional Style, the OWL 2 XML, or the RDF/XML serialisation format.
+\item Ontologies may contain datatypes, but do not contain DL-safe/SWRL rules.
+\item All file paths are absolute, contain only ASCII-characters that are valid for files, and do not contain blank characters.
+\item The wrapper script is executed with the following arguments:
+\begin{enumerate}
+\item The name of the reasoning task (\textless Operation\textgreater), i.e., either 'classification', 'consistency', or 'realisation'.
+\item Input file path of the ontology (\textless OntologyFile\textgreater).
+\item Output file path for the result (\textless Output\textgreater).
+\end{enumerate}
+For example, a wrapper script 'execReasoner.sh' is started with the command line: \\
+./execReasoner.sh classification /ore/ont/pizza.owl /ore/out/result.dat
+\end{itemize}
+
+
+
+
+\section{Output Format}
+
+The output format for the ORE 2014 Competition is specified as follows:
+\begin{itemize}
+\item The results must be encoded with \mbox{UTF-8}.
+\item Warnings/errors thrown by the reasoner must be written into the file \mbox{\textless Output\textgreater\_err}, i.e., the given output file suffixed with '\_err'. In particular, if the processing of the given ontology might be incomplete (e.g., the ontology contains axioms that are not supported by the reasoner), then this should be reflected by corresponding error/warning messages.
+\item It is guaranteed that all directories for the output files exist. If a file already exists, then the reasoner should overwrite the file.
+\item The reasoner should report to the console output (to stdout):
+\begin{enumerate}
+\item The start message: 'Started \textless Operation\textgreater{} on \textless OntologyFile\textgreater'.
+\item The operation time: 'Operation time: \textless Time\textgreater'.
+\item The completion message: 'Completed \textless Operation\textgreater{} on \mbox{\textless OntologyFile\textgreater'}.
+\end{enumerate}
+\item The operation time (\textless Time\textgreater) should be measured in wall clock time, and should only be the value in milliseconds. 
+Moreover, the operation time should represent the time elapsed from the moment preceding reasoner creation to the completion of the task at hand. 
+That is, do not include ontology parsing time (unless some reasoner-specific pre-processing is done at this point), nor file serialization or socket communication time (where applicable).
+\item The result must be written to the \textless Output\textgreater{} file and should be as defined below for the different reasoning tasks.
+\end{itemize}
+
+\subsection{Consistency Result Output Format}
+For consistency, the result output file (\textless Output\textgreater{}) must contain 'true' if the ontology is consistent and 'false' if the ontology is inconsistent.
+
+\subsection{Classification Result Output Format}
+For classification, the result output file (\textless Output\textgreater{}) must be an OWL 2 file (in OWL 2 Functional Syntax, or any other serialization format that can be read with the OWL API), which contains the class hierarchy with EquivalentClasses and SubClassOf axioms, i.e.,
+\begin{itemize}
+\item Classes that are computed as semantically equivalent, must be expressed as equivalent by EquivalentClasses/SubClassOf axioms.
+\begin{itemize}
+\item For example, if A and B are equivalent, then this equivalence can be expressed by EquivalentClasses(A B) or also by the axioms SubClassOf(A B) and SubClassOf(B A).
+\end{itemize}
+\item Classes that are direct sub-classes of other classes must be expressed as sub-classes of these other classes by SubClassOf axioms.
+\begin{itemize}
+\item For instance, if A is a direct sub-class of B (i.e., there is no class C such that C is a super-class of A and a sub-class of B, and C is not equivalent to A or B), then this sub-class relationship can be expressed by SubClassOf(A B).
+\end{itemize}
+\item SubClassOf(owl:Nothing A) axioms can be omitted.
+\item Note, if a class A is a direct sub-class of owl:Thing, then the result ontology must also contain SubClassOf(A owl:Thing).
+\item If the ontology is inconsistent, then owl:Thing is equivalent to owl:Nothing, i.e., the result ontology should contain SubClassOf(owl:Thing owl:Nothing) or EquivalentClasses(owl:Thing owl:Nothing).
+\item Note that for inconsistent ontologies the sub-class relationships of all other classes can be omitted.
+\item Indirect sub-class relationships MUST NOT be expressed, i.e., the reasoner has to perform the transitive reduction.
+\end{itemize}
+
+\subsection{Realisation Result Output Format}
+For realisation, the result output file (\textless Output\textgreater{}) must be an OWL 2 file (in OWL 2 Functional Syntax, or any other serialization format that can be read with the OWL API), which contains all types of all individuals with ClassAssertion axioms, i.e.,
+\begin{itemize}
+\item If an individual a is an instance of a class A, then the result ontology has to contain the axiom ClassAssertion(A a), i.e., all indirect types of individuals must also be expressed by ClassAssertion axioms.
+\item If the ontology is inconsistent, then the result ontology must contain an axiom of the form SubClassOf(owl:Thing owl:Nothing), EquivalentClasses(owl:Thing owl:Nothing), or ClassAssertion(owl:Nothing a).
+\end{itemize}
+
+
+
+\end{document}
+

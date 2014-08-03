@@ -1,0 +1,62 @@
+
+
+
+.reasoner-link:link {
+  color: #000;
+}
+.reasoner-link:visited {
+  color: #000;
+}
+
+.discipline-link-1:link {
+  color: #a94442
+}
+.discipline-link-1:visited{
+  color: #a94442;
+}
+
+
+.discipline-link-2:link {
+  color: #FFFFFF;
+}
+.discipline-link-2:visited{
+  color: #FFFFFF;
+}
+
+
+
+.label-tsv {
+  background-color: rgba(120, 119, 46, 1);
+}
+
+
+.label-csv {
+  background-color: rgba(180, 153, 98, 1);
+}
+
+
+.label-png {
+  background-color: rgba(113, 138, 81, 1);
+}
+
+.label-html {
+  background-color: rgba(164, 165, 112, 1);
+}
+
+
+
+.panel-black {
+  border-color: #000;
+}
+.panel-black > .panel-heading {
+  color: #fff;
+  background-color: #000;
+  border-color: #000;
+  padding: 5px;
+}
+.panel-black > .panel-heading + .panel-collapse .panel-body {
+  border-top-color: #000;
+}
+.panel-black > .panel-footer + .panel-collapse .panel-body {
+  border-bottom-color: #000;
+}

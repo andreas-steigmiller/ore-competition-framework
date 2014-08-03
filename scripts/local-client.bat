@@ -1,0 +1,1 @@
+java -Xmx8g -cp ReasonerQueryEvaluator.jar org.semanticweb.ore.execution.CompetitionEvaluationClient 127.0.0.1 11010 default-config.dat

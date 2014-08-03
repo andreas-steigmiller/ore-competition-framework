@@ -1,0 +1,11 @@
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+
+
+Ontology(<file:E:\Data\MyFiles\SemanticWeb\ORECompetition\2014\ORE-Eclipse-Workspace\ORE-Framework\data\responses\hermit-windows\realisation\2014-02-28--03-58-46\realisation\el\baa29363-f93c-4285-827e-0e2380c82efc_cations.n3-inconsistent.owl-realise.dat\query-result-data.owl>
+
+SubClassOf(owl:Thing owl:Nothing)
+)

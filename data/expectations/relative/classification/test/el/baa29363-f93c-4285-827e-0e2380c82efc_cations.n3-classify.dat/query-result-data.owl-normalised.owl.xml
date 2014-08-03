@@ -1,0 +1,146 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://org.semanticweb.ore/normalised-result-comparision-ontology"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     ontologyIRI="http://org.semanticweb.ore/normalised-result-comparision-ontology">
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <SubClassOf>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Activity"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Base"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Chemical_group"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Enzyme_class"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Modified_Base"/>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Base"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#RNAType"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Reaction"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Taxon"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Unmodified_Base"/>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Base"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#aminoacyl_group"/>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Chemical_group"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#aminoacylation"/>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Reaction"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#carbamoylation"/>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Reaction"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#chrRNA"/>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#RNAType"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#ester_formation"/>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Reaction"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#formylation"/>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Reaction"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#glycosyl_group"/>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Chemical_group"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#glycosylation"/>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Reaction"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#heavy_atom"/>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Chemical_group"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#heavy_atom_substitution"/>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Reaction"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#hydroxylation"/>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Reaction"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#mRNA"/>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#RNAType"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#methyl_group"/>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Chemical_group"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#methylation"/>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Reaction"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#misc_addition"/>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Reaction"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#other"/>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Chemical_group"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#other_reaction"/>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Reaction"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#rRNA"/>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#RNAType"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#ring_modification"/>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Chemical_group"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#snRNA"/>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#RNAType"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#tRNA"/>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#RNAType"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#transamination"/>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Reaction"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#transglycosylation"/>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Reaction"/>
+    </SubClassOf>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 3.4.10-SNAPSHOT) http://owlapi.sourceforge.net -->
+

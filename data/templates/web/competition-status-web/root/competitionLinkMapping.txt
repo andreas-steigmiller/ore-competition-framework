@@ -1,0 +1,16 @@
+OWL EL Classification DEMO 1	disciplines.html#elclassification
+OWL EL Classification DEMO 2	disciplines.html#elclassification
+OWL EL Classification DEMO 3	disciplines.html#elclassification
+OWL EL Classification DEMO 4	disciplines.html#elclassification
+OWL EL Classification	disciplines.html#elclassification
+OWL DL Classification	disciplines.html#dlclassification
+OWL EL Consistency	disciplines.html#elconsistency
+OWL DL Consistency	disciplines.html#dlconsistency
+OWL EL Realisation	disciplines.html#elrealisation
+OWL DL Realisation	disciplines.html#dlrealisation
+OWL EL Classification 2013	disciplines.html#elclassification
+OWL DL Classification 2013	disciplines.html#dlclassification
+OWL EL Consistency 2013	disciplines.html#elconsistency
+OWL DL Consistency 2013	disciplines.html#dlconsistency
+OWL EL Realisation 2013	disciplines.html#elrealisation
+OWL DL Realisation 2013	disciplines.html#dlrealisation

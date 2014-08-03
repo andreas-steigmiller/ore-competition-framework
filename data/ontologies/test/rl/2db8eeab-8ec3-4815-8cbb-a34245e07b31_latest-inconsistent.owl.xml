@@ -1,0 +1,992 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://owl.cs.man.ac.uk/ontologies/mergedimports/2db8eeab-8ec3-4815-8cbb-a34245e07b31_latest.owl"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     ontologyIRI="http://owl.cs.man.ac.uk/ontologies/mergedimports/2db8eeab-8ec3-4815-8cbb-a34245e07b31_latest.owl">
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Declaration>
+        <Class IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#april"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#august"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#binary-relation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#calendar-date"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#class"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#class-partition"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#day"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#day-in-time"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#december"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#duration"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#enumerated-set"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#february"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#february-in-leap-years"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#function"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#hour-in-time"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#individual"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#intangible-thing"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#integer"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#january"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#july"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#june"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#list"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#march"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#may"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#minute-in-time"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#month"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#month-in-time"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#negative-integer"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#negative-number"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#non-negative-integer"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#non-negative-number"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#november"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#number"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#october"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#physical-quantity"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#positive-integer"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#positive-number"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#quantity"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#real-number"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#relation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#second-in-time"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#september"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#set"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#string"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#tangible-thing"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#temporal-thing"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#thing"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#time-interval"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#time-measure"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#time-point"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#time-position"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#timezone"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#unary-relation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#unit-of-measure"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#week"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#year"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#year-in-time"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#begins-at-time-point"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#day-of"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#def-axiom"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#ends-at-time-point"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#has-duration"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#has-magnitude"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#has-pretty-name"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#has-time-interval"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#has-unit-of-measure"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#has-variant-name"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#hour-of"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#in-timezone"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#let"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#minute-of"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#month-of"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#second-of"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#subclass-partition"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#year-of"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#april"/>
+        <Class IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#month"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#april"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#has-duration"/>
+            <NamedIndividual IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#30-day-duration"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#august"/>
+        <Class IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#month"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#august"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#has-duration"/>
+            <NamedIndividual IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#31-day-duration"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#binary-relation"/>
+        <Class IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#relation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#calendar-date"/>
+        <Class IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#time-point"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#class"/>
+        <Class IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#unary-relation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#class-partition"/>
+        <Class IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#enumerated-set"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#day"/>
+        <Class IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#time-interval"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#day"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#has-duration"/>
+            <NamedIndividual IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#24-hour-duration"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#day-in-time"/>
+        <Class IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#positive-integer"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#december"/>
+        <Class IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#month"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#december"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#has-duration"/>
+            <NamedIndividual IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#31-day-duration"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#duration"/>
+        <Class IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#physical-quantity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#enumerated-set"/>
+        <Class IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#set"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#february"/>
+        <Class IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#month"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#february-in-leap-years"/>
+        <Class IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#february"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#february-in-leap-years"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#has-duration"/>
+            <NamedIndividual IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#29-day-duration"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#function"/>
+        <Class IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#set"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#hour-in-time"/>
+        <Class IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#non-negative-integer"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#individual"/>
+        <Class IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#intangible-thing"/>
+        <Class IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#integer"/>
+        <Class IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#real-number"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#january"/>
+        <Class IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#month"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#january"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#has-duration"/>
+            <NamedIndividual IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#31-day-duration"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#july"/>
+        <Class IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#month"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#july"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#has-duration"/>
+            <NamedIndividual IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#31-day-duration"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#june"/>
+        <Class IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#month"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#june"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#has-duration"/>
+            <NamedIndividual IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#30-day-duration"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#list"/>
+        <Class IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#intangible-thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#march"/>
+        <Class IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#month"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#march"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#has-duration"/>
+            <NamedIndividual IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#31-day-duration"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#may"/>
+        <Class IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#month"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#may"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#has-duration"/>
+            <NamedIndividual IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#31-day-duration"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#minute-in-time"/>
+        <Class IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#non-negative-integer"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#month"/>
+        <Class IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#time-interval"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#month-in-time"/>
+        <Class IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#positive-integer"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#negative-integer"/>
+        <Class IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#integer"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#negative-number"/>
+        <Class IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#number"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#non-negative-integer"/>
+        <Class IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#integer"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#non-negative-number"/>
+        <Class IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#number"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#november"/>
+        <Class IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#month"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#november"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#has-duration"/>
+            <NamedIndividual IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#30-day-duration"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#number"/>
+        <Class IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#quantity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#october"/>
+        <Class IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#month"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#october"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#has-duration"/>
+            <NamedIndividual IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#31-day-duration"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#physical-quantity"/>
+        <Class IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#quantity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#positive-integer"/>
+        <Class IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#integer"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#positive-number"/>
+        <Class IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#number"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#quantity"/>
+        <Class IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#individual"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#quantity"/>
+        <Class IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#intangible-thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#real-number"/>
+        <Class IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#number"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#relation"/>
+        <Class IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#set"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#second-in-time"/>
+        <Class IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#real-number"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#september"/>
+        <Class IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#month"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#september"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#has-duration"/>
+            <NamedIndividual IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#30-day-duration"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#set"/>
+        <Class IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#intangible-thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#string"/>
+        <Class IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#individual"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#string"/>
+        <Class IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#intangible-thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#tangible-thing"/>
+        <Class IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#temporal-thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#temporal-thing"/>
+        <Class IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#time-interval"/>
+        <Class IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#time-position"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#time-interval"/>
+        <ObjectMaxCardinality cardinality="1">
+            <ObjectProperty IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#begins-at-time-point"/>
+        </ObjectMaxCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#time-interval"/>
+        <ObjectMaxCardinality cardinality="1">
+            <ObjectProperty IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#ends-at-time-point"/>
+        </ObjectMaxCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#time-interval"/>
+        <ObjectMaxCardinality cardinality="1">
+            <ObjectProperty IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#has-duration"/>
+        </ObjectMaxCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#time-measure"/>
+        <Class IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#unit-of-measure"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#time-point"/>
+        <Class IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#time-position"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#time-point"/>
+        <ObjectMaxCardinality cardinality="1">
+            <ObjectProperty IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#day-of"/>
+        </ObjectMaxCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#time-point"/>
+        <ObjectMaxCardinality cardinality="1">
+            <ObjectProperty IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#hour-of"/>
+        </ObjectMaxCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#time-point"/>
+        <ObjectMaxCardinality cardinality="1">
+            <ObjectProperty IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#minute-of"/>
+        </ObjectMaxCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#time-point"/>
+        <ObjectMaxCardinality cardinality="1">
+            <ObjectProperty IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#month-of"/>
+        </ObjectMaxCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#time-point"/>
+        <ObjectMaxCardinality cardinality="1">
+            <ObjectProperty IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#second-of"/>
+        </ObjectMaxCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#time-point"/>
+        <ObjectMaxCardinality cardinality="1">
+            <ObjectProperty IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#year-of"/>
+        </ObjectMaxCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#time-position"/>
+        <Class IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#intangible-thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#timezone"/>
+        <Class IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#string"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#unary-relation"/>
+        <Class IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#relation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#unit-of-measure"/>
+        <Class IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#intangible-thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#week"/>
+        <Class IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#time-interval"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#week"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#has-duration"/>
+            <NamedIndividual IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#7-day-duration"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#year"/>
+        <Class IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#time-interval"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#year"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#has-duration"/>
+            <NamedIndividual IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#12-month-duration"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#year-in-time"/>
+        <Class IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#integer"/>
+    </SubClassOf>
+    <ClassAssertion>
+        <Class IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#list"/>
+        <NamedIndividual IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#nil"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#time-measure"/>
+        <NamedIndividual IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#time-measure-century"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#time-measure"/>
+        <NamedIndividual IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#time-measure-day"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#time-measure"/>
+        <NamedIndividual IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#time-measure-hour"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#time-measure"/>
+        <NamedIndividual IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#time-measure-minute"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="owl:Nothing"/>
+        <NamedIndividual IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#time-measure-minute"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#time-measure"/>
+        <NamedIndividual IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#time-measure-month"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#time-measure"/>
+        <NamedIndividual IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#time-measure-second"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#time-measure"/>
+        <NamedIndividual IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#time-measure-year"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#duration"/>
+        <NamedIndividual IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#12-month-duration"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#duration"/>
+        <NamedIndividual IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#24-hour-duration"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#duration"/>
+        <NamedIndividual IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#28-day-duration"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#duration"/>
+        <NamedIndividual IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#29-day-duration"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#duration"/>
+        <NamedIndividual IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#30-day-duration"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#duration"/>
+        <NamedIndividual IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#31-day-duration"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#duration"/>
+        <NamedIndividual IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#7-day-duration"/>
+    </ClassAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#has-unit-of-measure"/>
+        <NamedIndividual IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#12-month-duration"/>
+        <NamedIndividual IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#time-measure-year"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#has-unit-of-measure"/>
+        <NamedIndividual IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#24-hour-duration"/>
+        <NamedIndividual IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#time-measure-hour"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#has-unit-of-measure"/>
+        <NamedIndividual IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#28-day-duration"/>
+        <NamedIndividual IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#time-measure-day"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#has-unit-of-measure"/>
+        <NamedIndividual IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#29-day-duration"/>
+        <NamedIndividual IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#time-measure-day"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#has-unit-of-measure"/>
+        <NamedIndividual IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#30-day-duration"/>
+        <NamedIndividual IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#time-measure-day"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#has-unit-of-measure"/>
+        <NamedIndividual IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#31-day-duration"/>
+        <NamedIndividual IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#time-measure-day"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#has-unit-of-measure"/>
+        <NamedIndividual IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#7-day-duration"/>
+        <NamedIndividual IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#time-measure-day"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#begins-at-time-point"/>
+        <Class IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#time-interval"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#day-of"/>
+        <Class IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#calendar-date"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#day-of"/>
+        <Class IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#time-point"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#def-axiom"/>
+        <Class IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#set"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#def-axiom"/>
+        <Class IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#tangible-thing"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#ends-at-time-point"/>
+        <Class IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#time-interval"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#has-duration"/>
+        <Class IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#april"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#has-duration"/>
+        <Class IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#august"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#has-duration"/>
+        <Class IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#day"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#has-duration"/>
+        <Class IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#december"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#has-duration"/>
+        <Class IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#february"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#has-duration"/>
+        <Class IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#february-in-leap-years"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#has-duration"/>
+        <Class IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#january"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#has-duration"/>
+        <Class IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#july"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#has-duration"/>
+        <Class IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#june"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#has-duration"/>
+        <Class IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#march"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#has-duration"/>
+        <Class IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#may"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#has-duration"/>
+        <Class IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#november"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#has-duration"/>
+        <Class IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#october"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#has-duration"/>
+        <Class IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#september"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#has-duration"/>
+        <Class IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#time-interval"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#has-duration"/>
+        <Class IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#week"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#has-duration"/>
+        <Class IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#year"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#has-magnitude"/>
+        <Class IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#physical-quantity"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#has-pretty-name"/>
+        <Class IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#thing"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#has-time-interval"/>
+        <Class IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#temporal-thing"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#has-unit-of-measure"/>
+        <Class IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#duration"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#has-unit-of-measure"/>
+        <Class IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#physical-quantity"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#has-variant-name"/>
+        <Class IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#thing"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#hour-of"/>
+        <Class IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#calendar-date"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#hour-of"/>
+        <Class IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#time-point"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#in-timezone"/>
+        <Class IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#time-position"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#let"/>
+        <Class IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#class"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#let"/>
+        <Class IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#function"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#let"/>
+        <Class IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#integer"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#let"/>
+        <Class IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#number"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#let"/>
+        <Class IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#real-number"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#let"/>
+        <Class IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#relation"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#let"/>
+        <Class IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#string"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#minute-of"/>
+        <Class IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#calendar-date"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#minute-of"/>
+        <Class IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#time-point"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#month-of"/>
+        <Class IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#calendar-date"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#month-of"/>
+        <Class IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#time-point"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#second-of"/>
+        <Class IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#calendar-date"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#second-of"/>
+        <Class IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#time-point"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#subclass-partition"/>
+        <Class IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#set"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#subclass-partition"/>
+        <Class IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#tangible-thing"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#year-of"/>
+        <Class IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#calendar-date"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#year-of"/>
+        <Class IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#time-point"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#begins-at-time-point"/>
+        <Class IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#time-point"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#day-of"/>
+        <Class IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#day-in-time"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#ends-at-time-point"/>
+        <Class IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#time-point"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#has-duration"/>
+        <Class IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#duration"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#has-magnitude"/>
+        <Class IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#number"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#has-pretty-name"/>
+        <Class IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#string"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#has-time-interval"/>
+        <Class IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#time-interval"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#has-unit-of-measure"/>
+        <Class IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#unit-of-measure"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#has-variant-name"/>
+        <Class IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#string"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#hour-of"/>
+        <Class IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#hour-in-time"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#in-timezone"/>
+        <Class IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#timezone"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#minute-of"/>
+        <Class IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#minute-in-time"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#month-of"/>
+        <Class IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#month-in-time"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#second-of"/>
+        <Class IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#second-in-time"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#year-of"/>
+        <Class IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#year-in-time"/>
+    </ObjectPropertyRange>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 3.4.10-SNAPSHOT) http://owlapi.sourceforge.net -->
+

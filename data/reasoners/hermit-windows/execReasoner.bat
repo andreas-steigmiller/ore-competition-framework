@@ -1,0 +1,1 @@
+java -Xmx%2 -cp .;lib -jar OREv2ReasonerWrapper.jar org.semanticweb.HermiT.Reasoner$ReasonerFactory %3 %4 %5 %6 %7 %8

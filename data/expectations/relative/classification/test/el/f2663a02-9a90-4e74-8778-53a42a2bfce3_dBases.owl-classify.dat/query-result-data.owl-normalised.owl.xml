@@ -1,0 +1,210 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://org.semanticweb.ore/normalised-result-comparision-ontology"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     ontologyIRI="http://org.semanticweb.ore/normalised-result-comparision-ontology">
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <SubClassOf>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Addition"/>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Base_Modification_Reaction"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Aliphatic-N-Methylation"/>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#N-Methylation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Amide_Cleavage"/>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Hydrolysis"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Aminoacylation"/>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Addition"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Aromatic-N-Methylation"/>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#N-Methylation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Aromatic-O-Methylation"/>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#O-Methylation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Aspartylation"/>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Aminoacylation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Base"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Base_Modification_Reaction"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#C-Hydroxymethylation"/>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Addition"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#C-Methylation"/>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Methylation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Carbamoylation"/>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Addition"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Carboxymethylation"/>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Addition"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Decarboxymethylation"/>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Elimination"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Diformylglutamylation"/>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Aminoacylation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Elimination"/>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Base_Modification_Reaction"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Epoxide_Elimination"/>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Elimination"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Epoxyqueuosinylation"/>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Addition"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Formylation"/>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Addition"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Galactosylation"/>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Glycosylation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Glutamylation"/>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Aminoacylation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Glycosylation"/>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Addition"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Glycylation"/>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Aminoacylation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Glycylcarbamoylation"/>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Carbamoylation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Hydration"/>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Addition"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Hydrolysis"/>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Substitution"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Hydroxyl-Peroxidation"/>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Substitution"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Hydroxylation"/>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Addition"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Isomerisation"/>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Base_Modification_Reaction"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Isopentenylation"/>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Addition"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Lysylation"/>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Aminoacylation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Mannosylation"/>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Glycosylation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Methylation"/>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Addition"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Methylcarbamoylation"/>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Carbamoylation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Methylester_Formation"/>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#O-Methylation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Modified_Base"/>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Base"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#N-Methylation"/>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Methylation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#O-Methylation"/>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Methylation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Pseudouridine_Formation"/>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Isomerisation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Ribose-O2-Methylation"/>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#O-Methylation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Ribose-Ribosylation"/>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Glycosylation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Selenation"/>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Addition"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Substitution"/>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Base_Modification_Reaction"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Thiolation"/>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Addition"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Threonylcarbamoylation"/>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Carbamoylation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Transamination"/>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Substitution"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Unmodified_Base"/>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Base"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Wyosine_Formation"/>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1174405183.owl#Addition"/>
+    </SubClassOf>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 3.4.10-SNAPSHOT) http://owlapi.sourceforge.net -->
+

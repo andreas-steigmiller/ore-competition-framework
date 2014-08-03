@@ -1,0 +1,8 @@
+QueryType	classification
+OntologySource	RELATIVETOONTOLOGIESDIRECTORY	test/el/b7700fe1-103b-4b32-a21c-f6604a763ba5_t-cell.owl
+UsingRules	false
+UsingDatatypes	false
+InDLProfile	true
+InELProfile	true
+InRLProfile	false
+InQLProfile	false

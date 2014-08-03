@@ -1,0 +1,155 @@
+body {
+  padding-top: 20px;
+}
+.starter-template {
+  padding: 40px 15px;
+  text-align: center;
+}
+.content-template {
+  padding: 40px 15px;
+}
+
+.panel-black {
+  border-color: #000;
+}
+.panel-black > .panel-heading {
+  color: #fff;
+  background-color: #000;
+  border-color: #000;
+  padding: 5px;
+}
+.panel-black > .panel-heading + .panel-collapse .panel-body {
+  border-top-color: #000;
+}
+.panel-black > .panel-footer + .panel-collapse .panel-body {
+  border-bottom-color: #000;
+}
+
+
+
+.table-very-condensed > thead > tr > th,
+.table-very-condensed > tbody > tr > th,
+.table-very-condensed > tfoot > tr > th,
+.table-very-condensed > thead > tr > td,
+.table-very-condensed > tbody > tr > td,
+.table-very-condensed > tfoot > tr > td {
+  padding: 0px;
+}
+
+
+
+
+.table-more-condensed > thead > tr > th,
+.table-more-condensed > tbody > tr > th,
+.table-more-condensed > tfoot > tr > th,
+.table-more-condensed > thead > tr > td,
+.table-more-condensed > tbody > tr > td,
+.table-more-condensed > tfoot > tr > td {
+  padding: 1px;
+}
+
+
+
+
+
+
+
+
+
+
+.table > thead > tr > td.danger-blink,
+.table > tbody > tr > td.danger-blink,
+.table > tfoot > tr > td.danger-blink,
+.table > thead > tr > th.danger-blink,
+.table > tbody > tr > th.danger-blink,
+.table > tfoot > tr > th.danger-blink,
+.table > thead > tr.danger-blink > td,
+.table > tbody > tr.danger-blink > td,
+.table > tfoot > tr.danger-blink > td,
+.table > thead > tr.danger-blink > th,
+.table > tbody > tr.danger-blink > th,
+.table > tfoot > tr.danger-blink > th {
+  background-color: #fff;
+  
+  -webkit-animation: danger-blink-frames 2s;
+   animation: danger-blink-frames 2s;
+}
+
+.table-striped > tbody > tr.danger-blink:nth-child(odd) > td,
+.table-striped > tbody > tr.danger-blink:nth-child(odd) > th {
+  background-color: #f9f9f9;
+  
+  -webkit-animation: danger-blink-striped-frames 2s;
+  animation: danger-blink-striped-frames 2s;
+}
+
+
+@-webkit-keyframes danger-blink-frames {
+    from {background: #f2dede;}
+    to {background: #fff;}
+}
+@keyframes danger-blink-frames {
+    from {background: #f2dede;}
+    to {background: #fff;}
+}
+
+
+@-webkit-keyframes danger-blink-striped-frames {
+    from {background: #f2dede;}
+    to {background: #f9f9f9;}
+}
+@keyframes danger-blink-striped-frames {
+    from {background: #f2dede;}
+    to {background: #f9f9f9;}
+}
+
+
+
+.table > thead > tr > td.success-blink,
+.table > tbody > tr > td.success-blink,
+.table > tfoot > tr > td.success-blink,
+.table > thead > tr > th.success-blink,
+.table > tbody > tr > th.success-blink,
+.table > tfoot > tr > th.success-blink,
+.table > thead > tr.success-blink > td,
+.table > tbody > tr.success-blink > td,
+.table > tfoot > tr.success-blink > td,
+.table > thead > tr.success-blink > th,
+.table > tbody > tr.success-blink > th,
+.table > tfoot > tr.success-blink > th {
+  background-color: #fff;
+  
+  -webkit-animation: success-blink-frames 2s;
+   animation: success-blink-frames 2s;
+}
+
+.table-striped > tbody > tr.success-blink:nth-child(odd) > td,
+.table-striped > tbody > tr.success-blink:nth-child(odd) > th {
+  background-color: #f9f9f9;
+  
+  -webkit-animation: success-blink-striped-frames 2s;
+   animation: success-blink-striped-frames 2s;
+}
+
+
+
+
+@-webkit-keyframes success-blink-frames {
+    from {background: #dff0d8;}
+    to {background: #fff;}
+}
+@keyframes success-blink-frames {
+    from {background: #dff0d8;}
+    to {background: #fff;}
+}
+
+
+@-webkit-keyframes success-blink-striped-frames {
+    from {background: #dff0d8;}
+    to {background: #f9f9f9;}
+}
+@keyframes success-blink-striped-frames {
+    from {background: #dff0d8;}
+    to {background: #f9f9f9;}
+}
+

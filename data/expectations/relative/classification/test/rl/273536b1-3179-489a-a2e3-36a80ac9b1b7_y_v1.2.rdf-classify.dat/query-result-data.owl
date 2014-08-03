@@ -1,0 +1,21 @@
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+
+
+Ontology(<file:E:\Data\MyFiles\SemanticWeb\ORECompetition\2014\ORE-Eclipse-Workspace\ORE-Framework\data\responses\hermit-windows\classification\2014-02-28--14-55-05\classification\rl\273536b1-3179-489a-a2e3-36a80ac9b1b7_y_v1.2.rdf-classify.dat\query-result-data.owl>
+
+SubClassOf(<http://www.geonames.org/ontology#Class> <http://www.w3.org/2004/02/skos/core#ConceptScheme>)
+SubClassOf(<http://www.geonames.org/ontology#Code> <http://www.w3.org/2004/02/skos/core#Concept>)
+SubClassOf(<http://www.geonames.org/ontology#Country> owl:Thing)
+SubClassOf(<http://www.geonames.org/ontology#Feature> <http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing>)
+SubClassOf(<http://www.geonames.org/ontology#Map> <http://xmlns.com/foaf/0.1/Document>)
+SubClassOf(<http://www.geonames.org/ontology#RDFData> <http://xmlns.com/foaf/0.1/Document>)
+SubClassOf(<http://www.geonames.org/ontology#WikipediaArticle> <http://xmlns.com/foaf/0.1/Document>)
+SubClassOf(<http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing> owl:Thing)
+SubClassOf(<http://www.w3.org/2004/02/skos/core#Concept> owl:Thing)
+SubClassOf(<http://www.w3.org/2004/02/skos/core#ConceptScheme> owl:Thing)
+SubClassOf(<http://xmlns.com/foaf/0.1/Document> owl:Thing)
+)

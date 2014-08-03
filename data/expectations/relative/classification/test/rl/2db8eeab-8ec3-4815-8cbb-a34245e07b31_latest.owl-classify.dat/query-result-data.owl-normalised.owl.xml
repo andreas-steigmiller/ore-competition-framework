@@ -1,0 +1,215 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://org.semanticweb.ore/normalised-result-comparision-ontology"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     ontologyIRI="http://org.semanticweb.ore/normalised-result-comparision-ontology">
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <EquivalentClasses>
+        <Class IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#april"/>
+        <Class IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#august"/>
+        <Class IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#day"/>
+        <Class IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#december"/>
+        <Class IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#february-in-leap-years"/>
+        <Class IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#january"/>
+        <Class IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#july"/>
+        <Class IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#june"/>
+        <Class IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#march"/>
+        <Class IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#may"/>
+        <Class IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#november"/>
+        <Class IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#october"/>
+        <Class IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#september"/>
+        <Class IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#week"/>
+        <Class IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#year"/>
+    </EquivalentClasses>
+    <SubClassOf>
+        <Class IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#binary-relation"/>
+        <Class IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#relation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#calendar-date"/>
+        <Class IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#time-point"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#class"/>
+        <Class IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#unary-relation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#class-partition"/>
+        <Class IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#enumerated-set"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#day-in-time"/>
+        <Class IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#positive-integer"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#duration"/>
+        <Class IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#physical-quantity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#enumerated-set"/>
+        <Class IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#set"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#february"/>
+        <Class IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#month"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#function"/>
+        <Class IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#set"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#hour-in-time"/>
+        <Class IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#non-negative-integer"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#individual"/>
+        <Class IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#intangible-thing"/>
+        <Class IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#integer"/>
+        <Class IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#real-number"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#list"/>
+        <Class IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#intangible-thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#minute-in-time"/>
+        <Class IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#non-negative-integer"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#month"/>
+        <Class IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#time-interval"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#month-in-time"/>
+        <Class IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#positive-integer"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#negative-integer"/>
+        <Class IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#integer"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#negative-number"/>
+        <Class IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#number"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#non-negative-integer"/>
+        <Class IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#integer"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#non-negative-number"/>
+        <Class IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#number"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#number"/>
+        <Class IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#quantity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#physical-quantity"/>
+        <Class IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#quantity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#positive-integer"/>
+        <Class IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#integer"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#positive-number"/>
+        <Class IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#number"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#quantity"/>
+        <Class IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#individual"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#quantity"/>
+        <Class IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#intangible-thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#real-number"/>
+        <Class IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#number"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#relation"/>
+        <Class IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#set"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#second-in-time"/>
+        <Class IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#real-number"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#set"/>
+        <Class IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#intangible-thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#string"/>
+        <Class IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#individual"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#string"/>
+        <Class IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#intangible-thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#tangible-thing"/>
+        <Class IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#temporal-thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#temporal-thing"/>
+        <Class IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#thing"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#time-interval"/>
+        <Class IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#time-position"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#time-measure"/>
+        <Class IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#unit-of-measure"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#time-point"/>
+        <Class IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#time-position"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#time-position"/>
+        <Class IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#intangible-thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#timezone"/>
+        <Class IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#string"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#unary-relation"/>
+        <Class IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#relation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#unit-of-measure"/>
+        <Class IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#intangible-thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#year"/>
+        <Class IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#february"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#year-in-time"/>
+        <Class IRI="http://kmi.open.ac.uk/semanticweb/ontologies/owl/akt-support-ontology-latest.owl#integer"/>
+    </SubClassOf>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 3.4.10-SNAPSHOT) http://owlapi.sourceforge.net -->
+

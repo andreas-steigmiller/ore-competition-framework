@@ -1,0 +1,8 @@
+QueryType	classification
+OntologySource	RELATIVETOONTOLOGIESDIRECTORY	test/el/event-inoh-pathway-ontology-.1011.owl.xml
+UsingRules	false
+UsingDatatypes	false
+InDLProfile	true
+InELProfile	true
+InRLProfile	false
+InQLProfile	false

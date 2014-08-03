@@ -1,0 +1,8 @@
+QueryType	realisation
+OntologySource	RELATIVETOONTOLOGIESDIRECTORY	test/el/baa29363-f93c-4285-827e-0e2380c82efc_cations.n3-inconsistent.owl
+UsingRules	false
+UsingDatatypes	true
+InDLProfile	true
+InELProfile	true
+InRLProfile	false
+InQLProfile	false

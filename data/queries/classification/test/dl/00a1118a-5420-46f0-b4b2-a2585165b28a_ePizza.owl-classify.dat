@@ -1,0 +1,8 @@
+QueryType	classification
+OntologySource	RELATIVETOONTOLOGIESDIRECTORY	test/dl/00a1118a-5420-46f0-b4b2-a2585165b28a_ePizza.owl
+UsingRules	false
+UsingDatatypes	true
+InDLProfile	true
+InELProfile	false
+InRLProfile	false
+InQLProfile	false

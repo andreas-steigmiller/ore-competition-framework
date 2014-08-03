@@ -1,0 +1,758 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://org.semanticweb.ore/normalised-result-comparision-ontology"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     ontologyIRI="http://org.semanticweb.ore/normalised-result-comparision-ontology">
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <SubClassOf>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/dul/CollectionsLite.owl#AgentCollection"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/dul/CollectionsLite.owl#GeneticCollection"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/dul/CollectionsLite.owl#InformationCollection"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/dul/CollectionsLite.owl#Taxon"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Abstract"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Action"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Agent"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Amount"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#BiologicalObject"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#ChemicalObject"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Classification"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Collection"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Collective"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#CollectiveAgent"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Community"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Concept"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Configuration"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Contract"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Description"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Design"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#DesignedArtifact"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#DesignedSubstance"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Diagnosis"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Event"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#EventType"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#FormalEntity"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#FunctionalSubstance"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Goal"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Group"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationObject"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#LocalConcept"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Method"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Narrative"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#NaturalPerson"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Norm"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Object"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Organism"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Organization"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Parameter"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Pattern"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Person"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Personification"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#PhysicalAgent"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#PhysicalArtifact"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#PhysicalAttribute"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#PhysicalBody"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#PhysicalObject"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#PhysicalPlace"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Place"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Plan"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#PlanExecution"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Process"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Project"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Quality"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Region"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Relation"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Right"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Role"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Set"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Situation"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SocialAgent"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SocialObject"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SocialObjectAttribute"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SocialPerson"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SocialRelation"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SpaceRegion"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SpatioTemporalRegion"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Substance"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Task"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Theory"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#TimeInterval"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Transition"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#TypeCollection"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#UnitOfMeasure"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Workflow"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#WorkflowExecution"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#BodilyMotion"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#Code"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#CommunicativeFunction"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#ContractText"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#DBSchema"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#DataStructure"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#Datum"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#Depiction"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#Drawing"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#FormalExpression"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#FormalLanguage"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#Gesture"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#Grapheme"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#GraphicArt"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#IconicLanguage"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#IconicObject"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#KOS"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#Language"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#Lexeme"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#Lexicon"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#LinguisticAct"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#LinguisticFunction"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#LinguisticObject"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#LinguisticTheory"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#Morpheme"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#Multiword"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#NaturalLanguage"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#Painting"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#Phoneme"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#Phrase"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#PlasticArt"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#Sculpture"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#Sentence"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#Sound"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#Speech"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#Statue"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#Term"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#Text"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#Thesaurus"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#Voicing"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#Word"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#Writing"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/dul/Roles.owl#AgentRole"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/dul/Roles.owl#CausalRole"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/dul/Roles.owl#CollectionRole"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/dul/Roles.owl#CommercialRole"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/dul/Roles.owl#ConceptualRole"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/dul/Roles.owl#Department"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/dul/Roles.owl#ElementaryRole"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/dul/Roles.owl#FunctionalArea"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/dul/Roles.owl#GeographicalRole"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/dul/Roles.owl#InterpersonalRole"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/dul/Roles.owl#LegalPossessionRole"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/dul/Roles.owl#LocativeRole"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/dul/Roles.owl#QualitativeRole"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/dul/Roles.owl#SemioticRole"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/dul/Roles.owl#SocialFunction"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/dul/Roles.owl#Status"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/dul/Roles.owl#SubstanceRole"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/dul/Roles.owl#SymmetricRole"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/dul/Supplements.owl#DependentPlace"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/dul/Supplements.owl#GeographicalObject"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/dul/Supplements.owl#PoliticalGeographicObject"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/dul/ontopic.owl#Subject"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/dul/ontopic.owl#SubjectDirectory"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/dul/ontopic.owl#SubjectSpace"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/dul/ontopic.owl#Topic"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/dul/ontopic.owl#TopicAssignment"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/dul/ontopic.owl#TopicSignature"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/dul/ontopic.owl#TopicSpace"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/lmm/LMM_L1.owl#CoText"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/lmm/LMM_L1.owl#ConstructionRule"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/lmm/LMM_L1.owl#Expression"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/lmm/LMM_L1.owl#KnowledgeCommunity"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/lmm/LMM_L1.owl#Meaning"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/lmm/LMM_L1.owl#Paradigm"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/lmm/LMM_L2.owl#AnalyticFeature"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/lmm/LMM_L2.owl#AssociativeContext"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/lmm/LMM_L2.owl#AssociativeRule"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/lmm/LMM_L2.owl#ConceptExpression"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/lmm/LMM_L2.owl#ConceptReference"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/lmm/LMM_L2.owl#ContextualExpression"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/lmm/LMM_L2.owl#EnumeratedExpression"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/lmm/LMM_L2.owl#ExperimentalSetting"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/lmm/LMM_L2.owl#ExtensionalReference"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/lmm/LMM_L2.owl#Gloss"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/lmm/LMM_L2.owl#LSARule"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/lmm/LMM_L2.owl#LatentContext"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/lmm/LMM_L2.owl#MultipleReference"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/lmm/LMM_L2.owl#Name"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/lmm/LMM_L2.owl#PolyrhematicConceptExpression"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/lmm/LMM_L2.owl#SimpleConceptExpression"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/lmm/LMM_L2.owl#SyntacticContext"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/lmm/LMM_L2.owl#SyntacticRule"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.w3.org/2006/03/wn/wn30/schema/AdjectiveSatelliteSynset"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.w3.org/2006/03/wn/wn30/schema/AdjectiveSatelliteWordSense"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.w3.org/2006/03/wn/wn30/schema/AdjectiveSynset"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.w3.org/2006/03/wn/wn30/schema/AdjectiveWordSense"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.w3.org/2006/03/wn/wn30/schema/AdverbSynset"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.w3.org/2006/03/wn/wn30/schema/AdverbWordSense"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.w3.org/2006/03/wn/wn30/schema/Collocation"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.w3.org/2006/03/wn/wn30/schema/NounSynset"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.w3.org/2006/03/wn/wn30/schema/NounWordSense"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.w3.org/2006/03/wn/wn30/schema/SuperSense"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.w3.org/2006/03/wn/wn30/schema/Synset"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.w3.org/2006/03/wn/wn30/schema/VerbSynset"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.w3.org/2006/03/wn/wn30/schema/VerbWordSense"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.w3.org/2006/03/wn/wn30/schema/Word"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.w3.org/2006/03/wn/wn30/schema/WordSense"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 3.4.10-SNAPSHOT) http://owlapi.sourceforge.net -->
+

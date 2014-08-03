@@ -1,0 +1,18 @@
+# Competition file for the evaluation/testing framework.
+# Lines starting with '#' are interpreted as comments (like this line).
+# Each non-comment line starts with a key followed by one or more values. 
+# All values must be separated by tabs (i.e., by the character '	').
+
+CompetitionName	Test EL Classification
+
+OutputPathName	test-el-classification
+
+Reasoners	hermit-linux
+
+QueryPathFilterString	classification/test/el
+
+
+ExecutionTimeout	180000
+
+ProcessingTimeout	150000
+

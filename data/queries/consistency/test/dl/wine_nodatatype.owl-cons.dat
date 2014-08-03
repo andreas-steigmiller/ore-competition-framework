@@ -1,0 +1,8 @@
+QueryType	consistency
+OntologySource	RELATIVETOONTOLOGIESDIRECTORY	test/dl/wine_nodatatype.owl
+UsingRules	false
+UsingDatatypes	false
+InDLProfile	true
+InELProfile	false
+InRLProfile	false
+InQLProfile	false

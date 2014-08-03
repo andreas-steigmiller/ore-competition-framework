@@ -1,0 +1,146 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="ico/favicon.ico">
+
+    <title>ORE 2014 Live Competition</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/live.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+	
+  </head>
+
+  <body>
+	<script type="text/javascript" src="js/wz_tooltip.js"></script>
+
+    <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" class="active" href="index.html">ORE 2014</a>
+        </div>
+        <div class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="live.html"><span class="glyphicon glyphicon-star-empty"></span> Live</a></li>
+            <li><a href="results.html"><span class="glyphicon glyphicon-stats"></span> Results</a></li>
+            <li><a href="reasoners.html">Reasoners</a></li>
+	    <li><a href="disciplines.html">Disciplines</a></li>
+            <li><a href="ontologies.html">Ontologies</a></li>
+            <li><a href="about.html">About</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </div>
+
+    <div class="container-fluid">
+	
+	
+	
+
+	<br>
+	<br>	  
+	
+	<table width="100%">
+	  <colgroup>
+		<col width="*">
+		<col width="60">
+		<col width="80">
+		<col width="65">    
+	  </colgroup>
+	<tr><td><strong>Live Screen: <a href="liveScreen.html">http://bit.ly/1oEweet</a></strong></ td>
+		<td onmouseover="TagToTip('tt-viewer-count')" onmouseout="UnTip()"><span class="glyphicon glyphicon-eye-open"></span> <span id="viewer-count">?</span></td>
+		<td onmouseover="TagToTip('tt-local-time')" onmouseout="UnTip()"><span class="glyphicon glyphicon-time"></span> <span id="local-time">??:??</span></td>
+		<td onmouseover="TagToTip('tt-last-refresh-time')" onmouseout="UnTip()"><span class="glyphicon glyphicon-refresh"></span> <span id="last-refresh-time">??:??</span></td>
+	</tr>
+	</table>
+
+	<br>	  
+
+
+	
+	<div id="base">
+		<div class="alert alert-danger">No connection to evaluation server or no competition loaded.</div>
+	</div>
+
+
+	<script type="text/javascript" src="js/resultStreaming.js"></script>	  
+	<script type="text/javascript">
+		resultDataStreaming("live?screen=false");
+	</script>	  
+
+    </div><!-- /.container -->
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/navigation.js"></script>
+	
+	
+	<!-- Tooltips -->
+	<span id="tt-viewer-count" style="visibility:hidden">The approximative number of viewers <br> 
+						to which the results are streamed.</span>
+	<span id="tt-local-time" style="visibility:hidden">The local time used by this browser.</span>
+	<span id="tt-last-refresh-time" style="visibility:hidden">The local time for which the last results/ <br> 
+						updates are received from the server.</span>
+	<span id="tt-rank" style="visibility:hidden">The rank of the reasoner determined by the number of correctly solved <br> 
+						benchmarks and by the cumulative time that is spent for the processing <br>
+						of the correctly solved benchmarks. Please note that the time is used <br>
+						only used to determine the rank between reasoners if the number of  <br>
+						correctly solved benchmarks are the same.</span>
+	<span id="tt-reasoner" style="visibility:hidden">The name of the reasoner.</span>
+	<span id="tt-progress" style="visibility:hidden"><p>The progress bar which indicates the progress of the reasoner.</p>
+						If the reasoner is still busy with processing benchmarks, then the progress bar is animated by stripes as follows:
+						<div class="progress progress-striped active">
+							<div class="progress-bar progress-bar-success" style="width:35%">correctly solved benchmarks</div>
+							<div class="progress-bar progress-bar-danger" style="width:45%">errors + timeouts + unexpected results</div>
+						</div> <br>
+						
+						If the reasoner has processed all benchmarks, then there is a static progress bar as follows:
+						<div class="progress">
+							<div class="progress-bar progress-bar-success" style="width:45%">correctly solved benchmarks</div>
+							<div class="progress-bar progress-bar-danger" style="width:55%">errors + timeouts + unexpected results</div>
+						</div>
+						</span>
+	<span id="tt-score" style="visibility:hidden">The current score of the reasoner, i.e., the number of benchmarks <br>
+						that have been correctly solved so far (numerator), and the <br>
+						number of benchmarks for this discipline (denominator).</span>
+	<span id="tt-error" style="visibility:hidden">The number of errors + timeouts + unexpected results <br>
+						produced by the reasoner, i.e., the number of benchmarks <br>
+						that are not interpreted as correctly solved.</span>
+	<span id="tt-time" style="visibility:hidden">The cumulative time for the correctly solved benchmarks. <br>
+						Please note that this time is reported by the reasoner and may <br>
+						or may not include the parsing/loading times for the benchmarks.</span>
+
+
+	<span onmouseover="TagToTip('tt-rank')" onmouseout="UnTip()" style="visibility:hidden"></span>
+	<span onmouseover="TagToTip('tt-reasoner')" onmouseout="UnTip()" style="visibility:hidden"></span>
+	<span onmouseover="TagToTip('tt-progress')" onmouseout="UnTip()" style="visibility:hidden"></span>
+	<span onmouseover="TagToTip('tt-score')" onmouseout="UnTip()" style="visibility:hidden"></span>
+	<span onmouseover="TagToTip('tt-error')" onmouseout="UnTip()" style="visibility:hidden"></span>
+	<span onmouseover="TagToTip('tt-time')" onmouseout="UnTip()" style="visibility:hidden"></span>
+						
+  </body>
+</html>

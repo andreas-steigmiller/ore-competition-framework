@@ -1,0 +1,8 @@
+QueryType	consistency
+OntologySource	RELATIVETOONTOLOGIESDIRECTORY	test/rl/273536b1-3179-489a-a2e3-36a80ac9b1b7_y_v1.2.rdf
+UsingRules	false
+UsingDatatypes	true
+InDLProfile	true
+InELProfile	true
+InRLProfile	true
+InQLProfile	false

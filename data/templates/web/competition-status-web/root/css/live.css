@@ -1,0 +1,1273 @@
+body {
+  padding-top: 20px;
+}
+.live {
+  padding: 40px 15px;
+  text-align: center;
+}
+.content-template {
+  padding: 40px 15px;
+}
+
+
+
+
+
+.th-ra {
+  text-decoration: underline;
+}
+
+.th-re {
+  margin-left: 10px;
+  text-decoration: underline;
+  text-align: center;
+}
+
+.th-pr {
+  text-decoration: underline;
+}
+
+.th-sc {
+  text-decoration: underline;
+  text-align: right;
+}
+
+.th-er {
+  text-decoration: underline;
+  text-align: right;
+  color: rgba(223,32,32,0.85);
+}
+
+.th-ti {
+  text-decoration: underline;
+  text-align: right;
+}
+
+
+
+
+
+#overlay {
+   position: fixed;
+   z-index:199;
+   top: 0px;
+   left: 0px;
+   height:100%;
+   width:100%;
+
+}
+
+* html #overlay { /* ie6 hack */
+   position: absolute;
+   height: expression(document.body.scrollHeight > document.body.offsetHeight ? document.body.scrollHeight : document.body.offsetHeight + 'px');
+}
+
+.overlayBG {
+   background-color:#000;
+   -ms-filter: "Alpha(Opacity=75)";
+   filter:alpha(opacity=75);
+   -moz-opacity: 0.75;
+   opacity: 0.75;
+}
+
+#lightBox {
+   position:fixed;
+   top:50%;
+   left:50%;
+   margin-left:-400px;
+   margin-top:-200px;
+   z-index:200;
+   width:800px;
+   background-color:#fff;
+   text-align:center;
+   border-radius: 1.5em;
+   border-color: #000;
+   border-style:solid;
+   
+}
+* html #lightBox { /* ie6 hack */
+   position: absolute;
+   margin-top: expression(0 - parseInt(this.offsetHeight / 2) + (TBWindowMargin = document.documentElement && document.documentElement.scrollTop || document.body.scrollTop) + 'px');
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.critical-refresh-time {
+  color: rgba(223,32,32,0.85);
+}
+
+.good-refresh-time {
+  color: rgba(84,170,81,0.98);
+}
+
+
+.panel-black {
+  border-color: #000;
+}
+.panel-black > .panel-heading {
+  color: #fff;
+  background-color: #000;
+  border-color: #000;
+  padding: 5px;
+}
+.panel-black > .panel-heading + .panel-collapse .panel-body {
+  border-top-color: #000;
+}
+.panel-black > .panel-footer + .panel-collapse .panel-body {
+  border-bottom-color: #000;
+}
+
+
+
+
+
+
+.score-error {
+  color: rgba(223,32,32,0.85);
+}
+
+
+.score-success {
+  color: rgba(84,170,81,0.98);
+}
+
+.time-success {
+  color: rgba(84,170,81,0.98);
+}
+
+
+
+
+.reasoner-link:link {
+  color: #000;
+}
+.reasoner-link:visited {
+  color: #000;
+}
+
+.discipline-link-1:link {
+  color: #000
+}
+.discipline-link-1:visited{
+  color: #000;
+}
+
+
+.discipline-link-2:link {
+  color: #FFFFFF;
+}
+.discipline-link-2:visited{
+  color: #FFFFFF;
+}
+
+
+
+
+
+
+.table-very-condensed > thead > tr > th,
+.table-very-condensed > tbody > tr > th,
+.table-very-condensed > tfoot > tr > th,
+.table-very-condensed > thead > tr > td,
+.table-very-condensed > tbody > tr > td,
+.table-very-condensed > tfoot > tr > td {
+  padding: 1px;
+}
+
+
+
+
+.table-more-condensed > thead > tr > th,
+.table-more-condensed > tbody > tr > th,
+.table-more-condensed > tfoot > tr > th,
+.table-more-condensed > thead > tr > td,
+.table-more-condensed > tbody > tr > td,
+.table-more-condensed > tfoot > tr > td {
+  padding: 1px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.table > thead > tr > td.black,
+.table > tbody > tr > td.black,
+.table > tfoot > tr > td.black,
+.table > thead > tr > th.black,
+.table > tbody > tr > th.black,
+.table > tfoot > tr > th.black,
+.table > thead > tr.black > td,
+.table > tbody > tr.black > td,
+.table > tfoot > tr.black > td,
+.table > thead > tr.black > th,
+.table > tbody > tr.black > th,
+.table > tfoot > tr.black > th {
+  background-color: #E8EDF6;
+}
+
+
+.progress-bar-black {
+  background-color: #D7E1F1;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.table > thead > tr > td.fail-blink-1,
+.table > tbody > tr > td.fail-blink-1,
+.table > tfoot > tr > td.fail-blink-1,
+.table > thead > tr > th.fail-blink-1,
+.table > tbody > tr > th.fail-blink-1,
+.table > tfoot > tr > th.fail-blink-1,
+.table > thead > tr.fail-blink-1 > td,
+.table > tbody > tr.fail-blink-1 > td,
+.table > tfoot > tr.fail-blink-1 > td,
+.table > thead > tr.fail-blink-1 > th,
+.table > tbody > tr.fail-blink-1 > th,
+.table > tfoot > tr.fail-blink-1 > th {
+  background-color: #fff;
+  
+  -webkit-animation: fail-blink-1-frames 2s;
+   animation: fail-blink-1-frames 2s;
+}
+
+.table-striped > tbody > tr.fail-blink-1:nth-child(odd) > td,
+.table-striped > tbody > tr.fail-blink-1:nth-child(odd) > th {
+  background-color: #f9f9f9;
+  
+  -webkit-animation: fail-blink-1-striped-frames 2s;
+  animation: fail-blink-1-striped-frames 2s;
+}
+
+
+@-webkit-keyframes fail-blink-1-frames {
+    from {background: #f2dede;}
+    to {background: #fff;}
+}
+@keyframes fail-blink-1-frames {
+    from {background: #f2dede;}
+    to {background: #fff;}
+}
+
+
+@-webkit-keyframes fail-blink-1-striped-frames {
+    from {background: #f2dede;}
+    to {background: #f9f9f9;}
+}
+@keyframes fail-blink-1-striped-frames {
+    from {background: #f2dede;}
+    to {background: #f9f9f9;}
+}
+
+
+
+
+
+
+.table > thead > tr > td.fail-blink-2,
+.table > tbody > tr > td.fail-blink-2,
+.table > tfoot > tr > td.fail-blink-2,
+.table > thead > tr > th.fail-blink-2,
+.table > tbody > tr > th.fail-blink-2,
+.table > tfoot > tr > th.fail-blink-2,
+.table > thead > tr.fail-blink-2 > td,
+.table > tbody > tr.fail-blink-2 > td,
+.table > tfoot > tr.fail-blink-2 > td,
+.table > thead > tr.fail-blink-2 > th,
+.table > tbody > tr.fail-blink-2 > th,
+.table > tfoot > tr.fail-blink-2 > th {
+  background-color: #fff;
+  
+  -webkit-animation: fail-blink-2-frames 2s;
+   animation: fail-blink-2-frames 2s;
+}
+
+.table-striped > tbody > tr.fail-blink-2:nth-child(odd) > td,
+.table-striped > tbody > tr.fail-blink-2:nth-child(odd) > th {
+  background-color: #f9f9f9;
+  
+  -webkit-animation: fail-blink-2-striped-frames 2s;
+  animation: fail-blink-2-striped-frames 2s;
+}
+
+
+@-webkit-keyframes fail-blink-2-frames {
+    from {background: #f2dede;}
+    to {background: #fff;}
+}
+@keyframes fail-blink-2-frames {
+    from {background: #f2dede;}
+    to {background: #fff;}
+}
+
+
+@-webkit-keyframes fail-blink-2-striped-frames {
+    from {background: #f2dede;}
+    to {background: #f9f9f9;}
+}
+@keyframes fail-blink-2-striped-frames {
+    from {background: #f2dede;}
+    to {background: #f9f9f9;}
+}
+
+
+
+
+
+.table > thead > tr > td.fail-blink-3,
+.table > tbody > tr > td.fail-blink-3,
+.table > tfoot > tr > td.fail-blink-3,
+.table > thead > tr > th.fail-blink-3,
+.table > tbody > tr > th.fail-blink-3,
+.table > tfoot > tr > th.fail-blink-3,
+.table > thead > tr.fail-blink-3 > td,
+.table > tbody > tr.fail-blink-3 > td,
+.table > tfoot > tr.fail-blink-3 > td,
+.table > thead > tr.fail-blink-3 > th,
+.table > tbody > tr.fail-blink-3 > th,
+.table > tfoot > tr.fail-blink-3 > th {
+  background-color: #fff;
+  
+  -webkit-animation: fail-blink-3-frames 2s;
+   animation: fail-blink-3-frames 2s;
+}
+
+.table-striped > tbody > tr.fail-blink-3:nth-child(odd) > td,
+.table-striped > tbody > tr.fail-blink-3:nth-child(odd) > th {
+  background-color: #f9f9f9;
+  
+  -webkit-animation: fail-blink-3-striped-frames 2s;
+  animation: fail-blink-3-striped-frames 2s;
+}
+
+
+@-webkit-keyframes fail-blink-3-frames {
+    from {background: #f2dede;}
+    to {background: #fff;}
+}
+@keyframes fail-blink-3-frames {
+    from {background: #f2dede;}
+    to {background: #fff;}
+}
+
+
+@-webkit-keyframes fail-blink-3-striped-frames {
+    from {background: #f2dede;}
+    to {background: #f9f9f9;}
+}
+@keyframes fail-blink-3-striped-frames {
+    from {background: #f2dede;}
+    to {background: #f9f9f9;}
+}
+
+
+
+
+.table > thead > tr > td.fail-blink-4,
+.table > tbody > tr > td.fail-blink-4,
+.table > tfoot > tr > td.fail-blink-4,
+.table > thead > tr > th.fail-blink-4,
+.table > tbody > tr > th.fail-blink-4,
+.table > tfoot > tr > th.fail-blink-4,
+.table > thead > tr.fail-blink-4 > td,
+.table > tbody > tr.fail-blink-4 > td,
+.table > tfoot > tr.fail-blink-4 > td,
+.table > thead > tr.fail-blink-4 > th,
+.table > tbody > tr.fail-blink-4 > th,
+.table > tfoot > tr.fail-blink-4 > th {
+  background-color: #fff;
+  
+  -webkit-animation: fail-blink-4-frames 2s;
+   animation: fail-blink-4-frames 2s;
+}
+
+.table-striped > tbody > tr.fail-blink-4:nth-child(odd) > td,
+.table-striped > tbody > tr.fail-blink-4:nth-child(odd) > th {
+  background-color: #f9f9f9;
+  
+  -webkit-animation: fail-blink-4-striped-frames 2s;
+  animation: fail-blink-4-striped-frames 2s;
+}
+
+
+@-webkit-keyframes fail-blink-4-frames {
+    from {background: #f2dede;}
+    to {background: #fff;}
+}
+@keyframes fail-blink-4-frames {
+    from {background: #f2dede;}
+    to {background: #fff;}
+}
+
+
+@-webkit-keyframes fail-blink-4-striped-frames {
+    from {background: #f2dede;}
+    to {background: #f9f9f9;}
+}
+@keyframes fail-blink-4-striped-frames {
+    from {background: #f2dede;}
+    to {background: #f9f9f9;}
+}
+
+
+
+
+.table > thead > tr > td.fail-blink-5,
+.table > tbody > tr > td.fail-blink-5,
+.table > tfoot > tr > td.fail-blink-5,
+.table > thead > tr > th.fail-blink-5,
+.table > tbody > tr > th.fail-blink-5,
+.table > tfoot > tr > th.fail-blink-5,
+.table > thead > tr.fail-blink-5 > td,
+.table > tbody > tr.fail-blink-5 > td,
+.table > tfoot > tr.fail-blink-5 > td,
+.table > thead > tr.fail-blink-5 > th,
+.table > tbody > tr.fail-blink-5 > th,
+.table > tfoot > tr.fail-blink-5 > th {
+  background-color: #fff;
+  
+  -webkit-animation: fail-blink-5-frames 2s;
+   animation: fail-blink-5-frames 2s;
+}
+
+.table-striped > tbody > tr.fail-blink-5:nth-child(odd) > td,
+.table-striped > tbody > tr.fail-blink-5:nth-child(odd) > th {
+  background-color: #f9f9f9;
+  
+  -webkit-animation: fail-blink-5-striped-frames 2s;
+  animation: fail-blink-5-striped-frames 2s;
+}
+
+
+@-webkit-keyframes fail-blink-5-frames {
+    from {background: #f2dede;}
+    to {background: #fff;}
+}
+@keyframes fail-blink-5-frames {
+    from {background: #f2dede;}
+    to {background: #fff;}
+}
+
+
+@-webkit-keyframes fail-blink-5-striped-frames {
+    from {background: #f2dede;}
+    to {background: #f9f9f9;}
+}
+@keyframes fail-blink-5-striped-frames {
+    from {background: #f2dede;}
+    to {background: #f9f9f9;}
+}
+
+
+
+
+.table > thead > tr > td.fail-blink-6,
+.table > tbody > tr > td.fail-blink-6,
+.table > tfoot > tr > td.fail-blink-6,
+.table > thead > tr > th.fail-blink-6,
+.table > tbody > tr > th.fail-blink-6,
+.table > tfoot > tr > th.fail-blink-6,
+.table > thead > tr.fail-blink-6 > td,
+.table > tbody > tr.fail-blink-6 > td,
+.table > tfoot > tr.fail-blink-6 > td,
+.table > thead > tr.fail-blink-6 > th,
+.table > tbody > tr.fail-blink-6 > th,
+.table > tfoot > tr.fail-blink-6 > th {
+  background-color: #fff;
+  
+  -webkit-animation: fail-blink-6-frames 2s;
+   animation: fail-blink-6-frames 2s;
+}
+
+.table-striped > tbody > tr.fail-blink-6:nth-child(odd) > td,
+.table-striped > tbody > tr.fail-blink-6:nth-child(odd) > th {
+  background-color: #f9f9f9;
+  
+  -webkit-animation: fail-blink-6-striped-frames 2s;
+  animation: fail-blink-6-striped-frames 2s;
+}
+
+
+@-webkit-keyframes fail-blink-6-frames {
+    from {background: #f2dede;}
+    to {background: #fff;}
+}
+@keyframes fail-blink-6-frames {
+    from {background: #f2dede;}
+    to {background: #fff;}
+}
+
+
+@-webkit-keyframes fail-blink-6-striped-frames {
+    from {background: #f2dede;}
+    to {background: #f9f9f9;}
+}
+@keyframes fail-blink-6-striped-frames {
+    from {background: #f2dede;}
+    to {background: #f9f9f9;}
+}
+
+
+
+.table > thead > tr > td.fail-blink-7,
+.table > tbody > tr > td.fail-blink-7,
+.table > tfoot > tr > td.fail-blink-7,
+.table > thead > tr > th.fail-blink-7,
+.table > tbody > tr > th.fail-blink-7,
+.table > tfoot > tr > th.fail-blink-7,
+.table > thead > tr.fail-blink-7 > td,
+.table > tbody > tr.fail-blink-7 > td,
+.table > tfoot > tr.fail-blink-7 > td,
+.table > thead > tr.fail-blink-7 > th,
+.table > tbody > tr.fail-blink-7 > th,
+.table > tfoot > tr.fail-blink-7 > th {
+  background-color: #fff;
+  
+  -webkit-animation: fail-blink-7-frames 2s;
+   animation: fail-blink-7-frames 2s;
+}
+
+.table-striped > tbody > tr.fail-blink-7:nth-child(odd) > td,
+.table-striped > tbody > tr.fail-blink-7:nth-child(odd) > th {
+  background-color: #f9f9f9;
+  
+  -webkit-animation: fail-blink-7-striped-frames 2s;
+  animation: fail-blink-7-striped-frames 2s;
+}
+
+
+@-webkit-keyframes fail-blink-7-frames {
+    from {background: #f2dede;}
+    to {background: #fff;}
+}
+@keyframes fail-blink-7-frames {
+    from {background: #f2dede;}
+    to {background: #fff;}
+}
+
+
+@-webkit-keyframes fail-blink-7-striped-frames {
+    from {background: #f2dede;}
+    to {background: #f9f9f9;}
+}
+@keyframes fail-blink-7-striped-frames {
+    from {background: #f2dede;}
+    to {background: #f9f9f9;}
+}
+
+
+
+.table > thead > tr > td.fail-blink-8,
+.table > tbody > tr > td.fail-blink-8,
+.table > tfoot > tr > td.fail-blink-8,
+.table > thead > tr > th.fail-blink-8,
+.table > tbody > tr > th.fail-blink-8,
+.table > tfoot > tr > th.fail-blink-8,
+.table > thead > tr.fail-blink-8 > td,
+.table > tbody > tr.fail-blink-8 > td,
+.table > tfoot > tr.fail-blink-8 > td,
+.table > thead > tr.fail-blink-8 > th,
+.table > tbody > tr.fail-blink-8 > th,
+.table > tfoot > tr.fail-blink-8 > th {
+  background-color: #fff;
+  
+  -webkit-animation: fail-blink-8-frames 2s;
+   animation: fail-blink-8-frames 2s;
+}
+
+.table-striped > tbody > tr.fail-blink-8:nth-child(odd) > td,
+.table-striped > tbody > tr.fail-blink-8:nth-child(odd) > th {
+  background-color: #f9f9f9;
+  
+  -webkit-animation: fail-blink-8-striped-frames 2s;
+  animation: fail-blink-8-striped-frames 2s;
+}
+
+
+@-webkit-keyframes fail-blink-8-frames {
+    from {background: #f2dede;}
+    to {background: #fff;}
+}
+@keyframes fail-blink-8-frames {
+    from {background: #f2dede;}
+    to {background: #fff;}
+}
+
+
+@-webkit-keyframes fail-blink-8-striped-frames {
+    from {background: #f2dede;}
+    to {background: #f9f9f9;}
+}
+@keyframes fail-blink-8-striped-frames {
+    from {background: #f2dede;}
+    to {background: #f9f9f9;}
+}
+
+
+
+.table > thead > tr > td.fail-blink-9,
+.table > tbody > tr > td.fail-blink-9,
+.table > tfoot > tr > td.fail-blink-9,
+.table > thead > tr > th.fail-blink-9,
+.table > tbody > tr > th.fail-blink-9,
+.table > tfoot > tr > th.fail-blink-9,
+.table > thead > tr.fail-blink-9 > td,
+.table > tbody > tr.fail-blink-9 > td,
+.table > tfoot > tr.fail-blink-9 > td,
+.table > thead > tr.fail-blink-9 > th,
+.table > tbody > tr.fail-blink-9 > th,
+.table > tfoot > tr.fail-blink-9 > th {
+  background-color: #fff;
+  
+  -webkit-animation: fail-blink-9-frames 2s;
+   animation: fail-blink-9-frames 2s;
+}
+
+.table-striped > tbody > tr.fail-blink-9:nth-child(odd) > td,
+.table-striped > tbody > tr.fail-blink-9:nth-child(odd) > th {
+  background-color: #f9f9f9;
+  
+  -webkit-animation: fail-blink-9-striped-frames 2s;
+  animation: fail-blink-9-striped-frames 2s;
+}
+
+
+@-webkit-keyframes fail-blink-9-frames {
+    from {background: #f2dede;}
+    to {background: #fff;}
+}
+@keyframes fail-blink-9-frames {
+    from {background: #f2dede;}
+    to {background: #fff;}
+}
+
+
+@-webkit-keyframes fail-blink-9-striped-frames {
+    from {background: #f2dede;}
+    to {background: #f9f9f9;}
+}
+@keyframes fail-blink-9-striped-frames {
+    from {background: #f2dede;}
+    to {background: #f9f9f9;}
+}
+
+
+
+.table > thead > tr > td.fail-blink-0,
+.table > tbody > tr > td.fail-blink-0,
+.table > tfoot > tr > td.fail-blink-0,
+.table > thead > tr > th.fail-blink-0,
+.table > tbody > tr > th.fail-blink-0,
+.table > tfoot > tr > th.fail-blink-0,
+.table > thead > tr.fail-blink-0 > td,
+.table > tbody > tr.fail-blink-0 > td,
+.table > tfoot > tr.fail-blink-0 > td,
+.table > thead > tr.fail-blink-0 > th,
+.table > tbody > tr.fail-blink-0 > th,
+.table > tfoot > tr.fail-blink-0 > th {
+  background-color: #fff;
+  
+  -webkit-animation: fail-blink-0-frames 2s;
+   animation: fail-blink-0-frames 2s;
+}
+
+.table-striped > tbody > tr.fail-blink-0:nth-child(odd) > td,
+.table-striped > tbody > tr.fail-blink-0:nth-child(odd) > th {
+  background-color: #f9f9f9;
+  
+  -webkit-animation: fail-blink-0-striped-frames 2s;
+  animation: fail-blink-0-striped-frames 2s;
+}
+
+
+@-webkit-keyframes fail-blink-0-frames {
+    from {background: #f2dede;}
+    to {background: #fff;}
+}
+@keyframes fail-blink-0-frames {
+    from {background: #f2dede;}
+    to {background: #fff;}
+}
+
+
+@-webkit-keyframes fail-blink-0-striped-frames {
+    from {background: #f2dede;}
+    to {background: #f9f9f9;}
+}
+@keyframes fail-blink-0-striped-frames {
+    from {background: #f2dede;}
+    to {background: #f9f9f9;}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.table > thead > tr > td.success-blink-0,
+.table > tbody > tr > td.success-blink-0,
+.table > tfoot > tr > td.success-blink-0,
+.table > thead > tr > th.success-blink-0,
+.table > tbody > tr > th.success-blink-0,
+.table > tfoot > tr > th.success-blink-0,
+.table > thead > tr.success-blink-0 > td,
+.table > tbody > tr.success-blink-0 > td,
+.table > tfoot > tr.success-blink-0 > td,
+.table > thead > tr.success-blink-0 > th,
+.table > tbody > tr.success-blink-0 > th,
+.table > tfoot > tr.success-blink-0 > th {
+  background-color: #fff;
+  
+  -webkit-animation: success-blink-0-frames 2s;
+   animation: success-blink-0-frames 2s;
+}
+
+.table-striped > tbody > tr.success-blink-0:nth-child(odd) > td,
+.table-striped > tbody > tr.success-blink-0:nth-child(odd) > th {
+  background-color: #f9f9f9;
+  
+  -webkit-animation: success-blink-0-striped-frames 2s;
+   animation: success-blink-0-striped-frames 2s;
+}
+
+
+
+
+@-webkit-keyframes success-blink-0-frames {
+    from {background: #dff0d8;}
+    to {background: #fff;}
+}
+@keyframes success-blink-0-frames {
+    from {background: #dff0d8;}
+    to {background: #fff;}
+}
+
+
+@-webkit-keyframes success-blink-0-striped-frames {
+    from {background: #dff0d8;}
+    to {background: #f9f9f9;}
+}
+@keyframes success-blink-0-striped-frames {
+    from {background: #dff0d8;}
+    to {background: #f9f9f9;}
+}
+
+
+
+
+.table > thead > tr > td.success-blink-1,
+.table > tbody > tr > td.success-blink-1,
+.table > tfoot > tr > td.success-blink-1,
+.table > thead > tr > th.success-blink-1,
+.table > tbody > tr > th.success-blink-1,
+.table > tfoot > tr > th.success-blink-1,
+.table > thead > tr.success-blink-1 > td,
+.table > tbody > tr.success-blink-1 > td,
+.table > tfoot > tr.success-blink-1 > td,
+.table > thead > tr.success-blink-1 > th,
+.table > tbody > tr.success-blink-1 > th,
+.table > tfoot > tr.success-blink-1 > th {
+  background-color: #fff;
+  
+  -webkit-animation: success-blink-1-frames 2s;
+   animation: success-blink-1-frames 2s;
+}
+
+.table-striped > tbody > tr.success-blink-1:nth-child(odd) > td,
+.table-striped > tbody > tr.success-blink-1:nth-child(odd) > th {
+  background-color: #f9f9f9;
+  
+  -webkit-animation: success-blink-1-striped-frames 2s;
+   animation: success-blink-1-striped-frames 2s;
+}
+
+
+
+
+@-webkit-keyframes success-blink-1-frames {
+    from {background: #dff0d8;}
+    to {background: #fff;}
+}
+@keyframes success-blink-1-frames {
+    from {background: #dff0d8;}
+    to {background: #fff;}
+}
+
+
+@-webkit-keyframes success-blink-1-striped-frames {
+    from {background: #dff0d8;}
+    to {background: #f9f9f9;}
+}
+@keyframes success-blink-1-striped-frames {
+    from {background: #dff0d8;}
+    to {background: #f9f9f9;}
+}
+
+
+
+.table > thead > tr > td.success-blink-2,
+.table > tbody > tr > td.success-blink-2,
+.table > tfoot > tr > td.success-blink-2,
+.table > thead > tr > th.success-blink-2,
+.table > tbody > tr > th.success-blink-2,
+.table > tfoot > tr > th.success-blink-2,
+.table > thead > tr.success-blink-2 > td,
+.table > tbody > tr.success-blink-2 > td,
+.table > tfoot > tr.success-blink-2 > td,
+.table > thead > tr.success-blink-2 > th,
+.table > tbody > tr.success-blink-2 > th,
+.table > tfoot > tr.success-blink-2 > th {
+  background-color: #fff;
+  
+  -webkit-animation: success-blink-2-frames 2s;
+   animation: success-blink-2-frames 2s;
+}
+
+.table-striped > tbody > tr.success-blink-2:nth-child(odd) > td,
+.table-striped > tbody > tr.success-blink-2:nth-child(odd) > th {
+  background-color: #f9f9f9;
+  
+  -webkit-animation: success-blink-2-striped-frames 2s;
+   animation: success-blink-2-striped-frames 2s;
+}
+
+
+
+
+@-webkit-keyframes success-blink-2-frames {
+    from {background: #dff0d8;}
+    to {background: #fff;}
+}
+@keyframes success-blink-2-frames {
+    from {background: #dff0d8;}
+    to {background: #fff;}
+}
+
+
+@-webkit-keyframes success-blink-2-striped-frames {
+    from {background: #dff0d8;}
+    to {background: #f9f9f9;}
+}
+@keyframes success-blink-2-striped-frames {
+    from {background: #dff0d8;}
+    to {background: #f9f9f9;}
+}
+
+
+
+
+.table > thead > tr > td.success-blink-3,
+.table > tbody > tr > td.success-blink-3,
+.table > tfoot > tr > td.success-blink-3,
+.table > thead > tr > th.success-blink-3,
+.table > tbody > tr > th.success-blink-3,
+.table > tfoot > tr > th.success-blink-3,
+.table > thead > tr.success-blink-3 > td,
+.table > tbody > tr.success-blink-3 > td,
+.table > tfoot > tr.success-blink-3 > td,
+.table > thead > tr.success-blink-3 > th,
+.table > tbody > tr.success-blink-3 > th,
+.table > tfoot > tr.success-blink-3 > th {
+  background-color: #fff;
+  
+  -webkit-animation: success-blink-3-frames 2s;
+   animation: success-blink-3-frames 2s;
+}
+
+.table-striped > tbody > tr.success-blink-3:nth-child(odd) > td,
+.table-striped > tbody > tr.success-blink-3:nth-child(odd) > th {
+  background-color: #f9f9f9;
+  
+  -webkit-animation: success-blink-3-striped-frames 2s;
+   animation: success-blink-3-striped-frames 2s;
+}
+
+
+
+
+@-webkit-keyframes success-blink-3-frames {
+    from {background: #dff0d8;}
+    to {background: #fff;}
+}
+@keyframes success-blink-3-frames {
+    from {background: #dff0d8;}
+    to {background: #fff;}
+}
+
+
+@-webkit-keyframes success-blink-3-striped-frames {
+    from {background: #dff0d8;}
+    to {background: #f9f9f9;}
+}
+@keyframes success-blink-3-striped-frames {
+    from {background: #dff0d8;}
+    to {background: #f9f9f9;}
+}
+
+
+
+.table > thead > tr > td.success-blink-4,
+.table > tbody > tr > td.success-blink-4,
+.table > tfoot > tr > td.success-blink-4,
+.table > thead > tr > th.success-blink-4,
+.table > tbody > tr > th.success-blink-4,
+.table > tfoot > tr > th.success-blink-4,
+.table > thead > tr.success-blink-4 > td,
+.table > tbody > tr.success-blink-4 > td,
+.table > tfoot > tr.success-blink-4 > td,
+.table > thead > tr.success-blink-4 > th,
+.table > tbody > tr.success-blink-4 > th,
+.table > tfoot > tr.success-blink-4 > th {
+  background-color: #fff;
+  
+  -webkit-animation: success-blink-4-frames 2s;
+   animation: success-blink-4-frames 2s;
+}
+
+.table-striped > tbody > tr.success-blink-4:nth-child(odd) > td,
+.table-striped > tbody > tr.success-blink-4:nth-child(odd) > th {
+  background-color: #f9f9f9;
+  
+  -webkit-animation: success-blink-4-striped-frames 2s;
+   animation: success-blink-4-striped-frames 2s;
+}
+
+
+
+
+@-webkit-keyframes success-blink-4-frames {
+    from {background: #dff0d8;}
+    to {background: #fff;}
+}
+@keyframes success-blink-4-frames {
+    from {background: #dff0d8;}
+    to {background: #fff;}
+}
+
+
+@-webkit-keyframes success-blink-4-striped-frames {
+    from {background: #dff0d8;}
+    to {background: #f9f9f9;}
+}
+@keyframes success-blink-4-striped-frames {
+    from {background: #dff0d8;}
+    to {background: #f9f9f9;}
+}
+
+
+
+
+
+.table > thead > tr > td.success-blink-5,
+.table > tbody > tr > td.success-blink-5,
+.table > tfoot > tr > td.success-blink-5,
+.table > thead > tr > th.success-blink-5,
+.table > tbody > tr > th.success-blink-5,
+.table > tfoot > tr > th.success-blink-5,
+.table > thead > tr.success-blink-5 > td,
+.table > tbody > tr.success-blink-5 > td,
+.table > tfoot > tr.success-blink-5 > td,
+.table > thead > tr.success-blink-5 > th,
+.table > tbody > tr.success-blink-5 > th,
+.table > tfoot > tr.success-blink-5 > th {
+  background-color: #fff;
+  
+  -webkit-animation: success-blink-5-frames 2s;
+   animation: success-blink-5-frames 2s;
+}
+
+.table-striped > tbody > tr.success-blink-5:nth-child(odd) > td,
+.table-striped > tbody > tr.success-blink-5:nth-child(odd) > th {
+  background-color: #f9f9f9;
+  
+  -webkit-animation: success-blink-5-striped-frames 2s;
+   animation: success-blink-5-striped-frames 2s;
+}
+
+
+
+
+@-webkit-keyframes success-blink-5-frames {
+    from {background: #dff0d8;}
+    to {background: #fff;}
+}
+@keyframes success-blink-5-frames {
+    from {background: #dff0d8;}
+    to {background: #fff;}
+}
+
+
+@-webkit-keyframes success-blink-5-striped-frames {
+    from {background: #dff0d8;}
+    to {background: #f9f9f9;}
+}
+@keyframes success-blink-5-striped-frames {
+    from {background: #dff0d8;}
+    to {background: #f9f9f9;}
+}
+
+
+
+
+.table > thead > tr > td.success-blink-6,
+.table > tbody > tr > td.success-blink-6,
+.table > tfoot > tr > td.success-blink-6,
+.table > thead > tr > th.success-blink-6,
+.table > tbody > tr > th.success-blink-6,
+.table > tfoot > tr > th.success-blink-6,
+.table > thead > tr.success-blink-6 > td,
+.table > tbody > tr.success-blink-6 > td,
+.table > tfoot > tr.success-blink-6 > td,
+.table > thead > tr.success-blink-6 > th,
+.table > tbody > tr.success-blink-6 > th,
+.table > tfoot > tr.success-blink-6 > th {
+  background-color: #fff;
+  
+  -webkit-animation: success-blink-6-frames 2s;
+   animation: success-blink-6-frames 2s;
+}
+
+.table-striped > tbody > tr.success-blink-6:nth-child(odd) > td,
+.table-striped > tbody > tr.success-blink-6:nth-child(odd) > th {
+  background-color: #f9f9f9;
+  
+  -webkit-animation: success-blink-6-striped-frames 2s;
+   animation: success-blink-6-striped-frames 2s;
+}
+
+
+
+
+@-webkit-keyframes success-blink-6-frames {
+    from {background: #dff0d8;}
+    to {background: #fff;}
+}
+@keyframes success-blink-6-frames {
+    from {background: #dff0d8;}
+    to {background: #fff;}
+}
+
+
+@-webkit-keyframes success-blink-6-striped-frames {
+    from {background: #dff0d8;}
+    to {background: #f9f9f9;}
+}
+@keyframes success-blink-6-striped-frames {
+    from {background: #dff0d8;}
+    to {background: #f9f9f9;}
+}
+
+
+
+.table > thead > tr > td.success-blink-7,
+.table > tbody > tr > td.success-blink-7,
+.table > tfoot > tr > td.success-blink-7,
+.table > thead > tr > th.success-blink-7,
+.table > tbody > tr > th.success-blink-7,
+.table > tfoot > tr > th.success-blink-7,
+.table > thead > tr.success-blink-7 > td,
+.table > tbody > tr.success-blink-7 > td,
+.table > tfoot > tr.success-blink-7 > td,
+.table > thead > tr.success-blink-7 > th,
+.table > tbody > tr.success-blink-7 > th,
+.table > tfoot > tr.success-blink-7 > th {
+  background-color: #fff;
+  
+  -webkit-animation: success-blink-7-frames 2s;
+   animation: success-blink-7-frames 2s;
+}
+
+.table-striped > tbody > tr.success-blink-7:nth-child(odd) > td,
+.table-striped > tbody > tr.success-blink-7:nth-child(odd) > th {
+  background-color: #f9f9f9;
+  
+  -webkit-animation: success-blink-7-striped-frames 2s;
+   animation: success-blink-7-striped-frames 2s;
+}
+
+
+
+
+@-webkit-keyframes success-blink-7-frames {
+    from {background: #dff0d8;}
+    to {background: #fff;}
+}
+@keyframes success-blink-7-frames {
+    from {background: #dff0d8;}
+    to {background: #fff;}
+}
+
+
+@-webkit-keyframes success-blink-7-striped-frames {
+    from {background: #dff0d8;}
+    to {background: #f9f9f9;}
+}
+@keyframes success-blink-7-striped-frames {
+    from {background: #dff0d8;}
+    to {background: #f9f9f9;}
+}
+
+
+
+
+
+.table > thead > tr > td.success-blink-8,
+.table > tbody > tr > td.success-blink-8,
+.table > tfoot > tr > td.success-blink-8,
+.table > thead > tr > th.success-blink-8,
+.table > tbody > tr > th.success-blink-8,
+.table > tfoot > tr > th.success-blink-8,
+.table > thead > tr.success-blink-8 > td,
+.table > tbody > tr.success-blink-8 > td,
+.table > tfoot > tr.success-blink-8 > td,
+.table > thead > tr.success-blink-8 > th,
+.table > tbody > tr.success-blink-8 > th,
+.table > tfoot > tr.success-blink-8 > th {
+  background-color: #fff;
+  
+  -webkit-animation: success-blink-8-frames 2s;
+   animation: success-blink-8-frames 2s;
+}
+
+.table-striped > tbody > tr.success-blink-8:nth-child(odd) > td,
+.table-striped > tbody > tr.success-blink-8:nth-child(odd) > th {
+  background-color: #f9f9f9;
+  
+  -webkit-animation: success-blink-8-striped-frames 2s;
+   animation: success-blink-8-striped-frames 2s;
+}
+
+
+
+
+@-webkit-keyframes success-blink-8-frames {
+    from {background: #dff0d8;}
+    to {background: #fff;}
+}
+@keyframes success-blink-8-frames {
+    from {background: #dff0d8;}
+    to {background: #fff;}
+}
+
+
+@-webkit-keyframes success-blink-8-striped-frames {
+    from {background: #dff0d8;}
+    to {background: #f9f9f9;}
+}
+@keyframes success-blink-8-striped-frames {
+    from {background: #dff0d8;}
+    to {background: #f9f9f9;}
+}
+
+
+
+
+
+
+.table > thead > tr > td.success-blink-9,
+.table > tbody > tr > td.success-blink-9,
+.table > tfoot > tr > td.success-blink-9,
+.table > thead > tr > th.success-blink-9,
+.table > tbody > tr > th.success-blink-9,
+.table > tfoot > tr > th.success-blink-9,
+.table > thead > tr.success-blink-9 > td,
+.table > tbody > tr.success-blink-9 > td,
+.table > tfoot > tr.success-blink-9 > td,
+.table > thead > tr.success-blink-9 > th,
+.table > tbody > tr.success-blink-9 > th,
+.table > tfoot > tr.success-blink-9 > th {
+  background-color: #fff;
+  
+  -webkit-animation: success-blink-9-frames 2s;
+   animation: success-blink-9-frames 2s;
+}
+
+.table-striped > tbody > tr.success-blink-9:nth-child(odd) > td,
+.table-striped > tbody > tr.success-blink-9:nth-child(odd) > th {
+  background-color: #f9f9f9;
+  
+  -webkit-animation: success-blink-9-striped-frames 2s;
+   animation: success-blink-9-striped-frames 2s;
+}
+
+
+
+
+@-webkit-keyframes success-blink-9-frames {
+    from {background: #dff0d8;}
+    to {background: #fff;}
+}
+@keyframes success-blink-9-frames {
+    from {background: #dff0d8;}
+    to {background: #fff;}
+}
+
+
+@-webkit-keyframes success-blink-9-striped-frames {
+    from {background: #dff0d8;}
+    to {background: #f9f9f9;}
+}
+@keyframes success-blink-9-striped-frames {
+    from {background: #dff0d8;}
+    to {background: #f9f9f9;}
+}
+
+
+
+
+
+

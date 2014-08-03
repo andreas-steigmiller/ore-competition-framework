@@ -1,0 +1,212 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="ico/favicon.ico">
+
+    <title>ORE 2014 Live Competition</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="starter-template.css" rel="stylesheet">
+
+    <!-- Just for debugging purposes. Don't actually copy this line! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+
+    <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" class="active" href="index.html">ORE 2014</a>
+        </div>
+        <div class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="live.html"><span class="glyphicon glyphicon-star-empty"></span> Live</a></li>
+            <li><a href="results.html"><span class="glyphicon glyphicon-stats"></span> Results</a></li>
+            <li class="active"><a href="reasoners.html">Reasoners</a></li>
+	    <li><a href="disciplines.html">Disciplines</a></li>
+            <li><a href="ontologies.html">Ontologies</a></li>
+            <li><a href="about.html">About</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </div>
+
+    <div class="container">
+
+      <div class="content-template">
+<h2>Participating Systems</h2>
+<ul>
+  
+<li><strong><a href="http://sourceforge.net/projects/chainsaw/"
+  target="_blank" id="chainsaw">Chainsaw</a></strong> (1.0, using FaCT++ 1.6.3)<br>Chainsaw is a modular SROIQ reasoner for very
+  large ontologies. It uses Atomic Decomposition and a pool of
+  reasoners. To answer a certain query it choose a reasoner that
+  contains a module suitable for that query and query that reasoner
+  instead.<br>
+  <table>
+    <tr><td>License: </td><td><a href="https://www.gnu.org/licenses/old-licenses/gpl-2.0.html"
+  target="_blank">LGPL v2</a></td></tr>
+  <tr><td>Developers:&nbsp;</td><td>Dmitry Tsarkov, Ignazio Palmisano</td></tr>
+  <tr><td>Disciplines:&nbsp;</td><td><a href="disciplines.html#dlclassification">OWL DL Classification</a>, <a href="disciplines.html#elclassification">OWL EL Classification</a>, <a href="disciplines.html#dlconsistency">OWL DL Consistency</a>, <a href="disciplines.html#elconsistency">OWL EL Consistency</a></td></tr></table>
+  </li>
+  
+<li><strong><a href="https://code.google.com/p/elephant-reasoner/"
+  target="_blank" id="elephant">ELepHant</a></strong> (0.3.3)<br>ELepHant is a
+  consequence-based reasoner for the OWL 2 EL fragment. Its aims are
+  scalability to large ontologies and high-performance even on limited
+  hardware. Currently supports a subset of the whole OWL2 EL profile
+  and only has a command line interface that can parse ontologies in
+  functional style syntax.<br>
+  <table>
+    <tr><td>License: </td><td><a href="http://www.apache.org/licenses/LICENSE-2.0.html"
+  target="_blank">Apache Licence 2.0</a></td></tr>
+  <tr><td>Developer:&nbsp;</td><td>Baris Sertkaya</td></tr>
+  <tr><td>Disciplines:&nbsp;</td><td><a href="disciplines.html#elclassification">OWL EL Classification</a>, <a href="disciplines.html#elconsistency">OWL EL Consistency</a>, <a href="disciplines.html#elrealisation">OWL EL Realisation</a></td></tr></table>
+  </li>
+
+  <li><strong><a href="http://code.google.com/p/elk-reasoner/"
+  target="_blank" id="elk">ELK</a></strong> (0.5.0, unreleased)<br>ELK is a fast reasoner for OWL 2
+  EL ontologies. Its distinctive feature is a parallel EL saturation
+  procedure which concurrently computes super classes for each named
+  class in the ontology.<br>
+  <table>
+    <tr><td>License: </td><td><a href="http://www.apache.org/licenses/LICENSE-2.0.html"
+  target="_blank">Apache Licence 2.0</a></td></tr>
+  <tr><td>Developers:&nbsp;</td><td>Yevgeny Kazakov, Markus Krötzsch, František Simančík, Pavel Klinov</td></tr>
+  <tr><td>Disciplines:</td><td><a href="disciplines.html#elclassification">OWL EL Classification</a>, <a href="disciplines.html#elconsistency">OWL EL Consistency</a>, <a href="disciplines.html#elrealisation">OWL EL Realisation</a></td></tr></table>
+  </li>
+
+  <li><strong><a href="http://code.google.com/p/factplusplus/"
+  target="_blank" id="fact">FaCT++</a></strong> (1.6.3)<br>FaCT++ is the highly optimised tableaux-based SROIQ reasoner.<br>
+  <table>
+    <tr><td>License: </td><td><a href="https://www.gnu.org/licenses/old-licenses/gpl-2.0.html"
+  target="_blank">LGPL v2</a></td></tr>
+  <tr><td>Developer:&nbsp;</td><td>Dmitry Tsarkov</td></tr>
+  <tr><td>Disciplines:&nbsp;</td><td><a href="disciplines.html#dlclassification">OWL DL Classification</a>, <a href="disciplines.html#elclassification">OWL EL Classification</a>, <a href="disciplines.html#dlconsistency">OWL DL Consistency</a>, <a href="disciplines.html#elconsistency">OWL EL Consistency</a>, <a href="disciplines.html#dlrealisation">OWL DL Realisation</a>, <a href="disciplines.html#elrealisation">OWL EL Realisation</a></td></tr></table>
+  </li>
+
+  <li><strong><a href="http://www.hermit-reasoner.com/"
+  target="_blank" id="hermit">HermiT</a></strong> (1.3.8.1145)<br>HermiT is a
+  conformant OWL 2 DL reasoner that uses the direct semantics. It
+  supports all OWL 2 DL constructs and the datatypes required by the
+  OWL 2 specification.  HermiT is based on the hypertableau
+  calculus.<br>
+  <table>
+    <tr><td>License: </td><td><a href="https://www.gnu.org/licenses/lgpl.html"
+  target="_blank">LGPL 3.0</a></td></tr>
+  <tr><td>Developers:&nbsp;</td><td>Boris Motik, Rob Shearer, Birte Glimm, Giorgos Stoilos, and Ian Horrocks </td></tr>
+  <tr><td>Disciplines:</td><td><a href="disciplines.html#dlclassification">OWL DL Classification</a>, <a href="disciplines.html#elclassification">OWL EL Classification</a>, <a href="disciplines.html#dlconsistency">OWL DL Consistency</a>, <a href="disciplines.html#elconsistency">OWL EL Consistency</a>, <a href="disciplines.html#dlrealisation">OWL DL Realisation</a>, <a href="disciplines.html#elrealisation">OWL EL Realisation</a></td></tr></table>
+  </li>
+
+  <li><strong><a href="http://jcel.sourceforge.net/"
+  target="_blank" id="jcel">jcel</a></strong> (0.20.0)<br>jcel is a reasoner for
+  the description logic EL+ that uses a rule-based completion
+  algorithm.  jcel implements a subset of the OWL 2 EL profile, and
+  can be used as a Java library or as a Protege plug-in.<br>
+  <table>
+    <tr><td>License: </td><td><a href="http://www.apache.org/licenses/LICENSE-2.0.html"
+  target="_blank">Apache Licence 2.0</a></td></tr>
+  <tr><td>Developer:&nbsp;</td><td>Julian Mendez</td></tr>
+  <tr><td>Disciplines:</td><td><a href="disciplines.html#elclassification">OWL EL Classification</a>, <a href="disciplines.html#elconsistency">OWL EL Consistency</a></td></tr></table>
+  </li>
+
+<li><strong><a href="http://sourceforge.net/projects/jfact/"
+  target="_blank" id="jfact">JFact</a></strong> (1.2.2)<br>JFact is a Java port
+  of the FaCT++ OWL DL reasoner with an improved datatype support.<br>
+  <table>
+    <tr><td>License: </td><td><a href="https://www.gnu.org/licenses/old-licenses/gpl-2.0.html"
+  target="_blank">LGPL v2</a></td></tr>
+  <tr><td>Developers:&nbsp;</td><td>Dmitry Tsarkov, Ignazio Palmisano</td></tr>
+  <tr><td>Disciplines:&nbsp;</td><td><a href="disciplines.html#dlclassification">OWL DL Classification</a>, <a href="disciplines.html#elclassification">OWL EL Classification</a>, <a href="disciplines.html#dlconsistency">OWL DL Consistency</a>, <a href="disciplines.html#elconsistency">OWL EL Consistency</a>, <a href="disciplines.html#dlrealisation">OWL DL Realisation</a>, <a href="disciplines.html#elrealisation">OWL EL Realisation</a></td></tr></table>
+  </li>
+
+<li><strong><a href="http://konclude.com"
+  target="_blank" id="konclude">Konclude</a></strong> (0.5.3-386)<br>Konclude is a
+  parallel, high-performance reasoner for the Description Logic
+  SROIQV(D). It is implemented in C++ and uses a reasoning technique
+  that is based on a highly optimized tableau algorithm assisted by a
+  completion-based saturation procedure.<br>
+  <table>
+    <tr><td>License: </td><td><a href="https://www.gnu.org/licenses/lgpl.html"
+  target="_blank">LGPL 3.0</a></td></tr>
+  <tr><td>Developers:&nbsp;</td><td>Andreas Steigmiller, Thorsten Liebig, Birte Glimm</td></tr>
+  <tr><td>Disciplines:&nbsp;</td><td><a href="disciplines.html#dlclassification">OWL DL Classification</a>, <a href="disciplines.html#elclassification">OWL EL Classification</a>, <a href="disciplines.html#dlconsistency">OWL DL Consistency</a>, <a href="disciplines.html#elconsistency">OWL EL Consistency</a>, <a href="disciplines.html#dlrealisation">OWL DL Realisation</a>, <a href="disciplines.html#elrealisation">OWL EL Realisation</a></td></tr></table>
+  </li>
+
+  <li><strong><a href="http://code.google.com/p/more-reasoner/"
+  target="_blank" id="more">MORe</a></strong> (0.1.7)<br>MORe exploits module
+  extraction techniques to divide the workload of ontology reasoning
+  between a reasoner for a lightweight fragment of OWL 2 and a fully
+  fledged OWL 2 reasoner.<br>
+  <table>
+    <tr><td>License: </td><td><a href="https://www.gnu.org/licenses/lgpl.html"
+  target="_blank">LGPL 3.0</a></td></tr>
+  <tr><td>Developers:&nbsp;</td><td>Ana Armas Romero, Ernesto Jimenez Ruiz, Bernardo Cuenca Grau, Ian Horrocks, Cristina Feier</td></tr>
+  <tr><td>Disciplines:&nbsp;</td><td><a href="disciplines.html#dlclassification">OWL DL Classification</a>, <a href="disciplines.html#elclassification">OWL EL Classification</a>, <a href="disciplines.html#dlconsistency">OWL DL Consistency</a>, <a href="disciplines.html#elconsistency">OWL EL Consistency</a></td></tr></table>
+  </li>
+
+  <li><strong><a href="https://code.google.com/p/treasoner/"
+  target="_blank" id="treasoner">TReasoner</a></strong> (1.0.1)<br>TReasoner is a
+  system for automated reasoning. It implements the classical tableau
+  algorithm for the Description Logic SHOIQ with some optimisations
+  and datatype support.<br>
+  <table>
+    <tr><td>License: </td><td><a href="https://www.gnu.org/licenses/old-licenses/gpl-2.0.html"
+  target="_blank">LGPL v2</a></td></tr>
+  <tr><td>Developer:&nbsp;</td><td>Andrey Grigoryev</td></tr>
+  <tr><td>Disciplines:&nbsp;</td><td><a href="disciplines.html#dlclassification">OWL DL Classification</a>, <a href="disciplines.html#elclassification">OWL EL Classification</a>, <a href="disciplines.html#dlconsistency">OWL DL Consistency</a>, <a href="disciplines.html#elconsistency">OWL EL Consistency</a></td></tr></table>
+  </li>
+
+    <li><strong><a href="http://trowl.eu/"
+  target="_blank" id="trowl">TrOWL</a></strong> (1.4)<br>TrOWL is a tractable
+  reasoning infrastructure for OWL 2, supporting both TBox and ABox
+  reasoning, as well as conjunctive query answering in SPARQL.<br>
+  <table>
+    <tr><td valign="top">License: </td><td>Dual license<br>
+      For open source applications: <a href="http://www.gnu.org/licenses/agpl-3.0.html"
+  target="_blank">AGPL</a><br>For proprietary, closed source applications, and other commercial applications, TrOWL is available under alternative license terms.</td></tr>
+  <tr><td>Developers:&nbsp;</td><td>Jeff Z. Pan, Yuan Ren, Edward Thomas, Nophadol Jekjantuk, Stuart Taylor, Jhonatan Garcia</td></tr>
+  <tr><td>Disciplines:&nbsp;</td><td><a href="disciplines.html#dlclassification">OWL DL Classification</a>, <a href="disciplines.html#elclassification">OWL EL Classification</a>, <a href="disciplines.html#dlrealisation">OWL DL Realisation</a>, <a href="disciplines.html#elrealisation">OWL EL Realisation</a></td></tr></table>
+  </li>
+  
+</ul>
+
+      </div>
+	  
+	  
+
+	  
+
+    </div><!-- /.container -->
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/navigation.js"></script>
+  </body>
+</html>
