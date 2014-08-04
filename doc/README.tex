@@ -124,11 +124,14 @@ Note that there is also a 'query-execution-time-sorted.txt' file in the 'evaluat
 \end{enumerate}
 
 
-Note that the 'scripts/evaluate-competition.sh' executes a competition sequentially. 
+Note that the script 'scripts/evaluate-competition.sh' executes a competition sequentially. 
 You can also execute a competition in parallel by creating a competition server (e.g., with the script 'scripts/competition-server.sh') and by starting (several) clients (e.g., with the script 'scripts/client.sh').
 The clients can be started on different machines/computers, however, it is required that they are started within the same directory and that the path to this directory is the same for all clients and the competition server (otherwise some data can possibly not be correctly accessed).
 You can also create a web server in order to see the current status of the competition (e.g., by executing the script 'scripts/status-web-server.sh').
-Note that as many clients are required as reasoners are used in the competition if 'org.semanticweb.ore.competition.executorperreasoner' is set to 'TRUE' in the configuration file.
+Note that as many clients are required as reasoners are used in the competition if 'org.semanticweb.ore.competition.executorperreasoner' is set to 'TRUE' in the configuration file (by default it is set to 'FALSE').
+
+As an example, you can start the small test competition ('data/competitions/test-dl-classification-linux.dat') by executing the script 'scripts/evaluate-competition.sh' or by creating a corresponding competition server (e.g., with the script 'scripts/competition-server-test.sh') and by starting an evaluation client (e.g., with the script 'scripts/local-client.sh').
+The web server can be started with the script 'scripts/local-status-web-server.sh' and can be accessed at \url{http://localhost:8008/}.
 
 
 \section{ORE 2014 Live Competition}
@@ -138,9 +141,9 @@ The ORE 2014 Live Competition consists of the following components and packages:
 \begin{itemize}
 \item The ORE 2014 Competition Framework, available at \url{https://github.com/andreas-steigmiller/ore-2014-competition-framework}, encapsulates the binaries, source code, and documentation to reproduce the competition (this read-me is also part of this framework).
 \item The ORE 2014 Dataset, available at \url{https://zenodo.org/record/10791}, contains (a superset of) the evaluated ontologies.
-\item The ORE 2014 Reasoners package, available at \url{https://zenodo.org/record/10791}, contains the reasoners that have participated in the ORE 2014 Live Competition.
+\item The ORE 2014 Reasoners package, available at \url{https://zenodo.org/record/11145}, contains the reasoners that have participated in the ORE 2014 Live Competition.
 \item The ORE 2014 Live Competition Queries package, available at \url{https://zenodo.org/record/11133}, contains the queries and configuration files for the ORE 2014 Live Competition.
-\item The ORE 2014 Live Competition Results package, available at \url{https://zenodo.org/record/10791}, contains the logs, reasoner responses, and evaluation results of the ORE 2014 Live Competition.
+\item The ORE 2014 Live Competition Results package, available at \url{https://zenodo.org/record/11142}, contains the logs, reasoner responses, and evaluation results of the ORE 2014 Live Competition.
 \end{itemize}
 
 Note that, depending on the purpose, only some of the packages are required. 

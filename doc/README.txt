@@ -179,9 +179,9 @@ respectively):
     the competition file in order to specify the order in which the
     queries have to be executed.
 
-Note that the ’scripts/evaluate-competition.sh’ executes a competition
-sequentially. You can also execute a competition in parallel by creating
-a competition server (e.g., with the script
+Note that the script ’scripts/evaluate-competition.sh’ executes a
+competition sequentially. You can also execute a competition in parallel
+by creating a competition server (e.g., with the script
 ’scripts/competition-server.sh’) and by starting (several) clients
 (e.g., with the script ’scripts/client.sh’). The clients can be started
 on different machines/computers, however, it is required that they are
@@ -192,7 +192,16 @@ server in order to see the current status of the competition (e.g., by
 executing the script ’scripts/status-web-server.sh’). Note that as many
 clients are required as reasoners are used in the competition if
 ’org.semanticweb.ore.competition.executorperreasoner’ is set to ’TRUE’
-in the configuration file.
+in the configuration file (by default it is set to ’FALSE’).
+
+As an example, you can start the small test competition
+(’data/competitions/test-dl-classification-linux.dat’) by executing the
+script ’scripts/evaluate-competition.sh’ or by creating a corresponding
+competition server (e.g., with the script
+’scripts/competition-server-test.sh’) and by starting an evaluation
+client (e.g., with the script ’scripts/local-client.sh’). The web server
+can be started with the script ’scripts/local-status-web-server.sh’ and
+can be accessed at <http://localhost:8008/>.
 
 ORE 2014 Live Competition
 =========================
@@ -211,7 +220,7 @@ packages:
     evaluated ontologies.
 
 -   The ORE 2014 Reasoners package, available at
-    <https://zenodo.org/record/10791>, contains the reasoners that have
+    <https://zenodo.org/record/11145>, contains the reasoners that have
     participated in the ORE 2014 Live Competition.
 
 -   The ORE 2014 Live Competition Queries package, available at
@@ -219,7 +228,7 @@ packages:
     configuration files for the ORE 2014 Live Competition.
 
 -   The ORE 2014 Live Competition Results package, available at
-    <https://zenodo.org/record/10791>, contains the logs, reasoner
+    <https://zenodo.org/record/11142>, contains the logs, reasoner
     responses, and evaluation results of the ORE 2014 Live Competition.
 
 Note that, depending on the purpose, only some of the packages are
