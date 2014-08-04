@@ -102,14 +102,14 @@ The organisation of the competition framework is as follows:
     and realisation queries that refer to the ontologies in the
     ’data/ontologies/’ directory.
 
--   The responses and results of the reasoners as well as the evaluation
-    data are written into sub-directories of the ’data/responses/’
+-   The evaluation data as well as the responses and results of the
+    reasoners are written into sub-directories of the ’data/responses/’
     folder.
 
 -   Expected results are stored in the ’data/expectations/’ directory.
 
 -   Data about competitions are stored in the ’data/competitions/’
-    directory.
+    folder.
 
 -   The ’data/configs/’ directory contains configurations for the
     execution of the evaluations (e.g., timeouts). The
@@ -156,7 +156,7 @@ respectively):
     ’data/queries/’ directory. If specified in the competition file,
     then the loaded queries are also filtered and sorted.
 
-6.  Then the queries are executed for each reasoner by the competition
+6.  The queries are then executed for each reasoner by the competition
     framework and the results of the reasoners are parsed and
     normalised. If expected results are available for the queries, then
     the hash codes of the reasoner results are compared to the expected
@@ -201,7 +201,7 @@ The ORE 2014 Live Competition consists of the following components and
 packages:
 
 -   The ORE 2014 Competition Framework, available at
-    <https://bitbucket.org/andreas-steigmiller/ore-2014-competition-framework>,
+    <https://github.com/andreas-steigmiller/ore-2014-competition-framework>,
     encapsulates the binaries, source code, and documentation to
     reproduce the competition (this read-me is also part of this
     framework).
@@ -215,7 +215,7 @@ packages:
     participated in the ORE 2014 Live Competition.
 
 -   The ORE 2014 Live Competition Queries package, available at
-    <https://zenodo.org/record/10791>, contains the queries and
+    <https://zenodo.org/record/11133>, contains the queries and
     configuration files for the ORE 2014 Live Competition.
 
 -   The ORE 2014 Live Competition Results package, available at

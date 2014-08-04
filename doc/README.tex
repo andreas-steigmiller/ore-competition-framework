@@ -92,9 +92,9 @@ The organisation of the competition framework is as follows:
 \item Starter scripts are stored in the 'scripts' folder and they can be used to start many components with default arguments.
 \item The 'data/reasoners/' and 'data/ontologies/' directories contain the reasoners and the ontologies, respectively.
 \item The 'data/queries/' directory contains classification, consistency, and realisation queries that refer to the ontologies in the 'data/ontologies/' directory.
-\item The responses and results of the reasoners as well as the evaluation data are written into sub-directories of the 'data/responses/' folder.
+\item The evaluation data as well as the responses and results of the reasoners are written into sub-directories of the 'data/responses/' folder.
 \item Expected results are stored in the 'data/expectations/' directory.
-\item Data about competitions are stored in the 'data/competitions/' directory.
+\item Data about competitions are stored in the 'data/competitions/' folder.
 \item The 'data/configs/' directory contains configurations for the execution of the evaluations (e.g., timeouts). The 'default-config.dat' configuration is loaded by default, other configurations can be used by passing their file name as additional argument to the competition framework (e.g., './test-classification.sh hermit-linux other-config.dat').
 \item Logs from the execution of the competition framework are appended to the 'log.txt' file in the 'data/logs/' directory.
 \item The 'data/conversions/' directory is used to cache converted ontologies in the corresponding serialisation format if this is requested by a reasoner.
@@ -114,7 +114,7 @@ The competition framework works in principle as follows (the examples use the sy
 \item The competition has to be started, e.g., by calling the script 'scripts/evaluate-competition.sh' with the competition file as first argument.
 \item The competition framework tries to load the reasoners specified in the competition files and the corresponding queries in the 'data/queries/' directory. 
 If specified in the competition file, then the loaded queries are also filtered and sorted.
-\item Then the queries are executed for each reasoner by the competition framework and the results of the reasoners are parsed and normalised. 
+\item The queries are then executed for each reasoner by the competition framework and the results of the reasoners are parsed and normalised. 
 If expected results are available for the queries, then the hash codes of the reasoner results are compared to the expected results. 
 The expected results have to be in corresponding subdirectories of the 'data/expectations/' directory.
 \item The competition framework generates the evaluation data as soon as all queries for all reasoners have been executed.
@@ -136,10 +136,10 @@ Note that as many clients are required as reasoners are used in the competition 
 
 The ORE 2014 Live Competition consists of the following components and packages:
 \begin{itemize}
-\item The ORE 2014 Competition Framework, available at \url{https://bitbucket.org/andreas-steigmiller/ore-2014-competition-framework}, encapsulates the binaries, source code, and documentation to reproduce the competition (this read-me is also part of this framework).
+\item The ORE 2014 Competition Framework, available at \url{https://github.com/andreas-steigmiller/ore-2014-competition-framework}, encapsulates the binaries, source code, and documentation to reproduce the competition (this read-me is also part of this framework).
 \item The ORE 2014 Dataset, available at \url{https://zenodo.org/record/10791}, contains (a superset of) the evaluated ontologies.
 \item The ORE 2014 Reasoners package, available at \url{https://zenodo.org/record/10791}, contains the reasoners that have participated in the ORE 2014 Live Competition.
-\item The ORE 2014 Live Competition Queries package, available at \url{https://zenodo.org/record/10791}, contains the queries and configuration files for the ORE 2014 Live Competition.
+\item The ORE 2014 Live Competition Queries package, available at \url{https://zenodo.org/record/11133}, contains the queries and configuration files for the ORE 2014 Live Competition.
 \item The ORE 2014 Live Competition Results package, available at \url{https://zenodo.org/record/10791}, contains the logs, reasoner responses, and evaluation results of the ORE 2014 Live Competition.
 \end{itemize}
 
