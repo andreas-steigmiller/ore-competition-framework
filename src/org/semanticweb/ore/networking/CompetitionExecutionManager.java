@@ -362,7 +362,7 @@ public class CompetitionExecutionManager extends EventThread implements Executio
 		if (mFinishedExecution) {
 			return false;
 		}
-		return !mCompetitionHandler.isCompetitionExecutionCompleted();
+		return mCompetitionHandler.getMaximumRemainingTaskCount() > 0;
 	}
 
 
