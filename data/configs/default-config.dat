@@ -48,12 +48,12 @@ org.semanticweb.ore.responses.writenormalisedresults	TRUE
 
 # If set to 'TRUE', then the competition is only executed if for every reasoner one client is available.
 # If set to 'FALSE', then the competition is also executed if only one client is available.
-org.semanticweb.ore.competition.executorperreasoner	TRUE
+org.semanticweb.ore.competition.executorperreasoner	FALSE
 
 
 # If set to 'TRUE', then the competition is paused if the contact with a client is lost (should not happen)
-# and no other client are available that can be used instead of the lost one.
-org.semanticweb.ore.competition.continueexecutorloss	FALSE
+# and no other client is available that can be used instead of the lost one.
+org.semanticweb.ore.competition.continueexecutorloss	TRUE
 
 
 

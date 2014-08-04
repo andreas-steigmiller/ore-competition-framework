@@ -349,7 +349,7 @@ public class CompetitionExecutionManager extends EventThread implements Executio
 			return false; 
 		} else {
 			if (mRequiresExecutionHandlerPerReasoner) {
-				return totalCount <= mProcessingReasonerCount;
+				return totalCount <= mProcessingReasonerCount && canProvideMoreExecutionTask();
 			} else {
 				return canProvideMoreExecutionTask();
 			}
