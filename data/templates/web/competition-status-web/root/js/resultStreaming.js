@@ -1,9 +1,12 @@
 var streaming = false;
+var restartStreaming = false;
 var updateID = 0;
+var reconnectionRate = 100;
 var lastRefreshDate = new Date();
 
 function processStreamedDataLine(line) {
 	var dataStrings = line.split('\t');
+	var succProcessed = false;
 	if (dataStrings.length >= 1) {
 		var commandString = dataStrings[0];
 		
@@ -11,60 +14,80 @@ function processStreamedDataLine(line) {
 			var elementID = dataStrings[1];
 			var replaceValue = dataStrings[2];
 			var element = document.getElementById(elementID);
-			element.innerHTML = replaceValue;
+			if (element) {
+				element.innerHTML = replaceValue;
+			}
+			succProcessed = true;
 		} else if (commandString == "USW") {
 			var elementID = dataStrings[1];
 			var replaceValue = dataStrings[2];
 			var element = document.getElementById(elementID);
-			element.style.width = replaceValue;
+			if (element) {
+				element.style.width = replaceValue;
+			}
+			succProcessed = true;
 		} else if (commandString == "SOC") {		
 			var time = dataStrings[1];
 			var countdown = dataStrings[2];
 			var counterIDString = dataStrings[3];
 			var showTextValue = dataStrings[4];			
 			overlay(showTextValue,time,countdown,counterIDString);
+			succProcessed = true;
 		} else if (commandString == "UCL") {
 			var elementID = dataStrings[1];
 			var replaceValue = dataStrings[2];
 			var element = document.getElementById(elementID);
-			element.className = '';
-			setTimeout(function(){
-				element.className = replaceValue;
-			},10);
+			if (element) {
+				element.className = '';
+				setTimeout(function(){
+					element.className = replaceValue;
+				},10);
+			}
+			succProcessed = true;
 		} else if (commandString == "UBA") {
 			var elementID = dataStrings[1];
 			var replaceValue = dataStrings[2];
 			var element = document.getElementById(elementID);
-			var blinkID = 0;
-			if (element.blinkID) {
-				blinkID = element.blinkID;
+			if (element) {
+				var blinkID = 0;
+				if (element.blinkID) {
+					blinkID = element.blinkID;
+				}
+				var nextBlinkID = blinkID+1;
+				if (nextBlinkID >= 10) {
+					nextBlinkID = 0;
+				}
+				element.blinkID = nextBlinkID;
+				element.style.animationName = '';
+				element.style.animation = '';
+				element.className = '';
+				setTimeout(function(){
+					element.className = replaceValue+'-'+nextBlinkID;
+				},10);
 			}
-			var nextBlinkID = blinkID+1;
-			if (nextBlinkID >= 10) {
-				nextBlinkID = 0;
-			}
-			element.blinkID = nextBlinkID;
-			element.style.animationName = '';
-			element.style.animation = '';
-			element.className = '';
-			setTimeout(function(){
-				element.className = replaceValue+'-'+nextBlinkID;
-			},10);
+			succProcessed = true;
 		} else if (commandString == "TUCL") {
 			var elementID = dataStrings[1];
 			var replaceValue = dataStrings[2];
 			var time = dataStrings[3];
 			var element = document.getElementById(elementID);
-			updateID = updateID+1;
-			var localUpdateID = updateID;
-			element.updateID = localUpdateID;
-			setTimeout(function(){
-				var elementT = document.getElementById(elementID);
-				if (elementT != null && elementT.updateID == localUpdateID) {
-					elementT.className = replaceValue;
-				}
-			},time);
+			if (element) {
+				updateID = updateID+1;
+				var localUpdateID = updateID;
+				element.updateID = localUpdateID;
+				setTimeout(function(){
+					var elementT = document.getElementById(elementID);
+					if (elementT != null && elementT.updateID == localUpdateID) {
+						elementT.className = replaceValue;
+					}
+				},time);
+			}
+			succProcessed = true;
 		}
+	}
+
+	if (succProcessed == true) {
+		reconnectionRate = 500;
 	}
 	
 }
@@ -119,6 +142,14 @@ function checkCriticalRefreshTime() {
 checkCriticalRefreshTime();
 setInterval(function(){checkCriticalRefreshTime()}, 1000*60);
 
+
+function increaseReconnectionRate() {
+	reconnectionRate = reconnectionRate*2;
+	if (reconnectionRate > 600000) {
+		reconnectionRate = 600000;
+	}	
+}
+
 function resultDataStreaming(requestParam) {
 	if (!window.XMLHttpRequest) {
 		return;
@@ -127,6 +158,7 @@ function resultDataStreaming(requestParam) {
 		return
 	}
 	streaming = true;
+	restartStreaming = false;
 	 
 	try {
 		var xhr = new XMLHttpRequest();  
@@ -136,9 +168,13 @@ function resultDataStreaming(requestParam) {
 		xhr.onerror = function() { 
 			streaming = false;
 			removeOverlay();
-			window.setTimeout(function(){
-				resultDataStreaming(requestParam);
-			},60000); 
+			if (!restartStreaming) {
+				restartStreaming = true;
+				window.setTimeout(function(){
+					resultDataStreaming(requestParam);
+				},reconnectionRate); 
+				increaseReconnectionRate();		
+			}
 		};
 		
 		xhr.onreadystatechange = function() {
@@ -159,13 +195,28 @@ function resultDataStreaming(requestParam) {
 						} catch (e) {
 						}						
 					}
+					if (nextLinePos > 5000000) {
+						streaming = false;						
+						xhr.abort();
+						if (!restartStreaming) {
+							restartStreaming = true;
+							window.setTimeout(function(){
+								resultDataStreaming(requestParam);
+							},reconnectionRate);
+							increaseReconnectionRate();		
+						}
+					}
 				}   
 				if (xhr.readyState == 4) {
 					streaming = false;
 					removeOverlay();
-					window.setTimeout(function(){
-						resultDataStreaming(requestParam);
-					},60000);
+					if (!restartStreaming) {
+						restartStreaming = true;					
+						window.setTimeout(function(){
+							resultDataStreaming(requestParam);
+						},reconnectionRate);
+						increaseReconnectionRate();		
+					}
 				}
 			} catch (e) {
 			}                

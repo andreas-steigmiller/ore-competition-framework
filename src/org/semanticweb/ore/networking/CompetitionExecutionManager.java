@@ -93,6 +93,7 @@ public class CompetitionExecutionManager extends EventThread implements Executio
 			mContinueExecutorLoss = true;
 		}
 		
+		
 		startThread();
 	}	
 	
@@ -155,21 +156,25 @@ public class CompetitionExecutionManager extends EventThread implements Executio
 					if (validDate) {
 						if (mHandlerCount < mProcessingReasonerCount || mHandlerCount > mProcessingReasonerCount) {
 							
-							if (mFixedHandlerReasonerAssociation) {
-								for (Entry<ExecutionTaskHandler,ExecutionTaskHandlerItem> entry : mHandlerItemMap.entrySet()) {
-									entry.getValue().clearAssociatedReasoner();
-								}
-								mAssociatedReasonerSet.clear();
-							}
 							
-							if (mContinueExecutorLoss || mHandlerCount > mProcessingReasonerCount) {
-								if (mFixedHandlerReasonerAssociation) {								
-									mLogger.info("Switching to free association of execution handlers with reasoners.");
-									mFixedHandlerReasonerAssociation = false;
-								}					
-								executionTask = mCompetitionHandler.getNextCompetitionExecutionTask();
-							} else {
-								mRestartExecution = true;
+							if (!mRequiresExecutionHandlerPerReasoner || mHandlerCount < mProcessingReasonerCount) {						
+							
+								if (mFixedHandlerReasonerAssociation) {
+									for (Entry<ExecutionTaskHandler,ExecutionTaskHandlerItem> entry : mHandlerItemMap.entrySet()) {
+										entry.getValue().clearAssociatedReasoner();
+									}
+									mAssociatedReasonerSet.clear();
+								}
+								
+								if (mContinueExecutorLoss || mHandlerCount > mProcessingReasonerCount) {
+									if (mFixedHandlerReasonerAssociation) {								
+										mLogger.info("Switching to free association of execution handlers with reasoners.");
+										mFixedHandlerReasonerAssociation = false;
+									}					
+									executionTask = mCompetitionHandler.getNextCompetitionExecutionTask();
+								} else {
+									mRestartExecution = true;
+								}
 							}
 						} else {	
 							if (!mFixedHandlerReasonerAssociation) {

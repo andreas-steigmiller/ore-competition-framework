@@ -23,9 +23,9 @@ import org.semanticweb.ore.utilities.RelativeFilePathStringType;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-public class ORE2014SelectionQueriesGenerator {
+public class ORE2015SelectionQueriesGenerator {
 	
-	final private static Logger mLogger = LoggerFactory.getLogger(ORE2014SelectionQueriesGenerator.class);
+	final private static Logger mLogger = LoggerFactory.getLogger(ORE2015SelectionQueriesGenerator.class);
 
 	final private static String mClassificationQuerySubDirectoryString = "classification";
 	final private static String mRealisationQuerySubDirectoryString = "realisation";
@@ -201,7 +201,7 @@ public class ORE2014SelectionQueriesGenerator {
 				break;
 			}
 			
-			if (ontologyFileString.startsWith("ore2014")) {
+			if (ontologyFileString.startsWith("ore2015")) {
 				
 				FilePathString ontologyFilePathString = new FilePathString(ontologiesString,ontologyFileString,RelativeFilePathStringType.RELATIVE_TO_ONTOLOGIES_DIRECTORY);
 				
@@ -211,14 +211,14 @@ public class ORE2014SelectionQueriesGenerator {
 				boolean validOntology = false;
 				boolean elOntology = false;
 				String correctedQueryOntologyFileString = ontologyFileString.replace("\\", "/");
-				correctedQueryOntologyFileString = correctedQueryOntologyFileString.replace("ore2014/", "");
+				correctedQueryOntologyFileString = correctedQueryOntologyFileString.replace("ore2015/", "");
 				if (queryExpressivity.isInELProfile()) {
-					correctedQueryOntologyFileString = "ore2014/el/"+correctedQueryOntologyFileString;
+					correctedQueryOntologyFileString = "ore2015/el/"+correctedQueryOntologyFileString;
 					validOntology = true;
 					elOntology = true;
 					++elOntologies;
 				} else if (queryExpressivity.isInDLProfile()) {
-					correctedQueryOntologyFileString = "ore2014/dl/"+correctedQueryOntologyFileString;
+					correctedQueryOntologyFileString = "ore2015/dl/"+correctedQueryOntologyFileString;
 					validOntology = true;
 					elOntology = false;
 					++dlOntologies;

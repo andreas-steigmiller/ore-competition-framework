@@ -5,6 +5,7 @@ import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.nio.file.Files;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.HashMap;
@@ -23,9 +24,9 @@ import org.semanticweb.ore.utilities.RelativeFilePathStringType;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-public class ORE2014SelectionQueriesGenerator {
+public class ORE2014SelectionOntologiesCopier {
 	
-	final private static Logger mLogger = LoggerFactory.getLogger(ORE2014SelectionQueriesGenerator.class);
+	final private static Logger mLogger = LoggerFactory.getLogger(ORE2014SelectionOntologiesCopier.class);
 
 	final private static String mClassificationQuerySubDirectoryString = "classification";
 	final private static String mRealisationQuerySubDirectoryString = "realisation";
@@ -142,7 +143,6 @@ public class ORE2014SelectionQueriesGenerator {
 		
 		Config initialConfig = new InitialConfigBaseFactory().createConfig();
 
-		String queriesString = ConfigDataValueReader.getConfigDataValueString(initialConfig, ConfigType.CONFIG_TYPE_QUERIES_DIRECTORY);
 		String ontologiesString = ConfigDataValueReader.getConfigDataValueString(initialConfig, ConfigType.CONFIG_TYPE_ONTOLOGIES_DIRECTORY);
 		
 		mLogger.info("Generating queries for '{}'.",ontologiesString);
@@ -193,19 +193,19 @@ public class ORE2014SelectionQueriesGenerator {
 		}		
 		
 		Collection<String> sortedOntologyFileStringCollection = getSortedOntologiesList(ontologyFileStringCollection, ontologyIndexMap);
-		int generatedQueryNumber = 0;
+		int copiedOntologyNumber = 0;
 		
 		for (String ontologyFileString : sortedOntologyFileStringCollection) {
 			
-			if (generatedQueryNumber >= maxQueryGenerationCount) {
+			if (copiedOntologyNumber >= maxQueryGenerationCount) {
 				break;
 			}
 			
-			if (ontologyFileString.startsWith("ore2014")) {
+			if (ontologyFileString.startsWith("ore2014") && !ontologyFileString.startsWith("ore2014-")) {
 				
 				FilePathString ontologyFilePathString = new FilePathString(ontologiesString,ontologyFileString,RelativeFilePathStringType.RELATIVE_TO_ONTOLOGIES_DIRECTORY);
 				
-				mLogger.info("Generating queries for '{}'.",ontologyFilePathString);
+				mLogger.info("Copy ontology for '{}'.",ontologyFilePathString);
 	
 				QueryExpressivity queryExpressivity = new OntologyExpressivityChecker(ontologyFilePathString.getAbsoluteFilePathString()).createQueryExpressivity();
 				boolean validOntology = false;
@@ -213,12 +213,12 @@ public class ORE2014SelectionQueriesGenerator {
 				String correctedQueryOntologyFileString = ontologyFileString.replace("\\", "/");
 				correctedQueryOntologyFileString = correctedQueryOntologyFileString.replace("ore2014/", "");
 				if (queryExpressivity.isInELProfile()) {
-					correctedQueryOntologyFileString = "ore2014/el/"+correctedQueryOntologyFileString;
+					correctedQueryOntologyFileString = "el/"+correctedQueryOntologyFileString;
 					validOntology = true;
 					elOntology = true;
 					++elOntologies;
 				} else if (queryExpressivity.isInDLProfile()) {
-					correctedQueryOntologyFileString = "ore2014/dl/"+correctedQueryOntologyFileString;
+					correctedQueryOntologyFileString = "dl/"+correctedQueryOntologyFileString;
 					validOntology = true;
 					elOntology = false;
 					++dlOntologies;
@@ -235,98 +235,58 @@ public class ORE2014SelectionQueriesGenerator {
 					++validOntologies;
 					
 					
+					
 					if (generateClassification) {
-						FilePathString classificationQueryFilePathString = new FilePathString(queriesString,mClassificationQuerySubDirectoryString+File.separator+correctedQueryOntologyFileString+"-classify.dat",RelativeFilePathStringType.RELATIVE_TO_QUERIES_DIRECTORY);
-						Query classQuery = queryFactory.createClassificationQuery(classificationQueryFilePathString, ontologyFilePathString, queryExpressivity);			
-						if (classQuery != null) {
-							
-							QueryTSVRenderer queryTSVRenderer = null;
-							try {
-								queryTSVRenderer = new QueryTSVRenderer(classificationQueryFilePathString.getAbsoluteFilePathString());
-								queryTSVRenderer.renderQuery(classQuery);
-								mLogger.info("Generated classification query '{}'.",classQuery);
-								if (elOntology) {
-									++elClassificationQueries;
-								} else {
-									++dlClassificationQueries;
-								}
-								++generatedQueryNumber;
-							} catch (IOException e) {
-								mLogger.error("Saving query '{}' to '{}' failed, got IOException '{}'.",new Object[]{classQuery,classificationQueryFilePathString,e.getMessage()});
-							}				
-							
+						++copiedOntologyNumber;
+						FilePathString classificationCopiedFilePathString = new FilePathString(ontologiesString,"ore2014-copied"+File.separator+mClassificationQuerySubDirectoryString+File.separator+correctedQueryOntologyFileString,RelativeFilePathStringType.RELATIVE_TO_ONTOLOGIES_DIRECTORY);
+						FileSystemHandler.ensurePathToFileExists(classificationCopiedFilePathString);
+						try {
+							Files.copy(new File(ontologyFilePathString.getAbsoluteFilePathString()).toPath(), new File(classificationCopiedFilePathString.getAbsoluteFilePathString()).toPath());
+						} catch (IOException e) {
+							e.printStackTrace();
 						}
 					}
 					
 					if (generateConsistency) {
-						FilePathString consistencyQueryFilePathString = new FilePathString(queriesString,mConsistencyQuerySubDirectoryString+File.separator+correctedQueryOntologyFileString+"-consistency.dat",RelativeFilePathStringType.RELATIVE_TO_QUERIES_DIRECTORY);
-						Query consQuery = queryFactory.createConsistencyQuery(consistencyQueryFilePathString, ontologyFilePathString, queryExpressivity);			
-						if (consQuery != null) {
-							
-							QueryTSVRenderer queryTSVRenderer = null;
-							try {
-								queryTSVRenderer = new QueryTSVRenderer(consistencyQueryFilePathString.getAbsoluteFilePathString());
-								queryTSVRenderer.renderQuery(consQuery);
-								mLogger.info("Generated consistency query '{}'.",consQuery);	
-								if (elOntology) {
-									++elConsistencyQueries;
-								} else {
-									++dlConsistencyQueries;
-								}
-								++generatedQueryNumber;
-							} catch (IOException e) {
-								mLogger.error("Saving query '{}' to '{}' failed, got IOException '{}'.",new Object[]{consQuery,consistencyQueryFilePathString,e.getMessage()});
-							}				
-							
+						++copiedOntologyNumber;
+						FilePathString consistencyCopiedFilePathString = new FilePathString(ontologiesString,"ore2014-copied"+File.separator+mConsistencyQuerySubDirectoryString+File.separator+correctedQueryOntologyFileString,RelativeFilePathStringType.RELATIVE_TO_ONTOLOGIES_DIRECTORY);
+						FileSystemHandler.ensurePathToFileExists(consistencyCopiedFilePathString);
+						try {
+							Files.copy(new File(ontologyFilePathString.getAbsoluteFilePathString()).toPath(), new File(consistencyCopiedFilePathString.getAbsoluteFilePathString()).toPath());
+						} catch (IOException e) {
+							e.printStackTrace();
 						}
 					}
 					
 					if (generateRealisation) {
-						FilePathString realisationQueryFilePathString = new FilePathString(queriesString,mRealisationQuerySubDirectoryString+File.separator+correctedQueryOntologyFileString+"-realisation.dat",RelativeFilePathStringType.RELATIVE_TO_QUERIES_DIRECTORY);
-						OntologyExpressivityChecker ontExpChecker = new OntologyExpressivityChecker(ontologyFilePathString.getAbsoluteFilePathString());
-	
-						if (ontExpChecker.hasIndividuals()) {
-							Query realQuery = queryFactory.createRealisationQuery(realisationQueryFilePathString, ontologyFilePathString, queryExpressivity);			
-							if (realQuery != null) {
-								
-								QueryTSVRenderer queryTSVRenderer = null;
-								try {
-									queryTSVRenderer = new QueryTSVRenderer(realisationQueryFilePathString.getAbsoluteFilePathString());
-									queryTSVRenderer.renderQuery(realQuery);
-									mLogger.info("Generated realisation query '{}'.",realQuery);
-									if (elOntology) {
-										++elRealisationQueries;
-									} else {
-										++dlRealisationQueries;
-									}
-									++generatedQueryNumber;
-								} catch (IOException e) {
-									mLogger.error("Saving query '{}' to '{}' failed, got IOException '{}'.",new Object[]{realQuery,realisationQueryFilePathString,e.getMessage()});
-								}	
-							}
-							
-						} else {
-							mLogger.info("'{}' does not contain individuals, no query generated.",ontologyFilePathString);
-						}	
+						++copiedOntologyNumber;
+						FilePathString realisationCopiedFilePathString = new FilePathString(ontologiesString,"ore2014-copied"+File.separator+mRealisationQuerySubDirectoryString+File.separator+correctedQueryOntologyFileString,RelativeFilePathStringType.RELATIVE_TO_ONTOLOGIES_DIRECTORY);
+						FileSystemHandler.ensurePathToFileExists(realisationCopiedFilePathString);
+						try {
+							Files.copy(new File(ontologyFilePathString.getAbsoluteFilePathString()).toPath(), new File(realisationCopiedFilePathString.getAbsoluteFilePathString()).toPath());
+						} catch (IOException e) {
+							e.printStackTrace();
+						}
+
 					}
 				}
 			}
 			
 		}		
-		mLogger.info("Query generation for '{}' completed.",ontologiesString);
+		mLogger.info("Copying ontologies for '{}' completed.",ontologiesString);
 		
 		mLogger.info("Found {} valid ontologies.",validOntologies);
 		mLogger.info("Found {} valid EL ontologies.",elOntologies);
 		mLogger.info("Found {} valid DL ontologies.",dlOntologies);
 		
-		mLogger.info("Generated {} DL classification queries.",dlClassificationQueries);
-		mLogger.info("Generated {} EL classification queries.",elClassificationQueries);
+		mLogger.info("Copied {} DL classification ontologies.",dlClassificationQueries);
+		mLogger.info("Copied {} EL classification ontologies.",elClassificationQueries);
 		
-		mLogger.info("Generated {} DL realisation queries.",dlRealisationQueries);
-		mLogger.info("Generated {} EL realisation queries.",elRealisationQueries);
+		mLogger.info("Copied {} DL realisation ontologies.",dlRealisationQueries);
+		mLogger.info("Copied {} EL realisation ontologies.",elRealisationQueries);
 		
-		mLogger.info("Generated {} DL consistency queries.",dlConsistencyQueries);
-		mLogger.info("Generated {} EL consistency queries.",elConsistencyQueries);
+		mLogger.info("Copied {} DL consistency ontologies.",dlConsistencyQueries);
+		mLogger.info("Copied {} EL consistency ontologies.",elConsistencyQueries);
 		
 		
 	}

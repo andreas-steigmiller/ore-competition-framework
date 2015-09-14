@@ -87,19 +87,40 @@ public class CompetitionEvaluatorHandler extends Thread implements Runnable, Com
 		} catch (Exception e) {			
 		}
 		
-		try {
-			ReasonerQueryOutputListEvaluator reasonerOutputEvaluator = new ReasonerQueryOutputListEvaluator(mConfig,evaluationResultsResponseDirectory,mStatusUpdater);
-			reasonerOutputEvaluator.evaluateCompetitionResults(mResultStorage, mCompetition);
-		} catch (Exception e) {			
-		}
 				
 		try {
 			QueryDifficultyOrderGenerationEvaluator queryDifficultyOrderEvalutor = new QueryDifficultyOrderGenerationEvaluator(mConfig,evaluationResultsResponseDirectory,mStatusUpdater);
 			queryDifficultyOrderEvalutor.evaluateCompetitionResults(mResultStorage, mCompetition);
 		} catch (Exception e) {			
+		}	
+		
+		
+		try {
+			ReasonerQueryResultSimilarityListEvaluator resultSimilarityEvalutor = new ReasonerQueryResultSimilarityListEvaluator(mConfig,evaluationResultsResponseDirectory,mStatusUpdater);
+			resultSimilarityEvalutor.evaluateCompetitionResults(mResultStorage, mCompetition);
+		} catch (Exception e) {			
 		}
 		
+	
+		try {
+			ReasonerQuerySeparatedSortedResultsGenerationEvaluator resultSeparatedSortedEvalutor = new ReasonerQuerySeparatedSortedResultsGenerationEvaluator(mConfig,evaluationResultsResponseDirectory,mStatusUpdater);
+			resultSeparatedSortedEvalutor.evaluateCompetitionResults(mResultStorage, mCompetition);
+		} catch (Exception e) {			
+		}	
+	
 		
+		try {
+			ReasonerQueryNumberOfResultsWithinTimeGenerationEvaluator resultAccumulatedEvalutor = new ReasonerQueryNumberOfResultsWithinTimeGenerationEvaluator(mConfig,evaluationResultsResponseDirectory,mStatusUpdater);
+			resultAccumulatedEvalutor.evaluateCompetitionResults(mResultStorage, mCompetition);
+		} catch (Exception e) {			
+		}		
+		
+
+		try {
+			ReasonerQueryOutputListEvaluator reasonerOutputEvaluator = new ReasonerQueryOutputListEvaluator(mConfig,evaluationResultsResponseDirectory,mStatusUpdater);
+			reasonerOutputEvaluator.evaluateCompetitionResults(mResultStorage, mCompetition);
+		} catch (Exception e) {			
+		}
 		
 		
 		try {
@@ -121,7 +142,19 @@ public class CompetitionEvaluatorHandler extends Thread implements Runnable, Com
 		}
 		
 		
+		try {
+			ExpectedResultByReasonerGenerationEvaluator safeReasonerBasedExpectedResultGenerationEvaluator = new ExpectedResultByReasonerGenerationEvaluator(mConfig,expectedResultsResponseDirectory+"error-free-reasoner-based"+File.separator,true);
+			safeReasonerBasedExpectedResultGenerationEvaluator.evaluateCompetitionResults(mResultStorage, mCompetition);
+		} catch (Exception e) {			
+		}
 		
+		
+		try {
+			ExpectedResultByReasonerGenerationEvaluator reasonerBasedExpectedResultGenerationEvaluator = new ExpectedResultByReasonerGenerationEvaluator(mConfig,expectedResultsResponseDirectory+"reasoner-based"+File.separator,true);
+			reasonerBasedExpectedResultGenerationEvaluator.evaluateCompetitionResults(mResultStorage, mCompetition);
+		} catch (Exception e) {			
+		}
+			
 		mLogger.info("Finished evaluation for competition '{}'.",mCompetition.getCompetitionName());
 		
 		if (mCallback != null) {

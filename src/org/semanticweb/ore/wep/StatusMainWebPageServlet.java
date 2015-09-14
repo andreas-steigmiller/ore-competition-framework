@@ -231,6 +231,7 @@ public class StatusMainWebPageServlet extends HttpServlet {
 		        }
 	        } catch (Exception e) {
 	        	mLogger.error("Failed to stream results to client '{}', got Exception '{}'",request.getRemoteAddr().toString(),e.getMessage());
+	        	e.printStackTrace();
 	        } finally {
 	        	mStatusUpdateCollector.removeUpdateListner(updateListner);
 	        }
@@ -259,7 +260,7 @@ public class StatusMainWebPageServlet extends HttpServlet {
 			Vector<CompetitionReasonerProgressStatusUpdateItem> reasonerProgressStatusItemVector = compStatusItem.getReasonerProgressUpdateItemVector();
 			if (reasonerProgressStatusItemVector != null) {
 				for (CompetitionReasonerProgressStatusUpdateItem reasonerUpdateItem : reasonerProgressStatusItemVector) {
-					if (reasonerUpdateItem.isUpdated(updateContext.mLastUpdateID)) {
+					if (reasonerUpdateItem != null && reasonerUpdateItem.isUpdated(updateContext.mLastUpdateID)) {
 						updateContext.mLastCompetitionReasonerStatusItemMap.put(compStatusItem.getCompetitionStatus().getCompetitionSourceString()+":"+reasonerUpdateItem.getCompetitionReasonerProgressStatus().getReasonerSourceString(),reasonerUpdateItem);
 					}
 				}
@@ -909,7 +910,7 @@ public class StatusMainWebPageServlet extends HttpServlet {
 		if (condensedLevel >= 3) {
 			sb.append("<table id=\""+getIDString(competitionID)+"\" class=\"table table-striped table-very-condensed table-bordered\"><colgroup>");
 	
-			sb.append("<col width=\"10\"><col width=\"*\"><col width=\"57\"><col width=\"10\"><col width=\"57\"></colgroup>");		
+			sb.append("<col width=\"10\"><col width=\"*\"><col width=\"68\"><col width=\"10\"><col width=\"65\"></colgroup>");		
 			sb.append("<thead><tr></tr>"+
 					"<th onmouseover=\"TagToTip('tt-reasoner')\" onmouseout=\"UnTip()\"><u>Reasoner</u>&nbsp;</th>"+
 					"<th onmouseover=\"TagToTip('tt-progress')\" onmouseout=\"UnTip()\">&nbsp;<u>Progress</u></th>"+
@@ -918,7 +919,7 @@ public class StatusMainWebPageServlet extends HttpServlet {
 					"<th style=\"text-align:right\"  onmouseover=\"TagToTip('tt-time')\" onmouseout=\"UnTip()\"><u>Time</u>&nbsp;</th></thead><tbody>");
 		} else if (condensedLevel >= 2) {
 			sb.append("<table id=\""+getIDString(competitionID)+"\" class=\"table table-striped table-very-condensed table-bordered\"><colgroup>");
-			sb.append("<col width=\"10\"><col width=\"10\"><col width=\"*\"><col width=\"65\"><col width=\"30\"><col width=\"60\"></colgroup>");		
+			sb.append("<col width=\"10\"><col width=\"10\"><col width=\"*\"><col width=\"72\"><col width=\"30\"><col width=\"65\"></colgroup>");		
 			sb.append("<thead><tr></tr>"+
 					"<th style=\"text-align:center\" onmouseover=\"TagToTip('tt-rank')\" onmouseout=\"UnTip()\"><u>Rank</u>&nbsp;</th>"+
 					"<th onmouseover=\"TagToTip('tt-reasoner')\" onmouseout=\"UnTip()\"><u>Reasoner</u>&nbsp;</th>"+
@@ -928,7 +929,7 @@ public class StatusMainWebPageServlet extends HttpServlet {
 					"<th style=\"text-align:right\"  onmouseover=\"TagToTip('tt-time')\" onmouseout=\"UnTip()\"><u>Time</u>&nbsp;</th></thead><tbody>");
 		} else {
 			sb.append("<table id=\""+getIDString(competitionID)+"\" class=\"table table-striped table-more-condensed table-bordered\"><colgroup>");
-			sb.append("<col width=\"10\"><col width=\"10\"><col width=\"*\"><col width=\"75\"><col width=\"30\"><col width=\"70\"></colgroup>");		
+			sb.append("<col width=\"10\"><col width=\"10\"><col width=\"*\"><col width=\"82\"><col width=\"30\"><col width=\"75\"></colgroup>");		
 			sb.append("<thead><tr></tr>"+
 					"<th style=\"text-align:center\" onmouseover=\"TagToTip('tt-rank')\" onmouseout=\"UnTip()\"><u>Rank</u>&nbsp;</th>"+
 					"<th onmouseover=\"TagToTip('tt-reasoner')\" onmouseout=\"UnTip()\"><u>Reasoner</u>&nbsp;</th>"+

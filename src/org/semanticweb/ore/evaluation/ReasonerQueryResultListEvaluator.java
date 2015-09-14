@@ -51,6 +51,7 @@ public class ReasonerQueryResultListEvaluator implements StoredQueryResultEvalua
 		ET_REPORTED_PROCESSING_TIME("Reported-Processing-Time"),
 		ET_CORRECTLY_PROCESSED("Correctly-Processed"),
 		ET_CORRECTLY_PROCESSED_TIME("Correctly-Processed-Time"),
+		ET_RESULT_HASH_CODE("Result-Hash-Code"),
 		ET_TIMEOUT("Timeout"),
 		ET_EXECUTION_ERROR("Execution-Error"),
 		ET_REPORTED_ERROR("Reported-Error"),
@@ -74,7 +75,8 @@ public class ReasonerQueryResultListEvaluator implements StoredQueryResultEvalua
 		long mReportedProcessedTime = 0;
 		boolean mCorrectlyProccessed = false;
 		boolean mProcessed = false;
-		long mExecutionTime = 0;	
+		long mExecutionTime = 0;
+		String mResultHashCode = "-";
 		boolean mTimeOut = false;
 		boolean mExecutionError = false;
 		boolean mUnexpected = false;
@@ -103,6 +105,8 @@ public class ReasonerQueryResultListEvaluator implements StoredQueryResultEvalua
 				string = String.valueOf(mUnexpected);
 			} else if (evalType == EvaluationType.ET_NOT_PROCESSED) {
 				string = String.valueOf(mNotProcessed);
+			} else if (evalType == EvaluationType.ET_RESULT_HASH_CODE) {
+				string = mResultHashCode;
 			}
 			return string;
 		}
@@ -112,9 +116,10 @@ public class ReasonerQueryResultListEvaluator implements StoredQueryResultEvalua
 			mQuery = query;
 		}
 		
-		void setData(long reportedProcessingTime, long correctlyProcessingTime, boolean correctlyProcessedCount, boolean totalProcessedCount, long totalExecutionTime, boolean timeoutCount, boolean executionErrorCount, boolean reportedErrorCount, boolean unexpectedCount, boolean notProcessedCount) {
+		void setData(long reportedProcessingTime, long correctlyProcessingTime, boolean correctlyProcessedCount, boolean totalProcessedCount, long totalExecutionTime, String resultHashCode, boolean timeoutCount, boolean executionErrorCount, boolean reportedErrorCount, boolean unexpectedCount, boolean notProcessedCount) {
 			mReportedProcessedTime = reportedProcessingTime;
 			mCorrectlyProcessedTime = correctlyProcessingTime;
+			mResultHashCode = resultHashCode;
 			mCorrectlyProccessed = correctlyProcessedCount;
 			
 			mProcessed = totalProcessedCount;
@@ -193,6 +198,8 @@ public class ReasonerQueryResultListEvaluator implements StoredQueryResultEvalua
 					boolean timeout = false;
 					boolean notProcessed = false;
 					
+					String resultHashCode = "";
+					
 					if (item != null) {
 						QueryResponse queryResponse = item.getQueryResponse();
 						if (queryResponse != null) {
@@ -212,6 +219,9 @@ public class ReasonerQueryResultListEvaluator implements StoredQueryResultEvalua
 							resultValid = false;
 						}
 						QueryResultVerificationReport verificationReport = item.getVerificationReport();
+						if (verificationReport != null) {
+							resultHashCode = String.valueOf(verificationReport.getResultHashCode());
+						}
 						if (verificationReport != null && resultValid) {
 							if (verificationReport.getCorrectnessType() == QueryResultVerificationCorrectnessType.QUERY_RESULT_CORRECT) {
 								resultCorrect = true;
@@ -238,7 +248,7 @@ public class ReasonerQueryResultListEvaluator implements StoredQueryResultEvalua
 						}
 					}
 					QueryReasonerData queryReasonerData = getQueryReasonerData(query, reasoner);
-					queryReasonerData.setData(processingTime, correctlyProcessingTime, correctlyProcessing, totalProcessed, executionTime, timeout, executionError, reportedError, unexpected, notProcessed);
+					queryReasonerData.setData(processingTime, correctlyProcessingTime, correctlyProcessing, totalProcessed, executionTime, resultHashCode, timeout, executionError, reportedError, unexpected, notProcessed);
 					
 				}				
 			});
@@ -278,6 +288,7 @@ public class ReasonerQueryResultListEvaluator implements StoredQueryResultEvalua
 					reasonerTable.setData(query, EvaluationType.ET_REPORTED_PROCESSING_TIME, String.valueOf(queryReasonerData.mReportedProcessedTime));
 					reasonerTable.setData(query, EvaluationType.ET_CORRECTLY_PROCESSED_TIME, String.valueOf(queryReasonerData.mCorrectlyProcessedTime));
 					reasonerTable.setData(query, EvaluationType.ET_CORRECTLY_PROCESSED, String.valueOf(queryReasonerData.mCorrectlyProccessed));
+					reasonerTable.setData(query, EvaluationType.ET_RESULT_HASH_CODE, queryReasonerData.mResultHashCode);
 					reasonerTable.setData(query, EvaluationType.ET_TIMEOUT, String.valueOf(queryReasonerData.mTimeOut));
 					reasonerTable.setData(query, EvaluationType.ET_EXECUTION_ERROR, String.valueOf(queryReasonerData.mExecutionError));
 					reasonerTable.setData(query, EvaluationType.ET_REPORTED_ERROR, String.valueOf(queryReasonerData.mReportedError));

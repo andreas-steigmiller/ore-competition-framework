@@ -3,6 +3,8 @@ package org.semanticweb.ore.parsing;
 import java.io.IOException;
 import java.io.InputStream;
 import java.util.ArrayList;
+import java.util.Collections;
+import java.util.HashSet;
 import java.util.List;
 
 import org.joda.time.DateTime;
@@ -26,7 +28,7 @@ public class CompetitionTSVParser extends TSVParser {
 	private String mOutputPath = null;
 	private String mQueryPathFilterString = null;
 	private FilePathString mQuerySortingFilePathString = null;
-	private List<String> mReasonerNameList = null;
+	private HashSet<String> mReasonerNameSet = null;
 	
 	private long mExecutionTimeout = 0;
 	private long mProcessingTimeout = 0;
@@ -72,11 +74,13 @@ public class CompetitionTSVParser extends TSVParser {
 				mAllowProcessingOnlyBetweenDateTimeInterval = parseTSVBoolean(values);
 				parsed = true;
 			} else if (valueString1.compareToIgnoreCase("Reasoners") == 0) {
-				if (mReasonerNameList == null) {
-					mReasonerNameList = new ArrayList<String>();
+				if (mReasonerNameSet == null) {
+					mReasonerNameSet = new HashSet<String>();
 				}
 				for (int i = 1; i < values.length; ++i) {
-					mReasonerNameList.add(values[i]);
+					if (!values[i].isEmpty()) {
+						mReasonerNameSet.add(values[i]);
+					}
 				}
 				parsed = true;
 			}
@@ -92,14 +96,18 @@ public class CompetitionTSVParser extends TSVParser {
 	@Override
 	protected boolean handleStartParsing() {
 		mCompetition = null;
-		mReasonerNameList = null;
+		mReasonerNameSet = null;
 		return true;
 	}
 
 	@Override
 	protected boolean handleFinishParsing() {
 		if (mCompetitionFactory != null) {
-			mCompetition = mCompetitionFactory.createCompetition(mCompetitionNameString, mParsingSourceString, mReasonerNameList);
+			List<String> reasonerNameList = new ArrayList<String>();
+			if (mReasonerNameSet != null && !mReasonerNameSet.isEmpty()) {	
+				reasonerNameList.addAll(mReasonerNameSet);
+			}
+			mCompetition = mCompetitionFactory.createCompetition(mCompetitionNameString, mParsingSourceString, reasonerNameList);
 			if (mQueryPathFilterString != null) {
 				mCompetition.setQueryFilterString(mQueryPathFilterString);
 			}

@@ -49,10 +49,12 @@ public class OntologyFormatDynamicConversionRedirector implements OntologyFormat
 		File redirectSourceFile = new File(redirectSourceString);
 		while (redirectSourceFile != null) {
 			String filePartString = redirectSourceFile.getName();
-			if (conversionRelativeSourceString == null) {
-				conversionRelativeSourceString = filePartString;
-			} else {
-				conversionRelativeSourceString = filePartString + File.separator + conversionRelativeSourceString;
+			if (!filePartString.isEmpty()) {
+				if (conversionRelativeSourceString == null) {
+					conversionRelativeSourceString = filePartString;
+				} else {
+					conversionRelativeSourceString = filePartString + File.separator + conversionRelativeSourceString;
+				}
 			}
 			redirectSourceFile = redirectSourceFile.getParentFile();
 		}

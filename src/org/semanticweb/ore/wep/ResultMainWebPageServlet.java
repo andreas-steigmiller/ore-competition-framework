@@ -196,7 +196,7 @@ public class ResultMainWebPageServlet extends HttpServlet {
 			} else {
 				sb.append("<div class=\"row\">");
 				
-				sb.append("<div class=\"col-md-6\">");
+				sb.append("<div class=\"col-md-4\">");
 				sb.append("<h4>Final Ranking:</h4>");
 				Vector<CompetitionReasonerProgressStatusUpdateItem> reasonerStatUpItemVector = compStatUpdateItem.getReasonerProgressUpdateItemVector();
 				if (reasonerStatUpItemVector != null) {		
@@ -219,7 +219,7 @@ public class ResultMainWebPageServlet extends HttpServlet {
 					}
 				}
 				
-				sb.append("</div><div class=\"col-md-6\">");	
+				sb.append("</div><div class=\"col-md-8\">");	
 				sb.append("<div><h4>Detailed Results:<h4></div>");
 				HashMap<String,CompetitionEvaluationStatusUpdateItem> evalMap = compStatUpdateItem.getEvaluationMap();
 				if (evalMap == null || evalMap.isEmpty()) {

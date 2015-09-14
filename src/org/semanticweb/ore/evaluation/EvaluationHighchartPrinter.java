@@ -22,7 +22,9 @@ public class EvaluationHighchartPrinter implements EvaluationChartPrinter {
 
 	protected Config mConfig = null;
 	protected String mBaseTemplateFileString = null;
-	protected String mBarChartTemplateFileString = null; 
+	protected String mBarChartTemplateFileString = null;
+	protected String mCactusChartTemplateFileString = null; 
+	protected String mLogarithmicCactusChartTemplateFileString = null; 
 	
 	
 	protected static AtomicInteger mContinerIDNumber = new AtomicInteger(); 
@@ -33,6 +35,8 @@ public class EvaluationHighchartPrinter implements EvaluationChartPrinter {
 		
 		mBaseTemplateFileString = ConfigDataValueReader.getConfigDataValueString(mConfig, ConfigType.CONFIG_TYPE_TEMPLATES_DIRECTORY);
 		mBarChartTemplateFileString = mBaseTemplateFileString+"charts"+File.separator+"highchart"+File.separator+"bar-horizontal-chart.html";
+		mCactusChartTemplateFileString = mBaseTemplateFileString+"charts"+File.separator+"highchart"+File.separator+"cactus-horizontal-chart.html";
+		mLogarithmicCactusChartTemplateFileString = mBaseTemplateFileString+"charts"+File.separator+"highchart"+File.separator+"logarithmic-cactus-horizontal-chart.html";
 	}
 	
 	
@@ -63,7 +67,7 @@ public class EvaluationHighchartPrinter implements EvaluationChartPrinter {
 		if (chartString != null) {
 			
 			String plotLabelsString = getCategoriesString(chartData);
-			String dataString = getDataString(chartData);
+			String dataString = getBarDataString(chartData);
 			String valuesTitleString = chartData.getValuesTitle();
 			String categoriesTitleString = chartData.getDataTitle();
 			String plotTitleString = chartData.getTitle();
@@ -121,7 +125,7 @@ public class EvaluationHighchartPrinter implements EvaluationChartPrinter {
 	
 	
 	
-	protected String getDataString(EvaluationChartPrintingData chartData) {
+	protected String getBarDataString(EvaluationChartPrintingData chartData) {
 		String dataString = "";
 		ArrayList<ArrayList<String>> dataSeries = chartData.getDataSeries();
 		ArrayList<String> dataSeriesNames = chartData.getDataSeriesNames();
@@ -140,6 +144,35 @@ public class EvaluationHighchartPrinter implements EvaluationChartPrinter {
 				serieDataString = serieDataString+dataValueString;
 			}
 			serieDataString = "{ name: '"+seriesName+"', data: ["+serieDataString+"], dataLabels: {enabled: true, color: '#000', align: 'center', y: 25, style: {fontSize: '15px'} } }";
+			if (dataString.length() > 0) {
+				dataString = dataString+", ";
+			}
+			dataString = dataString+serieDataString;
+		}
+		return dataString;
+	}
+	
+
+	
+	protected String getCactusDataString(EvaluationChartPrintingData chartData) {
+		String dataString = "";
+		ArrayList<ArrayList<String>> dataSeries = chartData.getDataSeries();
+		ArrayList<String> dataSeriesNames = chartData.getDataSeriesNames();
+		
+		Iterator<ArrayList<String>> seriesIt = dataSeries.iterator();
+		Iterator<String> serieNamesIt = dataSeriesNames.iterator();
+		
+		while (seriesIt.hasNext() && serieNamesIt.hasNext()) {
+			ArrayList<String> seriesData = seriesIt.next();
+			String seriesName = serieNamesIt.next();
+			String serieDataString = "";
+			for (String dataValueString : seriesData) {		
+				if (serieDataString.length() > 0) {
+					serieDataString = serieDataString+", ";
+				}
+				serieDataString = serieDataString+dataValueString;
+			}
+			serieDataString = "{ type: 'spline', name: '"+seriesName+"', data: ["+serieDataString+"] }";
 			if (dataString.length() > 0) {
 				dataString = dataString+", ";
 			}
@@ -176,6 +209,90 @@ public class EvaluationHighchartPrinter implements EvaluationChartPrinter {
 			++dataValueNameNumber;
 		}
 		return valueLabels;
+	}
+
+
+
+	@Override
+	public boolean printCactusChart(String outputString, EvaluationChartPrintingData chartData) {
+		boolean chartGenerated = false;
+		String chartString = loadFileIntoString(mCactusChartTemplateFileString);
+		
+		if (chartString != null) {
+			
+			String plotLabelsString = getCategoriesString(chartData);
+			String dataString = getCactusDataString(chartData);
+			String valuesTitleString = chartData.getValuesTitle();
+			String categoriesTitleString = chartData.getDataTitle();
+			String plotTitleString = chartData.getTitle();
+			String containerIDString = getContainerIDString(outputString,chartData);
+			
+			chartString = chartString.replace("$$_PLOT_TITLE_$$", plotTitleString);
+			chartString = chartString.replace("$$_PLOT_LABELS_$$", plotLabelsString);
+			chartString = chartString.replace("$$_PLOT_DATA_SERIES_$$", dataString);
+			chartString = chartString.replace("$$_VALUES_TITLE_$$", valuesTitleString);
+			chartString = chartString.replace("$$_CATEGORIES_TITLE_$$", categoriesTitleString);
+			chartString = chartString.replace("$$_CONTAINER_ID_$$", containerIDString);
+			
+			FileOutputStream fileOutputStream;
+			try {
+				fileOutputStream = new FileOutputStream( outputString);
+				OutputStreamWriter outputStreamWriter = new OutputStreamWriter(fileOutputStream);
+				outputStreamWriter.write(chartString);
+				outputStreamWriter.flush();
+				fileOutputStream.flush();
+				outputStreamWriter.close();
+				fileOutputStream.close();
+				chartGenerated = true;
+			} catch (Exception e) {
+				mLogger.error("Failed to write chart to file, got Exception '{}'",e.getMessage());
+			}
+		}
+
+		
+		return chartGenerated;
+	}
+
+
+
+	@Override
+	public boolean printLogarithmicCactusChart(String outputString, EvaluationChartPrintingData chartData) {
+		boolean chartGenerated = false;
+		String chartString = loadFileIntoString(mLogarithmicCactusChartTemplateFileString);
+		
+		if (chartString != null) {
+			
+			String plotLabelsString = getCategoriesString(chartData);
+			String dataString = getCactusDataString(chartData);
+			String valuesTitleString = chartData.getValuesTitle();
+			String categoriesTitleString = chartData.getDataTitle();
+			String plotTitleString = chartData.getTitle();
+			String containerIDString = getContainerIDString(outputString,chartData);
+			
+			chartString = chartString.replace("$$_PLOT_TITLE_$$", plotTitleString);
+			chartString = chartString.replace("$$_PLOT_LABELS_$$", plotLabelsString);
+			chartString = chartString.replace("$$_PLOT_DATA_SERIES_$$", dataString);
+			chartString = chartString.replace("$$_VALUES_TITLE_$$", valuesTitleString);
+			chartString = chartString.replace("$$_CATEGORIES_TITLE_$$", categoriesTitleString);
+			chartString = chartString.replace("$$_CONTAINER_ID_$$", containerIDString);
+			
+			FileOutputStream fileOutputStream;
+			try {
+				fileOutputStream = new FileOutputStream( outputString);
+				OutputStreamWriter outputStreamWriter = new OutputStreamWriter(fileOutputStream);
+				outputStreamWriter.write(chartString);
+				outputStreamWriter.flush();
+				fileOutputStream.flush();
+				outputStreamWriter.close();
+				fileOutputStream.close();
+				chartGenerated = true;
+			} catch (Exception e) {
+				mLogger.error("Failed to write chart to file, got Exception '{}'",e.getMessage());
+			}
+		}
+
+		
+		return chartGenerated;
 	}		
 	
 	

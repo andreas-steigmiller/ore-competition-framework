@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <title>$$_PLOT_TITLE_$$</title>
+</head>
+<body>
+
+
+
+
+<!-- CHART_DATA_BEGIN -->
+<script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js'></script>
+
+<script src="http://code.highcharts.com/highcharts.js"></script>
+<script src="http://code.highcharts.com/modules/exporting.js"></script>
+
+<script type='text/javascript'>//<![CDATA[ 
+
+$(function () {
+    var chart;
+    $(document).ready(function() {
+        chart = new Highcharts.Chart({
+            chart: {
+                renderTo: '$$_CONTAINER_ID_$$'
+            },
+            title: {
+                text: '$$_PLOT_TITLE_$$'
+            },
+            xAxis: {
+				labels: {
+					rotation: 50,
+					align: 'left',
+					style: {
+						font: 'normal 13px Verdana, sans-serif'
+					}
+				},
+				title: {
+					text: '$$_CATEGORIES_TITLE_$$',
+					align: 'high'
+				}
+            },
+			yAxis: {
+				type: 'logarithmic',
+				minorTickInterval: 0.1,
+				title: {
+					text: '$$_VALUES_TITLE_$$',
+					align: 'high'
+				}
+			},
+			credits: {
+				text: 'ORE 2014',
+				href: 'http://vsl2014.at/meetings/ORE-index.html'
+			},	
+			plotOptions: {
+				series: {
+					borderColor: '#303030'            
+				}, 
+				spline: {
+                    lineWidth: 3,
+					marker: {
+                        enabled: false
+                    }
+                }
+			},			
+
+ 
+            series: [$$_PLOT_DATA_SERIES_$$]
+        });
+
+    });
+    
+});
+//]]>  
+
+</script>
+
+<div id="$$_CONTAINER_ID_$$" style="width: 100%; height: 800px; margin: 0 auto"></div>
+
+<!-- CHART_DATA_END -->
+
+
+
+</body>
+</html>

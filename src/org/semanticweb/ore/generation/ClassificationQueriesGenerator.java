@@ -40,7 +40,7 @@ public class ClassificationQueriesGenerator {
 		for (String ontologyFileString : ontologyFileStringCollection) {	
 			
 			
-			if (ontologyFileString.startsWith("el-test")) {
+//			if (ontologyFileString.startsWith("el-test")) {
 				
 				FilePathString queryFilePathString = new FilePathString(queriesString,mClassificationQuerySubDirectoryString+File.separator+ontologyFileString+"-classify.dat",RelativeFilePathStringType.RELATIVE_TO_QUERIES_DIRECTORY);
 				FilePathString ontologyFilePathString = new FilePathString(ontologiesString,ontologyFileString,RelativeFilePathStringType.RELATIVE_TO_ONTOLOGIES_DIRECTORY);
@@ -61,7 +61,7 @@ public class ClassificationQueriesGenerator {
 					
 				}
 				mLogger.info("Generated query '{}'.",query);
-			}
+//			}
 			
 		}		
 		mLogger.info("Query generation for '{}' completed.",ontologiesString);

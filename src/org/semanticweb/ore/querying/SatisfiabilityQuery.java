@@ -8,7 +8,7 @@ public class SatisfiabilityQuery extends Query {
 
 	@Override
 	public QueryType getQueryType() {
-		return QueryType.QUERY_TYPE_CONSISTENCY;
+		return QueryType.QUERY_TYPE_SATISFIABILITY;
 	}
 	
 	public SatisfiabilityQuery(FilePathString querySourceString, String classString, FilePathString ontologySourceString, QueryExpressivity queryExpressivity) {

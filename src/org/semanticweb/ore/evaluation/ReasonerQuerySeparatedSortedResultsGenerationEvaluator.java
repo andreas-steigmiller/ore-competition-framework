@@ -34,9 +34,9 @@ import org.semanticweb.ore.verification.QueryResultVerificationReport;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-public class QueryDifficultyOrderGenerationEvaluator implements StoredQueryResultEvaluator {
+public class ReasonerQuerySeparatedSortedResultsGenerationEvaluator implements StoredQueryResultEvaluator {
 	
-	final private static Logger mLogger = LoggerFactory.getLogger(QueryDifficultyOrderGenerationEvaluator.class);
+	final private static Logger mLogger = LoggerFactory.getLogger(ReasonerQuerySeparatedSortedResultsGenerationEvaluator.class);
 	
 	private Config mConfig = null;
 	private String mOutputString = null;
@@ -48,16 +48,19 @@ public class QueryDifficultyOrderGenerationEvaluator implements StoredQueryResul
 	
 	protected CompetitionStatusUpdater mStatusUpdater = null;
 
-	
+	protected EvaluationChartPrintingHandler mChartPrintingHandler = null;
+
 	
 	protected enum EvaluationType {
-		ET_QUERY("Query"),
-		ET_AVERAGE_EXECUTION_TIME("Average-Execution-Time");
+		ET_EXECUTION_TIME("Execution-Time","Execution Time"),
+		ET_CORRECTLY_PROCESSED_TIME("Correctly-Processed-Time","Correctly Processed Time");		
 		
 		String mShortString = null;
+		String mTitleString = null;
 		
-		private EvaluationType(String shortString) {
+		private EvaluationType(String shortString, String titleName) {
 			mShortString = shortString;
+			mTitleString = titleName;
 		}
 	}
 	
@@ -65,14 +68,66 @@ public class QueryDifficultyOrderGenerationEvaluator implements StoredQueryResul
 	
 	
 
-	public QueryDifficultyOrderGenerationEvaluator(Config config, String outputString, CompetitionStatusUpdater statusUpdater) {
+	public ReasonerQuerySeparatedSortedResultsGenerationEvaluator(Config config, String outputString, CompetitionStatusUpdater statusUpdater) {
 		mOutputString = outputString;
 		mConfig = config;
 		mStatusUpdater = statusUpdater;
 		
 		mDefaultExecutionTimeout = ConfigDataValueReader.getConfigDataValueLong(mConfig,ConfigType.CONFIG_TYPE_EXECUTION_TIMEOUT,mDefaultExecutionTimeout);		
-		mDefaultProcessingTimeout = ConfigDataValueReader.getConfigDataValueLong(mConfig,ConfigType.CONFIG_TYPE_PROCESSING_TIMEOUT,mDefaultProcessingTimeout);		
+		mDefaultProcessingTimeout = ConfigDataValueReader.getConfigDataValueLong(mConfig,ConfigType.CONFIG_TYPE_PROCESSING_TIMEOUT,mDefaultProcessingTimeout);
+		
+		mChartPrintingHandler = new EvaluationChartPrintingHandler(mConfig,mOutputString,statusUpdater);
+
 	}
+	
+	
+	protected class QueryProcessingData implements Comparable<QueryProcessingData> {
+		Query mQuery = null;			
+		long mValue = 0;
+
+		public QueryProcessingData(Query query) {
+			mQuery = query;
+		}
+		
+		public void setValue(long value) {
+			mValue += value;
+		}
+
+		@Override
+		public int compareTo(QueryProcessingData qpd) {
+			if (mValue < qpd.mValue) {
+				return -1;
+			} else if (mValue > qpd.mValue) {
+				return 1;
+			} 
+			return 0;
+		}
+	}	
+	
+	
+	
+	protected HashMap<EvaluationType,HashMap<ReasonerDescription,HashMap<Query,QueryProcessingData>>> mTypeReasonerQueryDataMap = new HashMap<EvaluationType,HashMap<ReasonerDescription,HashMap<Query,QueryProcessingData>>>();
+
+	
+	protected QueryProcessingData getProcessingData(EvaluationType evalType, ReasonerDescription reasoner, Query query) {
+		HashMap<ReasonerDescription,HashMap<Query,QueryProcessingData>> reasonerQueryDataMap = mTypeReasonerQueryDataMap.get(evalType);
+		if (reasonerQueryDataMap == null) {
+			reasonerQueryDataMap = new HashMap<ReasonerDescription,HashMap<Query,QueryProcessingData>>();
+			mTypeReasonerQueryDataMap.put(evalType,reasonerQueryDataMap);
+		}
+		HashMap<Query,QueryProcessingData> queryDataMap = reasonerQueryDataMap.get(reasoner);
+		if (queryDataMap == null) {
+			queryDataMap = new HashMap<Query,QueryProcessingData>();
+			reasonerQueryDataMap.put(reasoner,queryDataMap);
+		}
+		QueryProcessingData processingData = queryDataMap.get(query);
+		if (processingData == null) {
+			processingData = new QueryProcessingData(query);
+			queryDataMap.put(query, processingData);
+		}
+		return processingData;
+	}
+	
 	
 	public void evaluateCompetitionResults(QueryResultStorage resultStorage, Competition competition) {
 		mProcessingTimeout = competition.getProcessingTimeout();
@@ -87,38 +142,6 @@ public class QueryDifficultyOrderGenerationEvaluator implements StoredQueryResul
 			mProcessingTimeout = mExecutionTimeout;
 		}
 		
-		class QueryProcessingData implements Comparable<QueryProcessingData> {
-			Query mQuery = null;			
-			long mProcessingTime = 0;
-			long mCorrectlyProcessedTime = 0;
-			long mExecutionTime = 0;
-			int mProccessedCount = 0;			
-			
-			public QueryProcessingData(Query query) {
-				mQuery = query;
-			}
-			
-			public void addData(long processingTime, long executionTime, int proccessedCount, long correctlyProcessedTime) {
-				mProccessedCount += proccessedCount;
-				mProcessingTime += processingTime;
-				mExecutionTime += executionTime;
-				mCorrectlyProcessedTime += correctlyProcessedTime;
-			}
-
-			@Override
-			public int compareTo(QueryProcessingData qpd) {
-				if (mExecutionTime < qpd.mExecutionTime) {
-					return -1;
-				} else if (mExecutionTime > qpd.mExecutionTime) {
-					return 1;
-				} 
-				return 0;
-			}
-		}
-		
-		final HashMap<Query,QueryProcessingData> queryDataMap = new HashMap<Query,QueryProcessingData>();
-		
-		ArrayList<QueryProcessingData> queryDataList = new ArrayList<QueryProcessingData>();
 		
 		
 		Collection<Query> queryCollection = resultStorage.getStoredQueryCollection();
@@ -127,9 +150,12 @@ public class QueryDifficultyOrderGenerationEvaluator implements StoredQueryResul
 		ArrayList<String> queryNameList = new ArrayList<String>();
 		ArrayList<String> evalNameList = new ArrayList<String>();
 
+		ArrayList<String> queryNumberStringList = new ArrayList<String>();
 
+		int nextQueryNumber = 1;
 		for (Query query : queryCollection) {		
 			queryNameList.add(query.getOntologySourceString().getPreferedRelativeFilePathString());
+			queryNumberStringList.add(String.valueOf(nextQueryNumber++));
 		}
 		for (EvaluationType evalType : EvaluationType.values()) {	
 			evalNameList.add(evalType.mShortString);
@@ -138,12 +164,6 @@ public class QueryDifficultyOrderGenerationEvaluator implements StoredQueryResul
 		
 
 
-		
-		for (Query query : queryCollection) {
-			QueryProcessingData queryData = new QueryProcessingData(query);
-			queryDataMap.put(query, queryData);
-			queryDataList.add(queryData);
-		}		
 		
 		for (Query query : queryCollection) {
 			
@@ -181,60 +201,57 @@ public class QueryDifficultyOrderGenerationEvaluator implements StoredQueryResul
 						resultValid = false;
 					}
 					
-					int correctProccessedCount = 0;
-					long correctlyProccessedTime = 0;
+					
+					
 					if (resultValid && resultCorrect) {
-						correctProccessedCount = 1;
-						correctlyProccessedTime = processingTime;
+						QueryProcessingData processingData = getProcessingData(EvaluationType.ET_CORRECTLY_PROCESSED_TIME, reasoner, query);
+						processingData.setValue(processingTime);
 					}
-					QueryProcessingData queryData = queryDataMap.get(query);
-					queryData.addData(processingTime,executionTime,correctProccessedCount,correctlyProccessedTime);
+					QueryProcessingData processingData = getProcessingData(EvaluationType.ET_EXECUTION_TIME, reasoner, query);
+					processingData.setValue(executionTime);
 
 				}			
 			});
 		}
 		
-		Collections.sort(queryDataList);
-		
-		
-		EvaluationDataTable<Query,EvaluationType,String> queryEvalTable = new EvaluationDataTable<Query,EvaluationType,String>();
-		queryEvalTable.initTable(queryCollection, Arrays.asList(EvaluationType.values()));
-		queryEvalTable.initColumnHeaders(evalNameList);		
-		
-		for (QueryProcessingData queryData : queryDataList) {
-			queryEvalTable.setData(queryData.mQuery, EvaluationType.ET_QUERY, queryData.mQuery.getOntologySourceString().getPreferedRelativeFilePathString());
-			queryEvalTable.setData(queryData.mQuery, EvaluationType.ET_AVERAGE_EXECUTION_TIME, String.valueOf(queryData.mExecutionTime));
-		}
-		
-		
-		queryEvalTable.writeCSVTable(mOutputString+"Query-Sorted-Average-Execution-Time-Difficulty.csv");
-		if (mStatusUpdater != null) {
-			mStatusUpdater.updateCompetitionEvaluationStatus(new CompetitionEvaluationStatus(competition,"Query-Sorted-Average-Execution-Time-Difficulty",mOutputString+"Query-Sorted-Average-Execution-Time-Difficulty.csv",CompetitionEvaluationType.COMPETITION_EVALUTION_TYPE_TABLE_CSV,new DateTime(DateTimeZone.UTC)));
-		}
-		queryEvalTable.writeTSVTable(mOutputString+"Query-Sorted-Average-Execution-Time-Difficulty.tsv");
-		if (mStatusUpdater != null) {
-			mStatusUpdater.updateCompetitionEvaluationStatus(new CompetitionEvaluationStatus(competition,"Query-Sorted-Average-Execution-Time-Difficulty",mOutputString+"Query-Sorted-Average-Execution-Time-Difficulty.tsv",CompetitionEvaluationType.COMPETITION_EVALUTION_TYPE_TABLE_TSV,new DateTime(DateTimeZone.UTC)));
-		}
 		
 		
 		
-		try {
-			FileSystemHandler.ensurePathToFileExists(mOutputString+"query-execution-time-sorted.txt");
-			FileOutputStream outputStream = new FileOutputStream(new File(mOutputString+"query-execution-time-sorted.txt"));
-			OutputStreamWriter outputStreamWriter = new OutputStreamWriter(outputStream);
-			for (QueryProcessingData queryData : queryDataList) {
-				String querySource = queryData.mQuery.getQuerySourceString().getAbsoluteFilePathString();
-				if (queryData.mQuery.getQuerySourceString().isRelative()) {
-					querySource = queryData.mQuery.getQuerySourceString().getRelativeFilePathString();
-				}
-				querySource = querySource.replace("\\","/");
-				outputStreamWriter.write(querySource+"\r\n");		
-			}
-			outputStreamWriter.close();
-		} catch (Exception e) {
-			mLogger.error("Writing to file '{}' failed, got Exception '{}'.",mOutputString+"query-execution-time-sorted.txt",e.getMessage());
+		for (EvaluationType evalType : EvaluationType.values()) {
+			HashMap<ReasonerDescription,HashMap<Query,QueryProcessingData>> reasonerQueryDataMap = mTypeReasonerQueryDataMap.get(evalType);
 			
+			EvaluationChartPrintingData chartData = new EvaluationChartPrintingData("Comparison of Separately Sorted "+evalType.mTitleString); 
+			
+			
+			for (ReasonerDescription reasoner : reasonerCollection) {		
+				String dataName = reasoner.getReasonerName();
+				ArrayList<String> dataStringList = new ArrayList<String>(); 
+				
+				HashMap<Query,QueryProcessingData> queryDataMap = reasonerQueryDataMap.get(reasoner);
+				ArrayList<QueryProcessingData> dataValueList = new ArrayList<QueryProcessingData>();
+				dataValueList.addAll(queryDataMap.values());				
+				Collections.sort(dataValueList);
+				
+				for (QueryProcessingData data : dataValueList) {		
+					dataStringList.add(String.valueOf(data.mValue));
+				}
+				
+				chartData.addDataSerie(dataStringList,dataName);
+				chartData.setDataValuesNames(queryNumberStringList);
+				chartData.setDataTitle("Queries (separately sorted for each reasoner)");
+				chartData.setValuesTitle("Time in milliseconds");
+			}
+			
+			mChartPrintingHandler.printCactusChart(competition, "Query-Separately-Sorted-"+evalType.mShortString, chartData);
+			mChartPrintingHandler.printLogarithmicCactusChart(competition, "Query-Separately-Sorted-"+evalType.mShortString+"-Logarithmic", chartData);
+
 		}
+		
+		
+		
+		
+		
+		
 
 		
 	}

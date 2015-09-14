@@ -129,4 +129,15 @@ public class EvaluationJChartPrinter implements EvaluationChartPrinter {
 		return chartGenerated;		
 	}
 
+
+
+	@Override
+	public boolean printCactusChart(String outputString, EvaluationChartPrintingData chartData) {
+		return false;
+	}
+
+	@Override
+	public boolean printLogarithmicCactusChart(String outputString, EvaluationChartPrintingData chartData) {
+		return false;
+	}
 }

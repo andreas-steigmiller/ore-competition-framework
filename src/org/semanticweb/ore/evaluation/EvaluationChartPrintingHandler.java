@@ -53,6 +53,55 @@ public class EvaluationChartPrintingHandler {
 	
 	
 	
+
+	public boolean printCactusChart(Competition competition, String evaluationNameString, EvaluationChartPrintingData chartData) {
+		try {
+			CompetitionEvaluationStatus jChartEvalStat = new CompetitionEvaluationStatus(competition,evaluationNameString+"-JChart",mBaseOutputString+evaluationNameString+"-JChart.png",CompetitionEvaluationType.COMPETITION_EVALUTION_TYPE_CHART_PNG,new DateTime(DateTimeZone.UTC));
+			if (mJChartPrinter.printCactusChart(mBaseOutputString+evaluationNameString+"-JChart.png", chartData)) {
+				if (mStatusUpdater != null) {
+					mStatusUpdater.updateCompetitionEvaluationStatus(jChartEvalStat);
+				}
+			}
+		} catch (Exception e) {			
+		}
+		try {
+			CompetitionEvaluationStatus highChartEvalStat = new CompetitionEvaluationStatus(competition,evaluationNameString+"-Highchart",mBaseOutputString+evaluationNameString+"-Highchart.html",CompetitionEvaluationType.COMPETITION_EVALUTION_TYPE_CHART_HTML,new DateTime(DateTimeZone.UTC));
+			if (mHighchartPrinter.printCactusChart(mBaseOutputString+evaluationNameString+"-Highchart.html", chartData)) {
+				if (mStatusUpdater != null) {
+					mStatusUpdater.updateCompetitionEvaluationStatus(highChartEvalStat);
+				}
+			}
+		} catch (Exception e) {			
+		}
+		return false;
+	}
+	
+	
+	
+
+
+	public boolean printLogarithmicCactusChart(Competition competition, String evaluationNameString, EvaluationChartPrintingData chartData) {
+		try {
+			CompetitionEvaluationStatus jChartEvalStat = new CompetitionEvaluationStatus(competition,evaluationNameString+"-JChart",mBaseOutputString+evaluationNameString+"-JChart.png",CompetitionEvaluationType.COMPETITION_EVALUTION_TYPE_CHART_PNG,new DateTime(DateTimeZone.UTC));
+			if (mJChartPrinter.printLogarithmicCactusChart(mBaseOutputString+evaluationNameString+"-JChart.png", chartData)) {
+				if (mStatusUpdater != null) {
+					mStatusUpdater.updateCompetitionEvaluationStatus(jChartEvalStat);
+				}
+			}
+		} catch (Exception e) {			
+		}
+		try {
+			CompetitionEvaluationStatus highChartEvalStat = new CompetitionEvaluationStatus(competition,evaluationNameString+"-Highchart",mBaseOutputString+evaluationNameString+"-Highchart.html",CompetitionEvaluationType.COMPETITION_EVALUTION_TYPE_CHART_HTML,new DateTime(DateTimeZone.UTC));
+			if (mHighchartPrinter.printLogarithmicCactusChart(mBaseOutputString+evaluationNameString+"-Highchart.html", chartData)) {
+				if (mStatusUpdater != null) {
+					mStatusUpdater.updateCompetitionEvaluationStatus(highChartEvalStat);
+				}
+			}
+		} catch (Exception e) {			
+		}
+		return false;
+	}
+	
 	public boolean printBarChart(Competition competition, String evaluationNameString, String title, ArrayList<String> dataList, ArrayList<String> valueNameList, String dataName, String dataTitle, String valueTitle) {
 		
 		EvaluationChartPrintingData chartData = new EvaluationChartPrintingData(title); 
