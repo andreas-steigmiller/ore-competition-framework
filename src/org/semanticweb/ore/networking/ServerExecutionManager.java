@@ -432,7 +432,7 @@ public class ServerExecutionManager extends EventThread implements ExecutionTask
 		changeHandlerItemState(handlerItem, ExecutionTaskHandlerSchedulingState.STATE_SCHEDULED);
 		changeProviderItemState(providerItem, ExecutionTaskProviderSchedulingState.STATE_PROCESSING);		
 		providerItem.getProvider().postExecutionTaskHandlerAddition(handlerItem.getExecutionHandler());
-		mLogger.error("Associate execution handler '{}' to  competition '{}'.",handlerItem,providerItem);
+		mLogger.info("Associate execution handler '{}' to  competition '{}'.",handlerItem,providerItem);
 		if (delayedHanlderAssociationList != null) {
 			delayedHanlderAssociationList.add(handlerItem);
 		} else {
@@ -446,7 +446,7 @@ public class ServerExecutionManager extends EventThread implements ExecutionTask
 		if (providerItem != null) {
 			deassociateHandlerFromProvider(handlerItem,providerItem);
 			providerItem.getProvider().postExecutionTaskHandlerRemovement(handlerItem.getExecutionHandler());
-			mLogger.error("Deassociate execution handler '{}' from competition '{}'.",handlerItem,providerItem);
+			mLogger.info("Deassociate execution handler '{}' from competition '{}'.",handlerItem,providerItem);
 		}
 	}
 
