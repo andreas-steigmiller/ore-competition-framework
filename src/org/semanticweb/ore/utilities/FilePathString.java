@@ -53,6 +53,24 @@ public class FilePathString {
 		return mAbsoluteFilePathString;
 	}
 	
+
+	public String getFileString() {
+		int sepCharIndex = mAbsoluteFilePathString.lastIndexOf('/');
+		sepCharIndex = Math.max(sepCharIndex, mAbsoluteFilePathString.lastIndexOf('\\'));
+		if (sepCharIndex == -1) {
+			return mAbsoluteFilePathString;
+		}
+		return mAbsoluteFilePathString.substring(sepCharIndex+1);
+	}
+
+	public String getPathString() {
+		int sepCharIndex = mAbsoluteFilePathString.indexOf('/');
+		sepCharIndex = Math.min(sepCharIndex, mAbsoluteFilePathString.indexOf('\\'));
+		if (sepCharIndex == -1) {
+			return mAbsoluteFilePathString;
+		}
+		return mAbsoluteFilePathString.substring(0,sepCharIndex);
+	}
 	
 	
 	public FilePathString(String relativeBaseFilePathString, String relativeFilePathString, RelativeFilePathStringType relativeType) {

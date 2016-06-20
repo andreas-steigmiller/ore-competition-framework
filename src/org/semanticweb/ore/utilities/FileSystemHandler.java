@@ -1,6 +1,11 @@
 package org.semanticweb.ore.utilities;
 
 import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.OutputStream;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Collections;
@@ -172,6 +177,35 @@ public class FileSystemHandler {
 			return "absolute" + File.separator + redirectSourceString;			
 		}
 		
+	}
+	
+	
+
+	public static boolean copyFile(FilePathString filePathSourceString, FilePathString filePathDestinationString) {
+		
+		boolean copied = false;
+		InputStream is = null;
+	    OutputStream os = null;
+	    try {
+		    try {
+		    	ensurePathToFileExists(filePathDestinationString);
+		        is = new FileInputStream(new File(filePathSourceString.getAbsoluteFilePathString()));
+		        os = new FileOutputStream(new File(filePathDestinationString.getAbsoluteFilePathString()));
+		        byte[] buffer = new byte[1024];
+		        int length;
+		        while ((length = is.read(buffer)) > 0) {
+		            os.write(buffer, 0, length);
+		        }
+		        copied = true;
+			} finally {
+		        is.close();
+		        os.close();
+		    }	    
+    	} catch (Exception e) { 
+	        copied = false;
+    	}
+		
+	    return copied;
 	}
 
 }

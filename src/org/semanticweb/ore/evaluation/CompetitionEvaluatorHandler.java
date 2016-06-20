@@ -63,6 +63,7 @@ public class CompetitionEvaluatorHandler extends Thread implements Runnable, Com
 		String expectedResultsResponseDirectory = competitionOutputDirectory+File.separator+"new-expected-results"+File.separator;
 		String evaluationResultsResponseDirectory = competitionOutputDirectory+File.separator+"evaluation-results"+File.separator;
 		
+		String reorganisationResultsResponseDirectory = competitionOutputDirectory+File.separator+"reorganized-results"+File.separator;
 		
 
 		
@@ -154,6 +155,15 @@ public class CompetitionEvaluatorHandler extends Thread implements Runnable, Com
 			reasonerBasedExpectedResultGenerationEvaluator.evaluateCompetitionResults(mResultStorage, mCompetition);
 		} catch (Exception e) {			
 		}
+		
+		
+		
+		try {
+			ReasonerQueryResultAgreementReorganizer agreementResultReorganizerGenerationEvaluator = new ReasonerQueryResultAgreementReorganizer(mConfig,reorganisationResultsResponseDirectory+"agreement"+File.separator);
+			agreementResultReorganizerGenerationEvaluator.evaluateCompetitionResults(mResultStorage, mCompetition);
+		} catch (Exception e) {			
+			mLogger.info("Failed to reorganize results based on agreement for competition {}, got Exception {}'.",mCompetition.getCompetitionName(),e.getMessage());
+		}		
 			
 		mLogger.info("Finished evaluation for competition '{}'.",mCompetition.getCompetitionName());
 		

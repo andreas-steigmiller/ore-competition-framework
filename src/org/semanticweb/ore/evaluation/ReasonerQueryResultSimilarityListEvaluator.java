@@ -5,6 +5,8 @@ import java.util.Arrays;
 import java.util.Collection;
 import java.util.HashMap;
 import java.util.HashSet;
+import java.util.Map.Entry;
+import java.util.Set;
 
 import org.joda.time.DateTime;
 import org.joda.time.DateTimeZone;
@@ -48,7 +50,9 @@ public class ReasonerQueryResultSimilarityListEvaluator implements StoredQueryRe
 	protected enum EvaluationSummaryType {
 		ET_NO_RESULT_HASH_CODE("No-Result-Hash-Code"),
 		ET_MAX_SIMILAR_RESULT_COUNT("Max-Similar-Result-Count"),
-		ET_DIFFERENT_RESULT_COUNT("Different-Result-Count");
+		ET_DIFFERENT_RESULT_COUNT("Different-Result-Count"),
+		ET_DRAW_OCCURRED("Draw-Occurred"),
+		ET_DRAW_PARTIES_COUNT("Draw-Parties-Count");
 
 		String mShortString = null;
 		
@@ -60,7 +64,8 @@ public class ReasonerQueryResultSimilarityListEvaluator implements StoredQueryRe
 	protected enum EvaluationReasonerType {
 		ET_VALID_HASH_CODE("Has-Valid-Hash-Code"),
 		ET_SIMILAR_RESULT_COUNT("Similar-Result-Count"),
-		ET_DIFFERENT_RESULT_COUNT("Different-Result-Count");
+		ET_DIFFERENT_RESULT_COUNT("Different-Result-Count"),
+		ET_DRAW_PARTICIPATION("Draw-Participation");
 
 		String mShortString = null;
 		
@@ -77,6 +82,8 @@ public class ReasonerQueryResultSimilarityListEvaluator implements StoredQueryRe
 		boolean mValidResultHashCode = false;
 		int mDifferentHashCodeCount = 0;
 		int mSimilarHashCodeCount = 0;
+		int mDrawParticipation = 0;
+		int mDrawPartiesCount = 0;
 		
 		
 		String getValueString(EvaluationReasonerType evalType) {
@@ -87,6 +94,8 @@ public class ReasonerQueryResultSimilarityListEvaluator implements StoredQueryRe
 				string = String.valueOf(mSimilarHashCodeCount);
 			} else if (evalType == EvaluationReasonerType.ET_DIFFERENT_RESULT_COUNT) {
 				string = String.valueOf(mDifferentHashCodeCount);
+			} else if (evalType == EvaluationReasonerType.ET_DRAW_PARTICIPATION) {
+				string = String.valueOf(mDrawParticipation);
 			}
 			return string;
 		}
@@ -106,7 +115,8 @@ public class ReasonerQueryResultSimilarityListEvaluator implements StoredQueryRe
 		int mNoResultCount = 0;				
 		int mMaxSimilarResultCount = 0;
 		int mDifferentResultCount = 0;
-		
+		int mDrawOccurred = 0;
+		int mDrawPartiesCount = 0;		
 		String getValueString(EvaluationSummaryType evalType) {
 			String string = null;
 			if (evalType == EvaluationSummaryType.ET_NO_RESULT_HASH_CODE) {
@@ -115,6 +125,10 @@ public class ReasonerQueryResultSimilarityListEvaluator implements StoredQueryRe
 				string = String.valueOf(mMaxSimilarResultCount);
 			} else if (evalType == EvaluationSummaryType.ET_DIFFERENT_RESULT_COUNT) {
 				string = String.valueOf(mDifferentResultCount);
+			} else if (evalType == EvaluationSummaryType.ET_DRAW_OCCURRED) {
+				string = String.valueOf(mDrawOccurred);
+			} else if (evalType == EvaluationSummaryType.ET_DRAW_PARTIES_COUNT) {
+				string = String.valueOf(mDrawPartiesCount);
 			}
 			return string;
 		}
@@ -123,10 +137,12 @@ public class ReasonerQueryResultSimilarityListEvaluator implements StoredQueryRe
 			mQuery = query;
 		}
 		
-		void setData(int noResultCount, int maxSimilarResultCount, int differentResultCount) {
+		void setData(int noResultCount, int maxSimilarResultCount, int differentResultCount, int drawOccured, int drawPartiesCount) {
 			mDifferentResultCount = differentResultCount;
 			mMaxSimilarResultCount = maxSimilarResultCount;
 			mNoResultCount = noResultCount;	
+			mDrawOccurred = drawOccured;
+			mDrawPartiesCount = drawPartiesCount;
 		}
 	}	
 	
@@ -253,7 +269,8 @@ public class ReasonerQueryResultSimilarityListEvaluator implements StoredQueryRe
 			int differentHashCodeCount = 0;
 			int noValidHashCodeCount = 0;
 			int validHashCodeCount = 0;
-			HashSet<String> differentHashCodeSet = new HashSet<String>(); 
+			HashSet<String> differentHashCodeSet = new HashSet<String>();
+			HashMap<String,Integer> hashCodeCountSet = new HashMap<String,Integer>(); 
 			for (ReasonerDescription reasoner : reasonerCollection) {
 				int similarCount = 0;
 				int differentCount = 0;
@@ -261,6 +278,11 @@ public class ReasonerQueryResultSimilarityListEvaluator implements StoredQueryRe
 				if (queryReasonerData.mValidResultHashCode) {
 					String hashCode = queryReasonerData.mResultHashCode;
 					differentHashCodeSet.add(hashCode);
+					int prevHashCodeCount = 0;
+					if (hashCodeCountSet.containsKey(hashCode)) {
+						prevHashCodeCount = hashCodeCountSet.get(hashCode); 
+					}
+					hashCodeCountSet.put(hashCode, prevHashCodeCount+1);
 					++validHashCodeCount;
 					
 					for (ReasonerDescription otherReasoner : reasonerCollection) {
@@ -285,8 +307,43 @@ public class ReasonerQueryResultSimilarityListEvaluator implements StoredQueryRe
 					++noValidHashCodeCount;
 				}
 			}
+
+			int maxHashCodeCount = 0;
+			int maxHashCodeCountCount = 0;
+			for (Entry<String, Integer> hashCodeCountEntry : hashCodeCountSet.entrySet()) {
+				Integer hashCodeCount = hashCodeCountEntry.getValue();
+				if (hashCodeCount > maxHashCodeCount) {
+					maxHashCodeCount = hashCodeCount;
+					maxHashCodeCountCount = 1; 
+				} else if (hashCodeCount == maxHashCodeCount) {
+					maxHashCodeCountCount += 1; 
+				}
+			}
+			
+			int drawOccurred = 0;
+			if (maxHashCodeCountCount > 1) {
+				drawOccurred = 1;
+			}
+			
+			int drawPartiesCount = 0;
+			if (drawOccurred == 1) {				
+				for (ReasonerDescription reasoner : reasonerCollection) {
+					QueryReasonerData queryReasonerData = getQueryReasonerData(query, reasoner);
+					if (queryReasonerData.mValidResultHashCode) {
+						String hashCode = queryReasonerData.mResultHashCode;
+						int hashCodeCount = hashCodeCountSet.get(hashCode);
+						if (hashCodeCount == maxHashCodeCount) {	
+							queryReasonerData.mDrawParticipation = 1;
+						}
+					}				
+				}
+				drawPartiesCount = maxHashCodeCountCount;
+			}
+			
+			
+			
 			differentHashCodeCount = differentHashCodeSet.size();
-			queryData.setData(noValidHashCodeCount, maxSimilarHashCodeCount, differentHashCodeCount);
+			queryData.setData(noValidHashCodeCount, maxSimilarHashCodeCount, differentHashCodeCount, drawOccurred, drawPartiesCount);
 		}
 		
 		
@@ -328,6 +385,8 @@ public class ReasonerQueryResultSimilarityListEvaluator implements StoredQueryRe
 				reasonerTable.setData(query, EvaluationSummaryType.ET_NO_RESULT_HASH_CODE, String.valueOf(queryData.mNoResultCount));
 				reasonerTable.setData(query, EvaluationSummaryType.ET_MAX_SIMILAR_RESULT_COUNT, String.valueOf(queryData.mMaxSimilarResultCount));
 				reasonerTable.setData(query, EvaluationSummaryType.ET_DIFFERENT_RESULT_COUNT, String.valueOf(queryData.mDifferentResultCount));
+				reasonerTable.setData(query, EvaluationSummaryType.ET_DRAW_OCCURRED, String.valueOf(queryData.mDrawOccurred));
+				reasonerTable.setData(query, EvaluationSummaryType.ET_DRAW_PARTIES_COUNT, String.valueOf(queryData.mDrawPartiesCount));
 			}
 			
 			reasonerTable.writeCSVTable(mResultOutputString+"Result-Similarity.csv");
@@ -361,6 +420,7 @@ public class ReasonerQueryResultSimilarityListEvaluator implements StoredQueryRe
 					reasonerTable.setData(query, EvaluationReasonerType.ET_VALID_HASH_CODE, String.valueOf(queryReasonerData.mValidResultHashCode));
 					reasonerTable.setData(query, EvaluationReasonerType.ET_SIMILAR_RESULT_COUNT, String.valueOf(queryReasonerData.mSimilarHashCodeCount));
 					reasonerTable.setData(query, EvaluationReasonerType.ET_DIFFERENT_RESULT_COUNT, String.valueOf(queryReasonerData.mDifferentHashCodeCount));
+					reasonerTable.setData(query, EvaluationReasonerType.ET_DRAW_PARTICIPATION, String.valueOf(queryReasonerData.mDrawParticipation));
 				}
 				
 				reasonerTable.writeCSVTable(mResultOutputString+"Result-Similarity-"+reasoner.getReasonerName()+".csv");
